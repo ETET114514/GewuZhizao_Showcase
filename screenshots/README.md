@@ -13,6 +13,14 @@
 | [material-library.jpg](material-library.jpg) | 八类、160 款基础材质总览 | 材质样片 |
 | [furniture-models.jpg](furniture-models.jpg) | 五个内置 CC0 家具 GLB 预览 | 模型缩略图 |
 
+## 本轮室内设计与项目管理
+
+| 文件 | 展示内容 | 场景类型 |
+| --- | --- | --- |
+| [background-wall.png](background-wall.png) | 木饰面背景墙保留实际窗洞 | 功能演示场景 |
+| [slats-wall.png](slats-wall.png) | 竖向木格栅的厚度与间隔 | 功能演示场景 |
+| [projects.png](projects.png) | 项目命名、搜索、缩略图与自动保存入口 | 功能演示场景 |
+
 ## 材质库
 
 ![160 款材质总览](material-library.jpg)
