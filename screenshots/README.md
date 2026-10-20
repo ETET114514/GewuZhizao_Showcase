@@ -13,7 +13,16 @@
 | [material-library.jpg](material-library.jpg) | 八类、160 款基础材质总览 | 材质样片 |
 | [furniture-models.jpg](furniture-models.jpg) | 五个内置 CC0 家具 GLB 预览 | 模型缩略图 |
 
-## 本轮室内设计与项目管理
+## 本轮室内设计 · 2026-10-20
+
+| 文件 | 展示内容 | 场景类型 |
+| --- | --- | --- |
+| [seamed-wall-trim.png](seamed-wall-trim.png) | 规则网格分缝、四周矩形收边并保留窗洞 | 功能演示场景 |
+| [structures.png](structures.png) | 单层柱、梁、烟道与包管 | 功能演示场景 |
+| [wardrobe-open.png](wardrobe-open.png) | 衣柜板件、分格、门板与内部抽屉开合 | 功能演示场景 |
+| [straight-kitchen.png](straight-kitchen.png) | 地柜/吊柜直线排列、独立材质连续台面 | 功能演示场景 |
+
+## 室内设计与项目管理 · 2026-10-19
 
 | 文件 | 展示内容 | 场景类型 |
 | --- | --- | --- |
