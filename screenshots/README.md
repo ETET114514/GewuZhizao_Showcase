@@ -13,7 +13,17 @@
 | [material-library.jpg](material-library.jpg) | 八类、160 款基础材质总览 | 材质样片 |
 | [furniture-models.jpg](furniture-models.jpg) | 五个内置 CC0 家具 GLB 预览 | 模型缩略图 |
 
-## 本轮室内设计 · 2026-10-20
+## 本轮操作流程 · 2026-10-23
+
+| 文件 | 展示内容 | 场景类型 |
+| --- | --- | --- |
+| [workflow-plan.png](workflow-plan.png) | 五组深化工具、当前顶面属性和统一状态提示 | 隔离验收场景 |
+| [workflow-model.png](workflow-model.png) | 三维厨房组定位、朝向与统一应用/取消 | 隔离验收场景 |
+| [workflow-model-narrow.png](workflow-model-narrow.png) | 390 px 下的当前厨房属性与统一操作 | 隔离验收场景 |
+
+截图对应 New 提交 `d89af66dd1e72552ac1a8f874389232fd6db75db`，不代表完整装修方案；二维/三维仍使用原有容器。
+
+## 历史室内设计 · 2026-10-20
 
 | 文件 | 展示内容 | 场景类型 |
 | --- | --- | --- |
