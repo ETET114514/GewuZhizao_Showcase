@@ -13,7 +13,19 @@
 | [material-library.jpg](material-library.jpg) | 八类、160 款基础材质总览 | 材质样片 |
 | [furniture-models.jpg](furniture-models.jpg) | 五个内置 CC0 家具 GLB 预览 | 模型缩略图 |
 
-## 本轮操作流程 · 2026-10-23
+## 本轮统一工作台与 L 形厨房 · 2026-10-23
+
+| 文件 | 展示内容 | 场景类型 |
+| --- | --- | --- |
+| [unified-workbench.png](unified-workbench.png) | 同一三维工作台、共用工具/属性与家具画布手柄 | 隔离验收场景 |
+| [unified-plan.png](unified-plan.png) | 统一二维工作台与辅助视图入口 | 隔离验收场景 |
+| [l-kitchen.png](l-kitchen.png) | 两个独立左右盲位 L 形厨房、单块连续凹台面与编辑器 | 隔离验收场景 |
+| [l-kitchen-plan.png](l-kitchen-plan.png) | 二维六顶点 L 形台面轮廓 | 隔离验收场景 |
+| [l-kitchen-narrow.png](l-kitchen-narrow.png) | 390 px 厨房编辑器 | 隔离验收场景 |
+
+对应 New 最新提交 `37c066b3becd011e96714efd648b8600e50aedc3`（含工作台提交 `66c8761`）。L 形截图红框为当前姿态碰撞提示；保留原始验收截图，不代表完成的装修方案。
+
+## 历史操作基础 · 2026-10-23
 
 | 文件 | 展示内容 | 场景类型 |
 | --- | --- | --- |
@@ -21,7 +33,7 @@
 | [workflow-model.png](workflow-model.png) | 三维厨房组定位、朝向与统一应用/取消 | 隔离验收场景 |
 | [workflow-model-narrow.png](workflow-model-narrow.png) | 390 px 下的当前厨房属性与统一操作 | 隔离验收场景 |
 
-截图对应 New 提交 `d89af66dd1e72552ac1a8f874389232fd6db75db`，不代表完整装修方案；二维/三维仍使用原有容器。
+截图对应 New 提交 `d89af66dd1e72552ac1a8f874389232fd6db75db`，不代表完整装修方案；当轮二维/三维仍使用原有容器，目前已由 U03 统一工作台替代。
 
 ## 历史室内设计 · 2026-10-20
 
