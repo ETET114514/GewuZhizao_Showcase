@@ -13,7 +13,20 @@
 | [material-library.jpg](material-library.jpg) | 八类、160 款基础材质总览 | 材质样片 |
 | [furniture-models.jpg](furniture-models.jpg) | 五个内置 CC0 家具 GLB 预览 | 模型缩略图 |
 
-## 本轮厨房开孔与地面铺贴 · 2026-10-23
+## 本轮更新 · 2026-10-24
+
+| 文件 | 展示内容 | 场景类型 |
+| --- | --- | --- |
+| [herringbone.png](herringbone.png) | 人字拼、上传材质与隐藏单板 | 隔离验收场景 |
+| [herringbone-4k.jpg](herringbone-4k.jpg) | 3840 × 2160 JPG，隐藏选框 | 隔离验收场景 |
+| [floor-tiles-upload.png](floor-tiles-upload.png) | 单块上传材质、纹理及选块图 | 隔离验收场景 |
+| [furniture-groups.png](furniture-groups.png) | 家具组与三维操纵器 | 隔离验收场景 |
+| [furniture-groups-plan.png](furniture-groups-plan.png) | 二维组范围与拖动入口 | 隔离验收场景 |
+| [wall-opening-surround.png](wall-opening-surround.png) | 洞口上/右包口及逐洞开关 | 隔离验收场景 |
+
+对应 New 提交 544714f145bec6094d7a9b3ed4ac20582f59d265。蓝板为自制上传条纹图，空缺为隐藏示例，不表示结构洞或完整装修交付。
+
+## 历史厨房开孔与地面铺贴 · 2026-10-23
 
 | 文件 | 展示内容 | 场景类型 |
 | --- | --- | --- |
