@@ -13,7 +13,19 @@
 | [material-library.jpg](material-library.jpg) | 八类、160 款基础材质总览 | 材质样片 |
 | [furniture-models.jpg](furniture-models.jpg) | 五个内置 CC0 家具 GLB 预览 | 模型缩略图 |
 
-## 本轮更新 · 2026-10-24
+## 本轮更新 · 2026-10-25
+
+| 文件 | 展示内容 | 场景类型 |
+| --- | --- | --- |
+| [opening-frame-fit.png](opening-frame-fit.png) | 洞内包覆、适配窗框与三维快捷入口 | 隔离验收场景 |
+| [opening-frame-fit-editor.png](opening-frame-fit-editor.png) | 框进深、偏移及适配后框外宽高 | 隔离验收场景 |
+| [wall-panel-opening-details.png](wall-panel-opening-details.png) | 单洞口逐边材质/上传和矩形尺寸例外 | 隔离验收场景 |
+| [wall-panel-lines.png](wall-panel-lines.png) | 非等距横竖线矩形分板 | 隔离验收场景 |
+| [upload-library.png](upload-library.png) | 上传材质库名称与条目管理 | 隔离验收场景 |
+
+对应 New 提交 `3d812a2d9bc78b7e51271c6ae7f04357ea00ff1a`。实际运行截图不代表商品安装节点、施工图或最终装修方案。
+
+## 历史更新 · 2026-10-24
 
 | 文件 | 展示内容 | 场景类型 |
 | --- | --- | --- |
