@@ -13,7 +13,21 @@
 | [material-library.jpg](material-library.jpg) | 八类、160 款基础材质总览 | 材质样片 |
 | [furniture-models.jpg](furniture-models.jpg) | 五个内置 CC0 家具 GLB 预览 | 模型缩略图 |
 
-## 本轮更新 · 2026-10-25
+## 本轮更新 · 2026-10-26
+
+以下为隔离验收场景的实际界面；对应 New `35d29cd`，功能边界与验证见[更新概要](../docs/updates-2026-10-26.md)。
+
+| 文件 | 展示内容 |
+| --- | --- |
+| [p13-room-net-lengths.png](p13-room-net-lengths.png) | 在原轴线标注上新增按房间墙侧净长 |
+| [p13-solid-wall-lengths.png](p13-solid-wall-lengths.png) | 扣门窗水平投影后的实墙分段与待校核范围 |
+| [p22-floor-occupancy.png](p22-floor-occupancy.png) | 构件占用与铺装/可铺面积联动 |
+| [p25-opening-details.png](p25-opening-details.png) | 分格、真实截面与独立纱窗 |
+| [p25-bay-window.png](p25-bay-window.png) | 矩形三面飘窗 |
+| [p24-kitchen-cutouts.png](p24-kitchen-cutouts.png) | 盲角柜设备及真实孔型 |
+| [p23-free-wall-panels.png](p23-free-wall-panels.png) | 自由直缝、简单多边形墙板 |
+
+## 历史更新 · 2026-10-25
 
 | 文件 | 展示内容 | 场景类型 |
 | --- | --- | --- |
