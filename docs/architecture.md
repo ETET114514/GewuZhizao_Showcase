@@ -1,96 +1,100 @@
-# 架构与工程设计
+# Architecture and engineering
 
-本页介绍当前原型的系统分工与工程取舍，不包含源代码、接口凭据、训练数据或具体识别规则。
+**English** | [中文](architecture.zh-CN.md)
 
-## 总体结构
+This page describes the prototype's responsibilities and engineering choices. It contains no source code, credentials, training data or specific recognition rules.
 
-当前版本由浏览器工作台和 Python 本地服务组成。浏览器承担二维编辑与三维预览，本地服务承担图像处理、编辑校验和项目保存。
+## Overall structure
 
-U01～U05 协调现有表单与选择状态，在同一工作台切换二维/三维，共用工具与属性位置；统一应用取消、Esc 与未应用保护，无变化的基础编辑不写入历史或自动保存，也不清空重做。主三维画面与二维时的三维小预览共用一个渲染器；辅助视图默认收起，隐藏时暂停三维渲染。三维时的简化二维图可查看相机方向并点击可站立位置定位。
+The current version combines a browser workbench with a local Python service. The browser handles 2D editing and 3D previews; the service handles image processing, edit validation and project persistence.
+
+U01–U05 coordinates existing forms and selection state in one 2D/3D workbench with shared tool/property positions. Apply/cancel, Esc and unapplied-edit protection are consistent. Unchanged basic edits neither write history/autosave nor clear redo. The main 3D view and the small 2D-mode 3D preview share one renderer. Auxiliary views start collapsed and hidden 3D rendering pauses. In 3D mode, a simplified 2D map shows camera direction and lets users place the camera on walkable ground.
 
 ```mermaid
 flowchart TD
-    A[户型图片] --> B[图像处理与候选识别]
-    B --> C[可编辑构件与区域数据]
-    C --> D[二维工作台]
-    D --> E[修改校验与历史记录]
+    A[Floor-plan image] --> B[Image processing and candidate recognition]
+    B --> C[Editable elements and regions]
+    C --> D[2D workbench]
+    D --> E[Edit validation and history]
     E --> C
-    C --> F[三维场景构建]
-    F --> G[材质、灯光与交互预览]
-    G --> H[命名视角与图片导出]
-    C --> I[本机项目保存]
+    C --> F[3D scene construction]
+    F --> G[Materials, lighting and interactive preview]
+    G --> H[Named views and image export]
+    C --> I[Local project saving]
     I --> C
 ```
 
-## 模块分工
+## Module responsibilities
 
-| 模块 | 职责 | 主要技术 |
+| Module | Responsibility | Main technology |
 | --- | --- | --- |
-| 图像处理 | 读取底图，提取墙体、门窗与家具候选，复用相同识别输入的缓存 | Python、NumPy、Pillow、OpenCV、可选 ONNX Runtime |
-| 几何与空间 | 处理墙体、洞口、连接、房间边界、比例与面积 | Python、Shapely、平面几何处理 |
-| 编辑服务 | 校验修改，维护当前方案与撤销/重做历史，管理本机命名项目、资源与自动恢复 | Python HTTP 服务、文件存储 |
-| 二维工作台 | 图层、选中、定位、拖动、尺寸输入、区域编辑与参数预览 | JavaScript ES Modules、SVG、HTML/CSS |
-| 三维场景 | 根据构件尺寸构建墙体、门窗、家具、地面与顶面 | Three.js、WebGL、程序化几何、GLB |
-| 外观与照明 | PBR 贴图、金属/玻璃、日光、灯具投影与灯槽柔光 | Three.js 材质、阴影与光照贴图 |
-| 验证 | 几何测试、参数校验、接口操作与实际浏览器流程 | Python unittest、Node.js test runner、Playwright |
+| Image processing | Load plan images, extract wall/opening/furniture candidates, reuse caches for identical recognition inputs | Python, NumPy, Pillow, OpenCV, optional ONNX Runtime |
+| Spatial geometry | Walls, openings, connections, room boundaries, scale and area | Python, Shapely, planar geometry |
+| Editing service | Validate edits, manage current project/undo/redo and local named projects/assets/recovery | Python HTTP service, file storage |
+| 2D workbench | Layers, selection, navigation, dragging, dimensions, regions and parameter preview | JavaScript ES Modules, SVG, HTML/CSS |
+| 3D scene | Generate walls, openings, furniture, floors and ceilings from element dimensions | Three.js, WebGL, procedural geometry, GLB |
+| Appearance/lighting | PBR maps, metal/glass, daylight, fixture shadows and soft cove lighting | Three.js materials, shadows and lightmaps |
+| Verification | Geometry, parameter validation, API operations and actual browser workflows | Python unittest, Node.js test runner, Playwright |
 
-## 关键工程问题
+## Key engineering problems
 
-### 让二维编辑与三维几何保持一致
+### Consistent 2D editing and 3D geometry
 
-二维原始几何保留图像坐标，通过比例换算为实际尺寸。三维墙体保留洞口上方、下方和侧边实体，门窗当前开合状态同时影响二维符号、三维构件和当前碰撞检查。
+Original 2D geometry retains image coordinates and uses calibrated scale for physical dimensions. 3D walls retain solids above, below and beside openings. Current door/window operation affects 2D symbols, 3D parts and current collision checks together.
 
-这样可以在修改门窗位置、尺寸或开合方式时继续使用同一套可编辑对象，而不需要单独维护一份脱离户型的展示模型。
+This keeps the same editable objects in use when positions, dimensions or opening mechanisms change, without maintaining a separate display model disconnected from the plan.
 
-定制柜的板件与开合由单柜参数生成，厨房组合保存成员顺序和台面设置。连续台面依据当前有效排列派生；成员出现断缝、错位或标高不一致时暂停显示并提示重新对齐，预览取消和撤销可以恢复。单层矩形柱梁等构件共用编辑、材质、碰撞和保存流程；尚未自动修改房间分区或生成结构开洞。
+Custom cabinet boards/operation derive from cabinet parameters; kitchen groups store member order and worktop settings. Continuous worktops derive from the current valid arrangement. Gaps, misalignment or inconsistent elevations pause the worktop and request realignment; cancel/undo can restore it. Single-floor rectangular columns/beams share editing, materials, collision and persistence; they do not automatically change room regions or generate structural openings.
 
-厨房整组移动和直角旋转以首柜中心定位，成员和台面同步更新；复制创建独立成员/组合编号。家具/厨房画布手柄复用预览与提交流程，一次手势一条历史，取消或提交失败恢复。失效排列、越界或超出预算时整次拒绝；通用家具组已复用预览/提交机制及二维拖动；厨房仍限直角。P16 新增混合/嵌套对象引用树和临时选择，复制重绑所有后代；缩放/批量属性复用原约束，多段路径按包络连续区间与自定义净距检查。
+Kitchen group movement/right-angle rotation uses the first cabinet center, updating members and worktop together. Copies create independent member/group IDs. Furniture/kitchen handles reuse preview/commit: one gesture, one history entry, with cancellation/failure restoration. Invalid arrangements, bounds or budgets reject the entire action. General furniture groups also reuse preview/commit and 2D dragging; kitchens remain orthogonal. P16 adds a mixed/nested reference tree and temporary selection, rebinding every descendant on copy. Scaling/batch properties reuse original constraints; multi-segment paths use continuous envelope intervals and custom clearances.
 
-L 形由主排、唯一左右盲角地柜和返排派生。固定盲板与可开门区分开，连续台面由单个凹多边形挤出；碰撞拆为两个矩形区域以保留凹口空间。旧直线项目沿用原格式。普通地柜现可绑定简化水槽/灶具，台面生成真实通孔、柜顶板分块避孔；设备位置按宿主局部坐标保存，复制重绑新成员，冲突或失配明确提示。本轮已补齐 L 形吊柜/U 形同系列组合及连续地柜台面，新增圆/圆角孔、盲角与同排相邻 2～3 柜开孔和显式共享侧板缺口；任意多转角/异形台面、更多机构和商品设备仍待做。
+L-shaped kitchens derive from a main run, one left/right blind-corner base cabinet and a return. Fixed blind panels are separate from operable doors. One concave polygon produces the worktop, while collision uses two rectangles to retain the recess. Legacy straight projects keep their format. Ordinary base cabinets host simplified sinks/hobs: actual worktop holes and split top panels avoid the opening. Equipment uses host-local coordinates, copies rebind to new members, and conflicts/mismatches are explicit. The current round adds L-shaped wall/U-shaped matching groups and continuous base worktops, circular/rounded holes, blind-corner and two/three adjacent-cabinet holes, plus explicit shared-panel notches. Arbitrary multiple corners/irregular worktops, further mechanisms and product equipment remain pending.
 
-房间地面可按单块尺寸生成正铺或两种错缝网格，并按凹形/孔洞/多块轮廓裁切，缝宽从实际块面扣除；起铺点与尺寸以实际长度保存，贴图比例独立。二维示意与三维使用相同派生排版，按房间及全项目预算拒绝过密网格。旧项目保持连续贴图。真实人字拼由两组正交矩形板派生，纹理跟随板身；逐块材质/隐藏用稀疏例外保存，改网格清除例外。自由移动/缩放/轮廓、真实可调鱼骨及重复拼花已由 P23 C01～C08 接入；采购用量与施工图待做。
+Room floors derive straight or two offset grids from piece dimensions and clip to concavity/holes/disconnected contours; actual piece faces exclude joint widths. Origins/dimensions use physical lengths independently of texture scale. 2D/3D share derived layouts; room/project budgets reject excessive grids. Older projects retain continuous textures. Physical herringbone uses two orthogonal rectangular-board sets, with textures following boards. Per-piece materials/hiding are sparse overrides cleared by grid changes. Free movement/scaling/contours, adjustable chevron and repeating motifs were added in P23 C01–C08. Procurement quantities/construction drawings remain pending.
 
-墙板支持规则/非等距矩形分板与墙段/地面起点；外周/洞边逐边矩形尺寸与材质独立继承，单洞口可覆盖方向默认。洞内包覆复用真实联合边界，最多到墙厚中线，角部避免重叠。普通矩形门窗可在独立进深/偏移内按包覆净空派生框与扇，原结构洞口保持；失配暂停并提示。当前库门窗框适配、自由直缝/简单多边形、实际收边截面和逐边包覆已由 P23 收尾；曲线类型与额外商品安装节点仍待做。
+Wall panels support regular/nonuniform rectangular divisions and wall-segment/floor origins. Perimeter/opening dimensions and materials inherit independently, with per-opening overrides over direction defaults. Reveals reuse actual union boundaries, stop at the wall centerline and avoid corner overlap. Ordinary rectangular openings derive frames/leaves inside independent depth/offset using lined clearance, preserving the structural opening; mismatches pause fitting with a warning. P23 completes current-library frame fitting, free straight seams/simple polygons, actual trim profiles and per-edge reveals. Curved types/additional product installation details remain pending.
 
-### 让不确定的识别结果可以修正
+### Correctable recognition uncertainty
 
-墙体、门窗和家具识别输出候选。工作台提供编号定位、确认与排除、手工补充及闭合诊断。分区只在分析中使用门窗虚拟边界，不把分析封口直接变成实体墙。
+Walls, openings and furniture are candidates. The workbench provides numbered navigation, confirmation/rejection, manual additions and closure diagnostics. Region analysis uses virtual boundaries at openings without turning those analysis closures into solid walls.
 
-当前原型优先支持人工校核后的完整工作流；通用识别准确率需要独立测试图集进一步评估。
+The prototype prioritizes a complete manually reviewed workflow. General recognition accuracy requires further evaluation on an independent image set.
 
-### 让每次修改可检查、可恢复
+### Inspectable, recoverable edits
 
-参数编辑通过预览、应用、取消与撤销/重做衔接。已应用修改原子写入本机自动保存，保留上份完整记录；损坏时尝试回退，冲突恢复副本分别保存。未应用表单不在恢复范围，跨次完整撤销栈尚未持久化。项目保存包括构件、区域、比例、材质、灯光和视角；导入模型、GLB 部位覆盖和五图 PBR 随项目保存，以内容编号和校验值恢复；颜色为不透明 JPEG，法线/粗糙度/金属度/AO 为线性无损 PNG，DirectX 法线转换为 OpenGL。重新打开后可继续编辑。上传库支持名称搜索/重命名、未使用条目删除及保存/恢复/历史引用保护，移除保留缓存；批量管理与显式缓存清理在服务器锁内预检并重查方案/历史/快照/预览引用，拒绝越界及链接，系统占用保持隐藏可重试。对象专用入口复用同一生命周期。
+Parameter editing connects preview, apply, cancel and undo/redo. Applied changes atomically autosave locally while retaining the previous complete record. Corrupt records trigger fallback attempts; conflicting recovery copies are saved separately. Unapplied forms are excluded, and full undo stacks are not persistent across sessions. Projects store elements, regions, scale, materials, lights and views. Imported models, GLB part overrides and five-map PBR travel with projects and recover through content IDs/checksums. Color becomes opaque JPEG; normal/roughness/metalness/AO use linear lossless PNG. DirectX normals convert to OpenGL. Reopened projects remain editable.
 
-图片导出等待相关贴图与灯槽光照更新，暂时隐藏选中高亮及碰撞辅助标记，结束后恢复画布和镜头。
+The upload library supports search/rename, unused-entry deletion and save/recovery/history reference protection; removing an entry retains its cache. Batch management and explicit cache cleanup preflight and recheck project/history/snapshot/preview references under the server lock, rejecting out-of-root paths and links. System-locked files stay hidden and retryable. Object-specific upload entry points share this lifecycle.
 
-### 在浏览器中控制渲染成本
+Image export waits for relevant textures/cove lighting, temporarily hides selection/collision aids and restores canvas/camera afterwards.
 
-模型与材质使用本地资源和缩略图。阴影按画质与灯数预算启用；灯槽间接光采用一次漫反射近似并分批计算，编辑变化后取消过期更新。复杂家具的部分遮挡检查采用包围盒近似。
+### Browser rendering costs
 
-这些取舍服务于交互预览，不等同于离线写实渲染或专业光照仿真。
+Models/materials use local assets and thumbnails. Shadows follow quality/light-count budgets. Cove indirect light approximates one diffuse bounce in batches, cancelling stale work after edits. Some occlusion checks for complex furniture use bounding boxes.
 
-## 验证方式
+These choices serve interactive previews, rather than offline photorealistic rendering or professional lighting simulation.
 
-| 层次 | 关注内容 |
+## Verification approach
+
+| Layer | Focus |
 | --- | --- |
-| 参数与接口 | 非法值、预览/应用/撤销、保存重开、历史兼容与失败恢复 |
-| 几何与状态 | 洞口轮廓、门窗运动、二维/三维一致性、碰撞、纹理跟随 |
-| 浏览器流程 | 实际鼠标与键盘操作、面板切换、取消恢复、窄屏布局与高清导出 |
-| 图像核查 | 图片解码、输出尺寸、辅助标记隐藏及关键效果截图 |
+| Parameters/API | Invalid values, preview/apply/undo, save/reopen, historical compatibility and failure recovery |
+| Geometry/state | Opening contours/motion, 2D/3D consistency, collision and following textures |
+| Browser workflows | Actual mouse/keyboard operations, panel switches, cancellation, narrow layouts and high-resolution output |
+| Image checks | Decoding, dimensions, hidden helpers and screenshots of key effects |
 
-验证按功能迭代执行。现有测试不作为对任意户型图、设备或使用场景的准确率与性能保证。
+Verification follows feature iterations. Existing tests do not guarantee recognition accuracy/performance for every plan, device or use case.
 
-[返回项目首页](../README.md)
+[Back to project home](../README.md)
 
-## 本轮几何与验证 · 2026-10-26
+## Geometry and verification update · 2026-10-26
 
-地面铺装与构件扣除采用派生几何，原房间轮廓、起铺点和逐块身份继续保存；重叠占用按并集，跨房间取实际相交范围。净长标注沿已划房间相邻墙侧读取几何，切换口径不改变工程数据或编辑历史。门窗、板块与截面以真实几何同步二维、三维和当前姿态碰撞，保留各自有限范围。
+Floor layouts and element deductions use derived geometry while retaining room contours, origins and piece identities. Overlapping occupancies use unions and actual cross-room intersections. Net-length labels read adjacent wall-side geometry from existing rooms; view changes do not alter project data/history. Openings, pieces and profiles synchronize actual geometry in 2D, 3D and current-pose collision within each bounded scope.
 
-发布前 407 项 Node、480 项 Python 通过，本轮净长浏览器检查通过；其他模块的分轮验收和完整代码基线见[2026-10-26 更新](updates-2026-10-26.md)。
+Before publication, 407 Node/480 Python tests and the net-length browser checks passed. Other module rounds and full code baseline are in the [2026-10-26 update](updates-2026-10-26.md).
 
-## 本轮对象与材质 · 2026-10-27
+## Objects and materials update · 2026-10-27
 
-GLB 材质覆盖使用源节点/网格/primitive 和模型内容指纹定位，替换模型不会误套旧部位；自定义 UV 克隆几何，原模型资源保持可恢复。房间墙侧在实际墙体表面沿邻接区间裁切，洞口和联合墙角保留，归属歧义回退并提示。跨对象批量操作附文档版本指纹，任一类型无效则拒绝整次应用；地面排版方向和逐块例外保留。
+GLB overrides locate source node/mesh/primitive with a model-content fingerprint, preventing old part overrides from applying to replacement models. Custom UVs clone geometry, keeping original model assets restorable. Room wall sides clip actual surfaces along adjacency intervals, preserving openings and union corners; ambiguous ownership falls back with a notice. Cross-object batch operations carry a document-version fingerprint and reject the whole application if any type is invalid. Floor layout directions/per-piece overrides remain intact.
 
-最新全量 427 Node/495 Python、48 项相关最终复验和 23 项缓存最终复验通过，测试集合不相加。新 P18 与原材质、上传库、GLB、墙漆浏览器通过；P16 当轮验收另列，详见[更新与验证](updates-2026-10-27.md)。
+Latest full suites: 427 Node/495 Python, plus 48 targeted final checks and 23 final cache checks, all passed. Overlapping sets are not added. New P18 and existing materials/upload-library/GLB/wall-paint browser checks passed; P16 retains its own acceptance record. See [update and verification](updates-2026-10-27.md).

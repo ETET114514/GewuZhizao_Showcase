@@ -1,19 +1,23 @@
-# 展示材料与第三方素材说明
+# Showcase materials and third-party assets
 
-本仓库用于展示格物智造（GewuZhizao）的项目功能与开发成果，发布文档和运行截图。源代码保持私有；本仓库未授予私有源码的访问或使用权限。
+**English** | [中文](NOTICE.zh-CN.md)
 
-## 截图说明
+This repository presents GewuZhizao's features and development results through documentation and actual application screenshots. Source code remains private; this repository grants no access or usage rights to that private source.
 
-截图来自项目真实界面或三维渲染，包含已有户型示例及专用功能演示场景。展示材料不包含源码、模型权重、原始户型项目包、原始材质贴图或原始 GLB 文件。
+## Screenshots
 
-部分截图拍摄于不同开发阶段，界面文案与样式可能随迭代变化。功能状态以本仓库功能清单的更新日期为准。
+Screenshots come from the actual interface or 3D rendering, including existing plan examples and dedicated feature demos. Showcase materials do not include source code, model weights, original plan project packages, original material textures or original GLB files.
 
-## 第三方内容
+Some screenshots were captured at different development stages; UI wording and styling may change. Feature status follows the update date of this repository's feature list.
 
-三维预览使用 [Three.js](https://github.com/mrdoob/three.js)，其软件采用 MIT 许可；本仓库未分发该软件。
+## Third-party content
 
-真实家具模型预览中出现的 Sofa 03、Gothic Bed 01、Dining Table、Dining Chair 02 和 Gothic Cabinet 01 来自 [Poly Haven](https://polyhaven.com/)，原始素材采用 [CC0 许可](https://polyhaven.com/license)。这些素材不作为项目原创建模成果声明。
+The 3D preview uses [Three.js](https://github.com/mrdoob/three.js), licensed under MIT. This repository does not distribute that software.
 
-材质库包含外部 CC0 素材、项目制作的图案和物理材质预设。材质总览用于说明已接入的选择与预览能力，不声明所有素材均为原创。
+The Sofa 03, Gothic Bed 01, Dining Table, Dining Chair 02 and Gothic Cabinet 01 shown in real furniture-model previews come from [Poly Haven](https://polyhaven.com/). The original assets use the [CC0 license](https://polyhaven.com/license). They are not claimed as original project modeling work.
 
-原始第三方素材与其他内容的权利归各自权利人所有。此处的私有源码声明不改变第三方素材原有许可。
+The material library includes external CC0 assets, project-created patterns and physical material presets. Its overview demonstrates available selection and preview capabilities; it does not claim that all assets are original.
+
+Rights to original third-party assets and other content remain with their respective rights holders. The private-source statement does not change those assets' original licenses.
+
+[Back to project home](README.md)

@@ -1,135 +1,137 @@
-# 演示导览
+# Demo guide
 
-可以按以下顺序了解项目。所有图片均来自实际运行界面或场景渲染；三维细节图中的部分场景专用于演示单项功能。
+**English** | [中文](demo.zh-CN.md)
 
-2026-10-23：顶部 2D/3D 在同一工作台切换，共用五组工具与属性位置，二维缩放/滚动与三维镜头分别保留。修改后预览，使用底部“应用修改”或“取消预览”；Esc 可取消普通表单草稿，有未应用修改时先处理后再切换对象/工具。展开辅助视图可看三维小预览或二维相机定位图。
+Explore the project in the following order. All images come from the running interface or scene rendering; some 3D detail scenes demonstrate one specific feature.
 
-![统一工作台与画布手柄](../screenshots/unified-workbench.png)
+2026-10-23: the top 2D/3D switch uses one workbench with five shared tool groups/property positions. 2D zoom/scroll and 3D camera state are retained separately. Preview changes, then use the bottom **Apply changes** (`应用修改`) or **Cancel preview** (`取消预览`). Esc cancels ordinary form drafts. Resolve unapplied changes before switching objects/tools. Expand auxiliary views for a small 3D preview or 2D camera map. UI labels below are translated for reference; screenshots retain the captured application interface.
 
-## 1. 从户型图得到可编辑对象
+![Unified workbench and canvas handles](../screenshots/unified-workbench.png)
 
-导入图片后查看带编号的墙体、门窗和家具候选。在图中选择对象，右侧编辑类别、尺寸或朝向；缺失对象可以手工补充。
+## 1. Turn a floor plan into editable objects
 
-![二维识别与校核工作台](../screenshots/workbench.png)
+Import an image and inspect numbered wall, opening and furniture candidates. Select objects on the plan and edit category, dimensions or orientation on the right. Add missing objects manually.
 
-也可以从空白画布开始，或先标定图片后连续绘制正交墙。按实际长度和墙厚编辑，拖动端点时保持相接墙联动；斜墙和弧墙尚未实现。
+![2D recognition and review workbench](../screenshots/workbench.png)
 
-## 2. 确认比例、房间边界和面积
+Alternatively, start with a blank canvas or calibrate an image and trace continuous orthogonal walls. Edit physical length/thickness; connected walls update together when endpoints move. Diagonal/curved walls are not implemented.
 
-通过已知长度标定实际比例，检查并修复边界，生成或手绘房间区域。面积由有效轮廓与比例计算，用户仍需检查自动分区。
+## 2. Confirm scale, room boundaries and area
 
-![房间区域与参考面积](../screenshots/floorplan-regions.png)
+Calibrate with a known length, inspect/repair boundaries and generate or draw room regions. Areas derive from valid contours and scale; users still need to review automatic regions.
 
-在“测量 → 显示墙长”中切换原轴线、房间墙侧净长和实墙净长；可按房间筛选。实墙口径扣门窗水平投影，待确认洞口不报数。构件开启扣地面后，房间显示原/扣除/可铺面积，删除或移动后恢复。
+![Room regions and reference areas](../screenshots/floorplan-regions.png)
 
-![房间墙侧净长](../screenshots/p13-room-net-lengths.png)
+Under **Measure → Show wall lengths** (`测量 → 显示墙长`), switch between original centerlines, room-side net lengths and solid-wall net lengths, optionally filtering by room. Solid-wall measurements exclude horizontal projections of openings; unconfirmed openings withhold values. Enabling floor deductions on elements shows gross/deducted/paveable room area and restores paving after deletion or movement.
 
-## 3. 进入三维调整空间与材质
+![Room-side net lengths](../screenshots/p13-room-net-lengths.png)
 
-墙体、洞口、家具和地面根据编辑数据生成。可以切换视角，调整家具，选择单面墙材质，并预览、取消或应用修改。
+## 3. Adjust space and materials in 3D
 
-“做深化 → 硬装与结构 → 批量材质 · 房间墙侧 · GLB 部位”可勾选具体位置，选择赋材质、按源材质替换或恢复。GLB 可选择原 UV/实体投影，恢复使用模型原材质；房间内墙侧按真实邻接区间裁切，已排版地面保留方向和逐块记录。多图 PBR 需要颜色图，其余法线/粗糙度/金属度/AO 可选，导入后仍需应用方案。
+Walls, openings, furniture and floors derive from editable data. Change views, move furniture and select a wall-side material, then preview/cancel/apply.
 
-![批量材质与房间墙侧](../screenshots/p18-material-batch.png)
+**Detailing → Finishes and structure → Batch materials · Room wall sides · GLB parts** (`做深化 → 硬装与结构 → 批量材质 · 房间墙侧 · GLB 部位`) lets you select locations and assign, replace by source material or restore. GLB parts support original UVs/physical projection and original-material restoration. Interior room sides clip to actual adjacency intervals; laid floors retain orientation/per-piece records. Multi-map PBR requires color; normal/roughness/metalness/AO are optional. Apply the project after import.
 
-![三维墙面材质编辑](../screenshots/material-editor.png)
+![Batch materials and room wall sides](../screenshots/p18-material-batch.png)
 
-进入“做深化 → 地面铺贴 · 起点与铺法”，选房间地面，勾选按单块尺寸排版。设置正铺/二分之一/三分之一错缝或真实人字拼、单块宽长、起铺坐标、缝宽/缝色和方向；可取房间范围左上角或中心。小图与二维/三维按房间边界及孔洞裁切。覆盖尺寸继续控制贴图比例，排版块数不作为采购用量。
+![3D wall material editing](../screenshots/material-editor.png)
 
-![地面铺贴与排版小图](../screenshots/floor-layout.png)
+Open **Detailing → Floor laying · Origin and pattern** (`做深化 → 地面铺贴 · 起点与铺法`), select a room floor and enable piece-based layout. Set straight/half-offset/third-offset or physical herringbone, piece width/length, origin, joint width/color and direction. Use the room bounds' upper-left or center as origin. Mini/2D/3D views clip to room boundaries and holes. Coverage dimensions continue to control texture scale; layout piece counts are not procurement quantities.
 
-普通材质面板和“地面逐块 · 换材质与隐藏”中可上传 PNG/JPG/WebP，应用后随方案保存。二维主画布、小图和三维可选块，换材质、隐藏或恢复。人字拼可取 15 × 60 cm / 45° 示例，纹理跟随板身；改网格清除旧例外，取消/撤销可恢复。
+![Floor laying and layout mini view](../screenshots/floor-layout.png)
 
-![真实人字拼与逐板编辑](../screenshots/herringbone.png)
+Ordinary material panels and **Individual floor pieces · Materials and hiding** (`地面逐块 · 换材质与隐藏`) accept PNG/JPG/WebP uploads, carried with the project after application. Select pieces in the main 2D canvas, mini view or 3D to change materials, hide or restore them. Herringbone offers a 15 × 60 cm / 45° example with textures following boards. Changing the grid clears old overrides; cancel/undo can restore them.
 
-“家具成组 · 整组操作”可选 2～40 件建组，整体移动/旋转/复制；二维拖已选组虚线范围，三维使用手柄。解除保留家具；“多选 · 混合成组 · 搬运路径”可直接批量操作、混合/嵌套组、缩放与检查多段路径，自定义净距不代表规范审查。
+![Physical herringbone and individual-board editing](../screenshots/herringbone.png)
 
-![二维家具组范围](../screenshots/furniture-groups-plan.png)
+**Furniture groups · Group operations** (`家具成组 · 整组操作`) groups 2–40 objects for movement/rotation/copying. Drag the selected dashed bounds in 2D or use 3D handles. Ungrouping preserves furniture. **Multi-select · Mixed groups · Transport paths** (`多选 · 混合成组 · 搬运路径`) supports direct batch actions, mixed/nested groups, scaling and multi-segment path checks. Custom clearances are not a code-compliance review.
 
-## 4. 编辑门窗开合
+![Furniture group bounds in 2D](../screenshots/furniture-groups-plan.png)
 
-平开门窗、双开门、子母门和双轨推拉共用编辑与保存流程。图中展示两轨推拉门：活动扇移到固定扇后方，腾出约半个洞口。
+## 4. Edit door and window operation
 
-![双轨推拉门打开状态](../screenshots/sliding-door.png)
+Hinged openings, double/unequal doors and dual-track sliding share editing/persistence. Here, a moving sliding leaf passes behind the fixed leaf to free roughly half the opening.
 
-原横向 2～6 扇及逐扇开合继续保留；独立深化入口已补齐上下分格、横竖梃与纱窗。
+![Open dual-track sliding door](../screenshots/sliding-door.png)
 
-门窗属性新增“分格 · 框型 · 纱窗 · 飘窗”：逐格开合、门上亮/侧亮、真实框截面和独立纱窗；矩形三面飘窗及明确异高共框有各自边界。
+Original horizontal 2–6-leaf windows and per-leaf operation remain available. A dedicated detailing entry now adds vertical subdivisions, mullions/transoms and screens.
 
-![门窗深化](../screenshots/p25-opening-details.png)
+Opening properties include **Subdivisions · Frame profiles · Screens · Bay windows** (`分格 · 框型 · 纱窗 · 飘窗`): per-cell operation, door transoms/sidelights, actual profiles and independent screens. Rectangular three-sided bays and explicit different-height shared frames have their own constraints.
 
-## 5. 墙面与顶面深化
+![Opening detailing](../screenshots/p25-opening-details.png)
 
-可编辑平板背景墙、竖向格栅与分房间踢脚线，设置位置、尺寸、厚度及材质；装饰依照实际墙面保留门窗开口。天花板、吊顶与灯槽也可应用真实材质。
+## 5. Detail walls and ceilings
 
-![保留窗洞的背景墙](../screenshots/background-wall.png)
+Edit flat feature panels, vertical slats and room skirting: position, dimensions, thickness and materials. Finishes preserve actual door/window openings. Ceilings, dropped ceilings and coves also accept actual materials.
 
-![竖向木格栅](../screenshots/slats-wall.png)
+![Feature wall preserving a window opening](../screenshots/background-wall.png)
 
-平板现支持规则网格分缝；平板与格栅均可设置四周矩形收边和独立材质，继续避开门窗开口。
+![Vertical timber slats](../screenshots/slats-wall.png)
 
-![规则分板与四周收边](../screenshots/seamed-wall-trim.png)
+Flat panels support regular seams. Both flat/slatted finishes accept perimeter rectangular trim and independent materials while preserving openings.
 
-单层柱、梁、烟道与包管可在二维定位并设置尺寸、高度、离地和材质；可选落地扣铺装/可铺面积，原轮廓与分区保留，结构底板不打穿。烟道/包管仍表达占用外包体。
+![Regular panels and perimeter trim](../screenshots/seamed-wall-trim.png)
 
-![单层柱梁、烟道与包管](../screenshots/structures.png)
+Place single-floor columns, beams, flues and pipe enclosures in 2D and edit dimensions, height, elevation and materials. Optional floor-contact deductions affect paving/paveable area while preserving contours/regions and leaving the structural floor uncut. Flues/enclosures still represent external occupancy envelopes.
 
-墙板分缝可按墙段/地面定位或填写非等距横竖线；外周与洞边分别设置矩形尺寸/材质，指定单洞口时继承方向默认。可开启洞内进深包覆，填写进深与板厚，门洞/落地窗无底边。二维选门窗后展开“门窗框 · 进深与包覆适配”，或在三维门窗面板点击“框进深与包覆适配”进入同一二维表单，预览后再应用。框适配首版限单墙段内的普通单扇门窗；特殊类型、异形与构件几何联动待做。
+![Single-floor columns, beams, flues and pipe enclosures](../screenshots/structures.png)
 
-![洞边包口及逐洞设置](../screenshots/wall-opening-surround.png)
+Panel seams use wall-segment/floor positioning or nonuniform horizontal/vertical lines. Perimeter/opening edges have separate rectangular dimensions/materials; a specific opening inherits direction defaults. Enable reveals and set depth/board thickness; doors/full-height windows have no bottom strip. Select a 2D opening and expand **Frame · Depth and reveal fitting** (`门窗框 · 进深与包覆适配`), or use the 3D **Frame depth and reveal fitting** (`框进深与包覆适配`) shortcut to the same form, then preview/apply. The initial version covered ordinary single-leaf openings within one wall segment; special/irregular types and element-geometry integration were pending at that stage. Consult the current feature list for expanded fitting support.
 
-![非等距矩形墙板分缝](../screenshots/wall-panel-lines.png)
+![Opening surrounds and per-opening settings](../screenshots/wall-opening-surround.png)
 
-![洞内包覆与适配后的窗框](../screenshots/opening-frame-fit.png)
+![Nonuniform rectangular panel seams](../screenshots/wall-panel-lines.png)
 
-![框进深、偏移与适配属性](../screenshots/opening-frame-fit-editor.png)
+![Opening reveal and fitted window frame](../screenshots/opening-frame-fit.png)
 
-上传材质面板可搜索、改名或删除未使用条目，已保存/恢复/历史引用会受保护。墙板、构件、厨房台面及程序化家具/定制柜部位有直接上传入口；现支持五图 PBR、OpenGL/DirectX 法线，上传库可多选批量改名/移除和核查清理未引用缓存。
+![Frame depth, offset and fitting properties](../screenshots/opening-frame-fit-editor.png)
 
-![上传材质库管理](../screenshots/upload-library.png)
+The upload library supports search, renaming and deletion of unused entries, protecting saved/recovery/history references. Wall panels, elements, kitchen worktops and procedural furniture/custom cabinet parts have direct uploads. Five-map PBR, OpenGL/DirectX normals, batch naming/removal and unreferenced-cache checks/cleanup are now supported.
 
-## 6. 设计定制柜与直线 / L / U 形厨房
+![Uploaded material library management](../screenshots/upload-library.png)
 
-衣柜/收纳柜可编辑板件、分格、层板、挂衣杆、内部抽屉和门板；各格门板与抽屉独立开合，材质跟随部件运动。内部抽屉要求门先开至 90°，当前开合位置参与碰撞与行走。
+## 6. Design custom cabinetry and straight/L/U kitchens
 
-![定制衣柜内部与开合](../screenshots/wardrobe-open.png)
+Wardrobes/storage offer editable boards, compartments, shelves, rails, internal drawers and doors. Each compartment's doors/drawers operate independently and carry materials with them. Internal drawers require doors open to 90°; current poses participate in collision/walking.
 
-厨房提供地柜和吊柜预设，按列表顺序对齐同类型、同深度/柜高/离地的柜体。首柜固定、朝向限直角；地柜可生成一整块独立材质台面，可调厚度和外挑。移动单柜造成断缝/错位时，台面暂停并提示重新对齐；解除组合保留单柜。
+![Wardrobe interior and operation](../screenshots/wardrobe-open.png)
 
-选择已有有效组合，在“操作”中切换整组移动/直角旋转或整组复制。输入首柜中心 X/Y 厘米坐标及 0/90/180/270°，预览后应用；柜体和台面一起跟随，副本保留各柜结构、材质与开合并拥有独立编号。越界或预算失败不留下部分移动/副本，错位组合先重新对齐。
+Kitchen base/wall presets align same-type cabinets with matching depth/height/elevation in list order. The first cabinet anchors the run and orientation is orthogonal. Base cabinets can share one independent-material worktop with adjustable thickness/overhang. Moving one cabinet out of alignment pauses the worktop and requests realignment. Ungrouping preserves cabinets.
 
-![厨房组合与统一编辑操作](../screenshots/workflow-model.png)
+For an existing valid group, choose whole-group move/right-angle rotation or copy under **Operation** (`操作`). Enter the first cabinet center in X/Y centimeters and 0/90/180/270°, preview, then apply. Cabinets/worktops follow together; independent copies retain structure, materials and operation with new IDs. Bounds/budget failures leave no partial moves/copies; realign invalid groups first.
 
-![地柜与吊柜、连续台面](../screenshots/straight-kitchen.png)
+![Kitchen groups and unified editing](../screenshots/workflow-model.png)
 
-L 形先准备主排地柜、一个左右盲位地柜和返排地柜，再在“厨房组合 · 直线 / L 形台面”按此顺序添加。转角柜不能位于首尾，深度/柜高/离地需一致；应用后生成连续 L 形台面。盲板固定，可开门区域继续支持分格、门板与抽屉。整组可用数值或画布手柄移动、直角旋转与独立复制，一次手势一次撤销，Esc 取消恢复。
+![Base/wall cabinets and continuous worktop](../screenshots/straight-kitchen.png)
 
-![左右盲位 L 形厨房与连续台面](../screenshots/l-kitchen.png)
+For an L-shaped kitchen, prepare main-run base cabinets, one left/right blind-corner cabinet and return cabinets. Add them in that order under **Kitchen groups · Straight/L worktops** (`厨房组合 · 直线 / L 形台面`). The corner cannot be first/last; depth/height/elevation must match. Applying creates a continuous L worktop. The blind panel is fixed while the operable zone retains compartments, doors and drawers. Numeric/canvas controls move, right-angle rotate and independently copy the group. One gesture is one undo step; Esc restores the prior state.
 
-在厨房组合编辑器的“水槽 / 灶具与开孔”中添加设备，选择普通地柜并调整开孔尺寸、左右/前后偏移及嵌入深度。台面与柜顶板真实避孔，整组移动旋转复制时一起跟随；结构或抽屉包络冲突会拒绝应用，可先调整柜内分格/层板再预览。
+![Left/right blind-corner L kitchens and continuous worktops](../screenshots/l-kitchen.png)
 
-![厨房开孔与设备编辑](../screenshots/kitchen-cutouts.png)
+Under **Sink/hob and holes** (`水槽 / 灶具与开孔`), add equipment to an ordinary base cabinet and set hole dimensions, lateral/front-back offsets and inset depth. Worktop/top-panel geometry avoids the hole; equipment follows group movement/rotation/copying. Conflicts with structure/drawer envelopes reject application; adjust compartments/shelves before previewing again.
 
-上方 L 形历史截图中的红框是隔离场景的当前姿态碰撞提示。设备孔型与柜组范围以本轮说明为准；真实商品设备、更多转角机构、板件清单和定制图纸仍待做。
+![Kitchen holes and equipment editing](../screenshots/kitchen-cutouts.png)
 
-本轮已支持 L 形吊柜/U 形同系列地柜与吊柜、连续地柜台面，圆/圆角孔、盲角及同排相邻 2～3 柜设备孔；跨转弯、更多机构和商品设备仍待做。
+Red boxes in the historical L-shaped screenshots are current-pose collision aids in an isolated scene. Equipment holes/group scope follow the latest update. Product equipment, further corner mechanisms, board schedules and custom drawings remain pending.
 
-## 7. 检查日光和室内照明
+The current round supports L-shaped wall cabinets/U-shaped matching base/wall groups and continuous base worktops, circular/rounded holes, blind corners and equipment holes across two or three adjacent cabinets in a run. Holes around turns, further mechanisms and product equipment remain pending.
 
-调整日光方向、亮度与阴影，或编辑灯具、灯组和灯槽。日光方向按底图设置；灯槽使用一次漫反射近似。
+## 7. Inspect daylight and interior lighting
 
-![日光与实时阴影](../screenshots/design-result.png)
+Adjust daylight direction, brightness and shadows, or edit fixtures, light groups and coves. Daylight direction is relative to the plan; coves use one diffuse-bounce approximation.
 
-![灯槽与附近墙面柔光](../screenshots/cove-lighting.png)
+![Daylight and real-time shadows](../screenshots/design-result.png)
 
-## 8. 保存、恢复与输出图片
+![Cove lighting and soft nearby-wall light](../screenshots/cove-lighting.png)
 
-方案可以命名、按缩略图和搜索查找，支持撤销/重做。每次已应用修改自动保存到本机，刷新或服务重启后可恢复；未应用表单不恢复，跨次撤销历史重新开始。手动保存生成独立版本。
+## 8. Save, recover and export images
 
-![项目名称、搜索与缩略图](../screenshots/projects.png)
+Name projects and find them through thumbnails/search; undo/redo is supported. Every applied change autosaves locally and can recover after refresh/service restart. Unapplied forms are excluded; undo history restarts between sessions. Manual saves create independent versions.
 
-常用机位可保存为命名视角。当前支持 JPG/PNG 图片出图，最长边可选 1920、2560 或 3840 像素。
+![Project names, search and thumbnails](../screenshots/projects.png)
 
-当前展示提供静态截图，尚未发布演示视频或在线试用。浏览代码仓库无法运行私有程序。
+Save common camera positions as named views. JPG/PNG image output supports longest edges of 1920, 2560 or 3840 pixels.
 
-[返回项目首页](../README.md)
+The Showcase currently offers static screenshots; no demo video or public online trial has been published. Browsing this repository does not run the private application.
+
+[Back to project home](../README.md)

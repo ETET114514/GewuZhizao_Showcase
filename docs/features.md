@@ -1,68 +1,69 @@
-# 功能与当前边界
+# Features and current limitations
 
-更新日期：2026-10-27。以下按当前实现整理，区分已有功能与后续规划。
+**English** | [中文](features.zh-CN.md)
 
-## 已有功能
+Updated: 2026-10-27. This page separates current implementation from future plans.
 
-| 模块 | 已有能力 | 当前边界 |
+## Implemented capabilities
+
+| Module | Implemented | Current limitations |
 | --- | --- | --- |
-| 图片导入 | PNG、JPG、WebP，底图与构件分层查看 | 当前不解析 DWG/DXF |
-| 墙体识别 | 水平/垂直墙段候选，实心墙、双线墙及多墙色支持 | 特殊画法、短墙、斜墙与圆弧仍需补充和校核 |
-| 门窗识别与编辑 | 候选确认/排除、沿墙新增/移动、洞口宽高与窗台调整 | 复杂符号可能误检或漏检；待定边界需确认 |
-| 家具识别与补充 | 图例匹配与可选模型识别，手工补入或修改类别、范围、朝向 | 图例对样本来源敏感，未发布通用识别准确率 |
-| 墙体校核 | 修改位置/厚度/长度、补墙、连接短缝、逐处闭合诊断 | 不保证自动修复整户；长距离缺墙仍需人工判断 |
-| 精确画墙 | 空白画布或标定后临摹，连续水平/垂直墙、实际长度/墙厚、固定端、端点拖动、吸附与连接校核 | 首版不含斜墙、弧墙或局部墙高；边界变化后需校核房间装饰 |
-| 比例与测量 | 已知长度/门洞/墙厚比例；原轴线/拐角分段、按房间墙侧净长、扣门窗水平投影的实墙逐段净长 | 待确认洞口不报确定数值，墙两侧/不同房间分别统计；结构参考长度不含饰面净距或施工图 |
-| 房间区域 | 自动候选、手绘、重画、切分、合并、排除与命名 | 漏墙、洞口或边界不完整会影响分区；未自动识别房间用途 |
-| 三维墙体 | 墙段实体合并、相接墙角齐平、保留门窗上下墙体与真实洞口 | 以当前二维墙段和高度生成，尚非完整 BIM 构件系统 |
-| 家具与混合对象编辑 | 临时多选直接移动/旋转/复制/删除，家具/独立构件/灯具框选与点选；混合/嵌套成组、成员编辑/解除、复制重绑、等比缩放、批量属性、单件二维旋转与任意角度框内适配 | 依附对象保留宿主，构件和厨房限正交；对象原数量/尺寸/净空限制继续适用，新增商品机构另列范围 |
-| 真实模型 | 5 个内置 CC0 GLB；本地静态 GLB 导入、替换、单位/朝向校正、尺寸适配 | 首版限内嵌资源的静态网格，不含动画与压缩解码 |
-| 材质 | 160 款基础/14 款家具材质及纯色；五图 PBR、DirectX 法线转换、GLB 稳定网格部位与原 UV/实体投影、房间墙侧局部裁切、跨对象批量赋材质/替换和恢复 | 每图最多 12 MB/1600 万像素、整组 48 MB、最长边 2048；颜色为不透明 JPEG，数据为无损 PNG；不生成贴图，无透明/位移/高度图和网格建模，灯具商品外观归 P35 |
-| 上传材质库管理 | 名称搜索、多选批量前后缀改名/移除；显示缓存占用及保护原因，提交时重新核查后清理 | 最多 200 款；仅可清理隐藏且无方案/历史/保存/恢复/预览引用的缓存；无法核查则拒绝删除，库操作不改方案历史 |
-| 地面起铺点与铺法 | 正铺/两种错缝、真实人字拼、20～70°鱼骨、菱形/六边形/篮编及 2～16 子块可编辑重复拼花，凹形/孔洞/构件占用裁切 | 每房间 6000/项目 24000 候选格；曲线单元、无限铺法、采购损耗与施工图未做 |
-| 地面逐块编辑 | 二维/三维选块、材质/上传/纹理、隐藏/删除/恢复、移动/等比与非等比缩放/数值旋转/简单多边形；三维与小图移动/八向缩放手柄 | 保留原候选身份，构件覆盖后记录保留；整体排版变化清除例外；无旋转手柄，非结构开洞 |
-| 门窗开合 | 单扇平开、固定窗、双开门、子母门、双轨推拉；侧开/上下转动、批量开合 | 推拉首版为两轨两扇，一活动扇一固定扇，最大腾出约半个洞口 |
-| 门窗框进深与包覆适配 | 当前库单/双开/子母/推拉门、固定/平开/推拉/多扇窗，逐边包覆净洞适配；明确共线跨段/正交共框，批量设置 | 连续跨段需等厚，正交转角偏移为 0；异高共框需两边明确开启且保留非重叠高度；歧义/重叠/待确认节点不强接，不检查完整路径 |
-| 多扇组合窗 | 原横向 2～6 扇保留；新增 1～6 列 × 1～4 行真实横竖梃、逐格固定/左右平开/上下翻开和独立角度 | 逐格开合模式与原窗型分开保留；逐窗格材质与格内推拉机构仍待做 |
-| 转角窗 | 原同高直角共框保留；明确共线/正交窗可两边开启异高连接，重叠高度共框，阶差保留实墙和边框 | 不强接断缝、第三方占用或歧义节点；非直角/任意角连接和商品节点待做 |
-| 门窗框型、纱窗与飘窗 | 平框/阶梯/斜面真实截面，独立固定/平开/双轨纱窗，门上亮/侧亮，矩形三面飘窗与实体上下板 | 框/扇/纱网独立姿态，飘窗侧面固定玻璃；商品五金/非矩形飘窗/折叠入墙及完整运动路径未做 |
-| 顶面与吊顶 | 整房/局部/边吊/多级跌级、灯槽、安装面归属 | 已接入天花板/吊顶/灯槽真实材质；自由剖面、逐面赋材质与商品灯具待做 |
-| 墙板与背景墙 | 自由直缝/简单多边形及单块位置/尺寸/旋转/删除/材质；非等距/T 形分缝、组合背景墙/嵌灯、格栅逐条材质、实际型材截面/逐边包覆和当前库框适配 | C01～C08 约定类型已完成；曲线板/型材、跨墙混合嵌套组合和额外商品安装节点另列扩展，包覆上限墙厚中线 |
-| 单层矩形构件 | 柱/梁/烟道/包管原编辑、材质、复制和碰撞；可选触地扣铺装/可铺面积、并集/跨房间裁切，移动/删除后恢复原铺装和逐块记录 | 旧项目缺省关闭，界面新建柱/烟道/包管默认开启、梁关闭；原分区/轮廓/结构底板不改，旋转/异形/改墙洞口/多层待做 |
-| 定制衣柜与收纳柜 | 宽深高、板厚/背板/底座、1～6 个比例分格、层板/挂衣杆/内部抽屉、开放/单门/双门、逐格开合与部位材质 | 柜身按占地箱预留，当前打开门板/抽屉参与碰撞；厨房开孔另有结构/抽屉包络静态校验；完整内部机构/连续路径校核、清单或制造图纸待做 |
-| 厨房水槽 / 灶具与开孔 | 矩形/圆形/圆角设备孔及仅开孔；普通/盲角、同排相邻 2～3 柜，显式共享侧板缺口与所有参与柜内部净空校核 | 跨转弯/超过三柜/自由多边形孔、真实商品设备/安装节点与完整运动路径仍待做 |
-| 厨房直线与 L 形组合 | 直线/L/U 形同系列地柜/吊柜、左右盲角地柜/吊柜，地柜连续台面，整组移动/直角旋转/独立复制与设备引用重绑 | 任意多转角/异形台面、更多转角机构/商品设备和清单图纸未接入 |
-| 踢脚线 | 房间/逐墙侧区间尺寸/材质继承，矩形/斜切/阶梯/凹槽/自定义真实截面及斜面；柜体当前占用自动裁断与封口 | 正交直墙侧，柜体按当前包络；圆弧路径、商品节点与内部空腔推断未接入 |
-| 灯组与阴影 | 六类灯具，灯组开关/亮度/色温；日光与室内实时阴影 | 投影灯数受预算与显卡限制；不含 IES 与专业照度仿真 |
-| 灯槽间接光 | 顶面照射及一次漫反射近似、附近墙面柔光、光路遮挡 | 显示顶面时启用；不含多次反射与离线全局光照 |
-| 日光控制 | 方位、高度角、亮度、色温与阴影画质可调 | 方向按底图设置，尚不按地理位置和日期计算真实日照 |
-| 碰撞、路径与行走 | 当前姿态碰撞与受限行走；P16 多段平移/旋转连续区间、自定义水平净距和通道宽/净高检查，不确定时报告待确认 | 基于现有包络与项目判据；不包含商品内部空腔、抬举/倾斜搬运、机构变形或建筑规范审查 |
-| 视角与图片 | 命名视角；JPG/PNG，最长边 1920/2560/3840，多种画幅 | 输出当前实时预览；不含全景、视频或可编辑模型导出 |
-| 保存与撤销 | 预览取消、应用、最近 50 步撤销/重做、本机手动独立版本；已应用修改原子自动保存与恢复，含底图、导入 GLB 和已应用上传材质 | 未应用表单不恢复；跨次打开/恢复后撤销栈重新开始；无云同步与版本可视化比较 |
-| 项目查找 | 当前方案命名、保存版本改名、缩略图及按名称/底图名/版本号搜索 | 最多展示 100 个匹配结果，仍为本机项目管理 |
-| 操作流程 U01～U05 | 同一工作台顶部切换 2D/3D，共用五组工具与对象属性位置；可折叠三维小预览/二维相机定位图，家具/厨房移动轴、平面移动及旋转手柄；统一应用取消、Esc、未应用保护与无变化保护 | 手柄覆盖家具/通用组/厨房，通用组支持二维拖动；厨房限直角，混合/嵌套、跨对象多选及多段路径已由 P16 接入，保留对象约束。辅助视图默认收起，二维缩放/滚动与三维镜头分别保留；复制/移除按对象既有范围显示 |
+| Image import | PNG, JPG and WebP; separate plan/element layers | No DWG/DXF parsing |
+| Wall recognition | Horizontal/vertical candidates; solid/double-line walls and multiple wall colors | Unusual drawing conventions, short/diagonal/curved walls require supplementation and review |
+| Opening recognition/editing | Confirm/reject candidates, add/move along walls, edit opening width/height and sill | Complex symbols can produce false/missed detections; uncertain boundaries require confirmation |
+| Furniture recognition/addition | Legend matching and optional model recognition; manually add/change category, bounds and orientation | Legend matching depends on sample sources; no general recognition-accuracy figure is published |
+| Wall review | Edit position/thickness/length, add walls, connect short gaps and diagnose closure locally | Does not guarantee automatic repair of a full plan; long missing walls require judgment |
+| Precise wall drawing | Blank or calibrated traced plans; continuous horizontal/vertical walls, physical length/thickness, fixed ends, endpoint dragging, snapping and connection checks | No diagonal/curved walls or local wall heights in the initial version; recheck room finishes after boundary changes |
+| Scale and measurement | Known length/opening/wall-thickness scale; original centerlines/corner segments, room-side net lengths and solid-wall segments excluding horizontal opening projections | No definite values for unconfirmed openings; opposite sides/different rooms counted separately; structural reference lengths exclude finish clearances and construction drawings |
+| Room regions | Automatic candidates, manual drawing/redrawing, splitting, merging, excluding and naming | Missing walls/openings/incomplete boundaries affect regions; room functions are not automatically classified |
+| 3D walls | Merged wall solids, flush connected corners, actual openings with wall retained above/below | Generated from current 2D segments and height; not a full BIM element system |
+| Furniture and mixed-object editing | Temporary move/rotate/copy/delete; box/click selection of furniture, independent elements and lights; mixed/nested groups, member editing/ungrouping, copied-reference rebinding, proportional scaling, batch properties, individual 2D rotation and fitting within a rectangle at any angle | Attached objects retain hosts; structural elements/kitchens remain orthogonal; original object count/dimension/clearance limits apply; additional product mechanisms are separate scope |
+| Real models | Five built-in CC0 GLBs; local static GLB import/replacement, unit/orientation correction and size fitting | Initial support is static meshes with embedded resources, without animation or compression decoding |
+| Materials | 160 base/14 furniture materials and solid colors; five-map PBR, DirectX normals, stable GLB mesh parts with original UV/physical projection, local room-side clipping, cross-object batch assignment/replacement/restoration | Each map ≤12 MB/16 million pixels, set ≤48 MB, normalized longest edge 2048; opaque JPEG color/lossless PNG data; no map generation, transparency/displacement/height maps or mesh modeling; product light appearance belongs to P35 |
+| Upload-library management | Name search, multi-select prefix/suffix renaming/removal, cache usage/protection reasons and cleanup after fresh checks | Up to 200 materials; only hidden caches without project/history/save/recovery/preview references can be removed; unverifiable references block deletion; library operations do not alter project history |
+| Floor origins and patterns | Straight/two offset patterns, physical herringbone, 20–70° chevron, diamond/hexagon/basket weave and editable repeating motifs of 2–16 subpieces; clipping to concavity/holes/element occupancy | 6000 candidate cells per room/24000 per project; curved units, unlimited patterns, procurement waste and construction drawings not implemented |
+| Individual floor pieces | 2D/3D selection, material/upload/texture, hide/delete/restore, move, proportional/nonproportional scale, numeric rotation and simple polygons; 3D/mini-view movement/eight-direction scaling handles | Retains candidate identity and records when covered by elements; global layout changes clear overrides; no rotation handle; not a structural opening |
+| Opening operation | Single hinged/fixed/double/unequal double/dual-track sliding; side/top/bottom rotation and batch operation | Initial sliding type has two tracks/two leaves, one moving and one fixed, opening roughly half the width |
+| Frame depth and reveal fitting | Current-library single/double/unequal/sliding doors, fixed/casement/sliding/multi-leaf windows; per-edge clear-opening fitting, explicit collinear cross-segment/orthogonal shared frames and batch settings | Continuous segments require equal thickness; orthogonal corners require zero offset; unequal-height sharing must be enabled on both sides and preserve nonoverlapping heights; ambiguous/overlapping/unconfirmed nodes are not forced; no full motion-path check |
+| Multi-leaf windows | Original horizontal 2–6 leaves; actual 1–6 columns × 1–4 rows of mullions/transoms, per-cell fixed/left/right casement/top/bottom tilt and independent angles | Per-cell operation is retained separately from original window type; per-pane materials and sliding mechanisms within cells remain pending |
+| Corner windows | Original equal-height right-angle sharing; explicit collinear/orthogonal windows can opt into unequal-height connections, share overlapping heights and retain solid wall/frame at steps | Gaps, third-party occupancy and ambiguous nodes are not forced together; non-right-angle/arbitrary connections and product details pending |
+| Frames, insect screens and bays | Actual flat/stepped/beveled profiles, independent fixed/hinged/dual-track screens, door transoms/sidelights and rectangular three-sided bays with solid top/bottom boards | Frame/leaf/screen states independent; bay sides are fixed glass; product hardware, nonrectangular bays, folding/pocket mechanisms and full motion paths pending |
+| Ceilings | Whole-room/local/perimeter/multilevel ceilings, coves and mounting-surface ownership | Actual ceiling/dropped-ceiling/cove materials implemented; free profiles, per-face materials and product lights pending |
+| Panels and feature walls | Free straight seams/simple polygons and per-piece position/size/rotation/deletion/material; nonuniform/T seams, composite walls/recessed lights, per-slat materials, actual trim profiles/per-edge reveals and current-library frame fitting | Agreed C01–C08 types complete; curved boards/profiles, cross-wall mixed nested assemblies and extra product installation details are extensions; reveal depth capped at wall centerline |
+| Single-floor rectangular elements | Original column/beam/flue/enclosure editing/material/copy/collision; optional floor-contact deductions, union/cross-room clipping, restored paving/per-piece records after movement/deletion | Off for older projects; new UI columns/flues/enclosures default on, beams off; regions/contours/structural slabs unchanged; rotation/irregular shapes/wall-opening changes/multiple floors pending |
+| Custom wardrobes/storage | Width/depth/height, board/back/base thickness, 1–6 proportional compartments, shelves/rails/internal drawers, open/single/double doors, per-compartment operation/materials | Carcass reserves its footprint box; current open doors/drawers participate in collision; kitchen holes add static structure/drawer-envelope checks; full internals/continuous paths, schedules and manufacturing drawings pending |
+| Kitchen sinks/hobs and holes | Rectangular/circular/rounded equipment holes and hole-only mode; ordinary/blind-corner hosts and two or three adjacent cabinets in a run; explicit shared-panel notches and internal-clearance checks for all participating cabinets | Holes around corners/across more than three cabinets/free polygons, product equipment/installation details and full motion paths pending |
+| Straight/L-shaped kitchen groups | Straight/L/U same-series base/wall cabinets, left/right blind corners, continuous base worktops, group movement/right-angle rotation/independent copies and equipment-reference rebinding | Arbitrary multiple corners/irregular worktops, further mechanisms/product equipment and schedules/drawings pending |
+| Skirting | Room/per-wall-side interval dimension/material inheritance, actual rectangular/beveled/stepped/grooved/custom profiles, automatic clipping/end caps against current cabinet occupancy | Orthogonal straight wall sides; cabinet occupancy uses current envelopes; curved paths, product details and inference of internal cavities pending |
+| Light groups and shadows | Six light types, group switching/brightness/color temperature, daylight and indoor real-time shadows | Shadow-casting lights limited by budget/GPU; no IES or professional illuminance simulation |
+| Cove indirect light | Ceiling illumination, one diffuse-bounce approximation, soft nearby-wall light and occlusion | Enabled when ceilings are shown; no multiple bounces or offline global illumination |
+| Daylight control | Adjustable azimuth/elevation/brightness/color temperature/shadow quality | Direction relative to plan; no location/date-based solar calculation |
+| Collision, paths and walking | Current-pose collision/restricted walking; P16 multi-segment translation/rotation continuous intervals, custom horizontal clearance and passage width/headroom; uncertain results marked for review | Existing envelopes/project criteria; no product internal cavities, lifting/tilting transport, mechanism deformation or building-code review |
+| Views and images | Named views, JPG/PNG with 1920/2560/3840 longest edge and several aspect ratios | Current real-time preview output; no panoramas, video or editable-model export |
+| Saving and undo | Preview/cancel/apply, latest 50 undo/redo steps, independent local manual versions, atomic autosave/recovery of applied edits including plan/imported GLB/applied uploaded materials | Unapplied forms are not restored; undo stack restarts after reopening/recovery; no cloud sync or visual version comparison |
+| Project search | Name current project/rename saved versions, thumbnails, search by name/plan filename/version | Up to 100 matches; local management only |
+| Workflow U01–U05 | Same workbench top 2D/3D switch, five shared tool groups/property positions; collapsible 3D preview/2D camera map; furniture/kitchen axis/plane/rotation handles; unified apply/cancel/Esc, unapplied/unchanged-edit protection | Handles cover furniture/general groups/kitchens, general groups support 2D dragging; kitchens remain orthogonal. P16 adds mixed/nested groups, cross-object selection and multi-segment paths subject to object constraints. Auxiliary views start collapsed; 2D zoom/scroll and 3D camera are retained separately; copy/remove reflect existing object scope |
 
+## Planned, unimplemented or awaiting expansion
 
-## 已设想、未实现或待扩展
-
-| 方向 | 计划内容 |
+| Direction | Planned scope |
 | --- | --- |
-| 室内细节 | 曲线板/型材、额外商品安装节点、商品门窗框型/五金、逐窗格材质、非矩形飘窗与复杂机构；C01～C08、门窗三组及构件扣地面已完成 |
-| 定制柜深化 | 跨转弯/超过三柜/自由多边形设备孔、商品设备、更多转角机构/五金和板件图纸；L 形吊柜、U 形组合与本轮孔型已完成 |
-| 工作台流程扩展 | 厨房组任意角度、额外商品机构/宿主类型及具体搬运规范；临时多选、混合/嵌套与自定义路径校核已完成 |
-| 材质后续类型 | 灯具商品模型与外观深化归 P35，跨设备资产同步、透明/位移/高度图及网格建模另定范围；P18 M01～M08 已完成 |
-| 户型绘制 | 斜墙、弧墙、更多角度约束及局部墙高；空白建图与正交连续画墙已实现 |
-| 图纸与模型交换 | 带尺寸平面图 PNG/PDF、GLB/glTF 导出、DXF/DWG 接入 |
-| 识别泛化 | 独立测试图集、漏检/误检评估、复杂符号及图像校正 |
-| 项目管理 | 版本差异比较、打包迁移、跨次完整编辑历史与云同步；名称/缩略图/搜索/自动恢复/重做已实现 |
-| 专业交付 | 施工图、立面/剖面、工程量、物料清单与报价 |
-| 渲染与分享 | 多次间接反射、IES、批量出图、全景、漫游视频、只读分享 |
-| 云端与智能辅助 | 云同步、协作权限、AI 布局与风格辅助 |
+| Interior details | Curved boards/profiles, extra product installation details, product opening profiles/hardware, per-pane materials, nonrectangular bays and complex mechanisms; C01–C08, the three opening groups and floor deductions are complete |
+| Custom cabinetry | Equipment holes around corners/across more than three cabinets/free polygons, product equipment, further corner hardware/mechanisms and board drawings; L-shaped wall cabinets, U-shaped groups and this round's hole types complete |
+| Workflow extensions | Arbitrary-angle kitchen groups, more product mechanisms/host types and specific transport standards; temporary selection, mixed/nested groups and custom path checks complete |
+| Future material types | Product light models/appearance under P35, cross-device asset sync, transparency/displacement/height maps and mesh modeling separately scoped; P18 M01–M08 complete |
+| Plan drawing | Diagonal/curved walls, more angle constraints and local wall heights; blank plans/continuous orthogonal drawing implemented |
+| Drawing/model exchange | Dimensioned PNG/PDF plans, GLB/glTF export and DXF/DWG support |
+| Recognition generalization | Independent test images, false/missed detection evaluation, complex symbols and image correction |
+| Project management | Version comparison, packaged migration, persistent full history and cloud sync; names/thumbnails/search/recovery/redo implemented |
+| Professional delivery | Construction drawings, elevations/sections, quantities, bills of materials and quotations |
+| Rendering/sharing | Multiple indirect bounces, IES, batch images, panoramas, walkthrough video and read-only sharing |
+| Cloud/intelligent assistance | Cloud sync, collaboration permissions, AI layout and style assistance |
 
-这些条目是发展方向，未列入当前交付能力。项目当前重点仍是完善室内编辑工作流。
+These are development directions, not current deliverables. The present focus remains the interior editing workflow.
 
-P23、P16 与 P18 按确认范围收尾后，完整功能清单中仍有后续范围的 20 个方向，12 个已有对应主要流程，8 个目标流程未接入但部分有共用基础；不是 20 个从零开发的功能，也不是酷家乐全部功能差额。U01～U05 是跨模块交互轮次，不重复增加业务方向数。
+After scoped completion of P23/P16/P18, 20 directions in the full inventory still have future scope: 12 have their main workflow, and eight lack the stated target workflow, although some shared foundations exist. These are neither 20 features starting from zero nor the full feature gap against Kujiale. U01–U05 is a cross-module interaction round, not an additional business-direction count.
 
-概要对应 New 提交：[2164415](https://github.com/ETET114514/GewuZhizaoNew/commit/2164415b7f8e8bac992c975a2a999f243312171f)。详见[本轮更新与验证](updates-2026-10-27.md)；[2026-10-26](updates-2026-10-26.md)及[2026-10-25](updates-2026-10-25.md)保留历史范围；[2026-10-24](updates-2026-10-24.md)、[2026-10-23](updates-2026-10-23.md)、[2026-10-20](updates-2026-10-20.md)和[2026-10-19](updates-2026-10-19.md)保留历史验证范围。
+Feature summary corresponds to New commit [2164415](https://github.com/ETET114514/GewuZhizaoNew/commit/2164415b7f8e8bac992c975a2a999f243312171f). See [latest update and verification](updates-2026-10-27.md). [2026-10-26](updates-2026-10-26.md) and [2026-10-25](updates-2026-10-25.md) retain their historical scope; [2026-10-24](updates-2026-10-24.md), [2026-10-23](updates-2026-10-23.md), [2026-10-20](updates-2026-10-20.md) and [2026-10-19](updates-2026-10-19.md) retain historical verification.
 
-[返回项目首页](../README.md)
+[Back to project home](../README.md)
