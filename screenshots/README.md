@@ -13,7 +13,17 @@
 | [material-library.jpg](material-library.jpg) | 八类、160 款基础材质总览 | 材质样片 |
 | [furniture-models.jpg](furniture-models.jpg) | 五个内置 CC0 家具 GLB 预览 | 模型缩略图 |
 
-## 本轮更新 · 2026-10-26
+## 本轮更新 · 2026-10-27
+
+对应 New `2164415`，均为隔离验收场景的原始截图，功能边界和测试见[更新概要](../docs/updates-2026-10-27.md)。红框表示当前碰撞辅助显示，路径净距使用项目自定义判据。
+
+| 文件 | 展示内容 |
+| --- | --- |
+| [p16-mixed-objects.png](p16-mixed-objects.png) | 家具、构件、灯具的混合与嵌套对象编辑 |
+| [p16-path-check.png](p16-path-check.png) | 多段搬运/旋转路径与通道净距检查 |
+| [p18-material-batch.png](p18-material-batch.png) | 房间墙侧及家具部位的跨对象材质替换工作台 |
+
+## 历史更新 · 2026-10-26
 
 以下为隔离验收场景的实际界面；对应 New `35d29cd`，功能边界与验证见[更新概要](../docs/updates-2026-10-26.md)。
 
