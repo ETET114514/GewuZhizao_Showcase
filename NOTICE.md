@@ -18,6 +18,8 @@ The Sofa 03, Gothic Bed 01, Dining Table, Dining Chair 02 and Gothic Cabinet 01 
 
 The material library includes external CC0 assets, project-created patterns and physical material presets. Its overview demonstrates available selection and preview capabilities; it does not claim that all assets are original.
 
+P35 adds six project-original CC0 lamp GLB examples in the source repository, separate from the five external furniture assets above. Showcase publishes their application screenshots rather than the original GLB files. Original examples and acceptance-only brand fields imply no real brand affiliation; no external vendor online catalog is connected. User/provider-entered brand metadata does not replace the model's recorded provenance or license.
+
 Rights to original third-party assets and other content remain with their respective rights holders. The private-source statement does not change those assets' original licenses.
 
 [Back to project home](README.md)

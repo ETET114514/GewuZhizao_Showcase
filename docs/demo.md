@@ -90,6 +90,16 @@ The upload library supports search, renaming and deletion of unused entries, pro
 
 ![Uploaded material library management](../screenshots/upload-library.png)
 
+### P35 curves, rails and section inspection
+
+Open **Detailing → Ceilings and lights → Ceilings, dropped ceilings and fixtures** (`做深化 → 顶面与灯光 → 顶面、吊顶与灯具`). Edit per-face materials, lamp parts or actual local GLBs. Expand **Free curves and double-curvature surfaces** for cubic handles and a 4 × 4 height grid; use **Variable profiles** for matching cross-sections along the contour. Preview first, then apply to create one undo step.
+
+Choose a polyline, arc or cubic rail, place attached fixtures and apply motion settings before opening motion preview. Play/pause/seek use the current lighting and collision; stop restores the applied position. Enable section caps, rotate the main plane or add planes to inspect closed solids while preserving holes. Named views and export keep the visible inspection settings/frame.
+
+Import an actual lamp GLB before entering brand/series/SKU/tags/product links in the local library. Search/filter, apply to the current fixture or import/export its hash-bound catalog. **An external online vendor service is not connected.** See [scope, limits and verification](updates-2026-10-27-p35.md).
+
+![Rotated sections with real caps](../screenshots/p35-section-caps.png)
+
 ## 6. Design custom cabinetry and straight/L/U kitchens
 
 Wardrobes/storage offer editable boards, compartments, shelves, rails, internal drawers and doors. Each compartment's doors/drawers operate independently and carry materials with them. Internal drawers require doors open to 90°; current poses participate in collision/walking.

@@ -15,7 +15,16 @@ All images are original captures from the running interface or rendering. They d
 | [material-library.jpg](material-library.jpg) | Eight categories/160 base materials | Material samples |
 | [furniture-models.jpg](furniture-models.jpg) | Five built-in CC0 furniture GLBs | Model thumbnails |
 
-## Latest update · 2026-10-27
+## Latest update · 2026-10-27 · P35
+
+Corresponds to New [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). Unmodified captures from the actual isolated acceptance scene; see [current scope and verification](../docs/updates-2026-10-27-p35.md). These demonstrate section inspection and ceiling controls, not construction drawings or an online brand catalog.
+
+| File | Content |
+| --- | --- |
+| [p35-section-caps.png](p35-section-caps.png) | Rotated/multiple section planes with actual mesh-intersection caps |
+| [p35-ceiling-narrow.png](p35-ceiling-narrow.png) | Double-curvature ceiling controls at 390 px |
+
+## Earlier update · 2026-10-27 · P16/P18
 
 Corresponds to New `2164415`. All are original isolated acceptance screenshots; see [update details](../docs/updates-2026-10-27.md) for scope/tests. Red boxes show current collision aids; path clearances use project-defined criteria.
 

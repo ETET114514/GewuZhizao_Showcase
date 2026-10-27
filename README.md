@@ -18,7 +18,21 @@ This repository presents project documentation, actual application screenshots a
 
 *An actual floor plan reconstructed as a 3D scene. This image comes from the running project at real-time preview quality.*
 
-## Latest update · 2026-10-27
+## Latest update · 2026-10-27 · P35
+
+- **Ceilings and fixtures**: six refined procedural fixtures and six original CC0 lamp GLBs, local product-model imports, part PBR, per-face ceiling/cove/rail materials and physical texture origins. Closed arc/cubic Bézier contours, custom profiles and 2–16 variable-profile stations, plus double-curvature ceiling slabs from a 4 × 4 height grid, clipped to rooms and holes.
+- **Rails and motion**: independent polyline, arc and cubic rails; actual arc-length placement, translation and tangent-following rotation; play, pause, seek and reset with once/loop/ping-pong modes. Current lighting and collision follow the preview frame.
+- **Section views and model library**: actual mesh-intersection caps preserving holes, rotated main plane and up to six simultaneous planes; local brand/series/SKU/tag search, product links and hash-bound catalog import/export. **No external vendor's online brand service is connected.**
+
+Corresponding full New source commit: [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). **437 full-suite Node tests and a 517-test full Python snapshot** passed, followed by **80 targeted Python checks** covering the final boundary revisions. Sets overlap and are not added. New and original P35 browser checks and existing ceiling/cove regressions passed, including 390 px, 3840 × 2160 export, camera restoration, save/reopen and recovery. See [scope, limits and verification](docs/updates-2026-10-27-p35.md).
+
+| Rotated section planes with actual caps | Ceiling controls at 390 px |
+| --- | --- |
+| ![Actual mesh section caps in the P35 workbench](screenshots/p35-section-caps.png) | ![Double-curvature ceiling controls at 390 px](screenshots/p35-ceiling-narrow.png) |
+
+*Actual isolated acceptance scenes. Curved surfaces are height fields with vertical thickness; motion is a preview, and sections are inspection views. Professional illuminance, electrical calculations, construction sections and cloud rendering remain separately planned.*
+
+## Earlier update · 2026-10-27 · P16/P18
 
 - **P16 F01–F08**: move, rotate, copy and delete temporary selections; box/click selection across furniture, independent structural elements and lights; mixed and nested groups, member editing/ungrouping and independent copies. Adds proportional scaling, individual 2D rotation, shared/type-specific batch properties, fitting within a rectangle at any angle, and multi-segment movement/rotation checks with custom passage clearances.
 - **P18 M01–M08**: five-map PBR for color, normal, roughness, metalness and AO, with DirectX normal conversion; stable GLB mesh parts, original UVs/physical projection and original-material restoration; automatic room wall sides and local clipping along a shared side; batch material assignment/replacement across objects; upload-library batch renaming/removal and cache cleanup after reference checks.
@@ -150,14 +164,14 @@ Recognition is a starting point. Users can correct false detections, add missing
 | Scale and regions | Known-length calibration, fallback scale estimation, centerline/room-side/solid-wall projection lengths, region split/merge and element-aware paveable area |
 | 2D and 3D | Walls, openings, floors, furniture and ceilings generated from the same editable element data |
 | Furniture layout | 17 procedural furniture/fixture categories; temporary cross-object selection, mixed/nested groups, move/rotate/copy, scaling/batch properties, rectangular fitting and multi-segment clearance checks |
-| Models and materials | Five built-in CC0 furniture GLBs and local imports; 160 base/14 furniture materials, five-map PBR, GLB parts/room wall sides, cross-object replacements and upload-library/cache management |
+| Models and materials | Five external CC0 furniture GLBs, six original CC0 lamp GLBs and local imports; local brand/series/SKU catalog; 160 base/14 furniture materials, five-map PBR, GLB parts/room wall sides, cross-object replacements and upload-library/cache management |
 | Doors and windows | Hinged, fixed glazing, double/unequal double doors, dual-track sliding and horizontal multi-leaf windows, with per-leaf operation synchronized in 3D |
 | Interior walls | Flat feature panels, vertical slats, regular seams, perimeter trim and room skirting; adjustable size/position/materials, avoiding openings |
 | Single-floor elements | Rectangular columns, beams, flues and pipe enclosures with 2D placement, dimensions/height/elevation and 3D materials |
 | Custom cabinetry | Wardrobe/storage compartments, shelves/rails/internal drawers and operation; straight base/wall runs, left/right blind-corner L-shaped base runs and continuous worktops, group movement/right-angle rotation/independent copies |
 | Editing workflow | Shared 2D/3D workbench, five tool groups/property positions, collapsible views and furniture/kitchen handles; consistent apply/cancel/Esc, unapplied-edit protection and unchanged-edit history protection |
-| Ceilings and lighting | Local/perimeter/multilevel ceilings, coves, six light types, light groups, daylight/indoor shadows and soft cove bounce |
-| Viewing and output | First-person walking, named views and JPG/PNG image export up to a 3840-pixel longest edge |
+| Ceilings and lighting | Local/perimeter/multilevel ceilings, per-face materials, free curves/height surfaces, variable profiles, curved rails/motion, six refined light types, light groups, daylight/indoor shadows and soft cove bounce |
+| Viewing and output | First-person walking, named views, rotated/multiple capped section views and JPG/PNG image export up to a 3840-pixel longest edge |
 | Editing and persistence | Preview/cancel, undo/redo, names/thumbnails/search, local autosave/recovery and independent manual versions |
 
 See [features and limitations](docs/features.md) for detailed status and constraints.
@@ -204,7 +218,7 @@ Engineering focuses on consistent 2D/3D data, a complete preview/apply/undo/save
 
 ## Future directions
 
-P23 C01–C08, P16 F01–F08 and P18 M01–M08 are complete within their agreed scopes. Further work follows actual needs for product models/mechanisms, diagonal walls/irregular elements, additional installation details and model compatibility; product lighting appearance belongs to P35. Drawing/model exchange remains lower priority. Procurement quantities, construction pricing, cloud collaboration and AI layout are not implemented. Twenty directions retain future scope: 12 have a main workflow and eight lack the stated target workflow. These counts are not completion percentages.
+P23 C01–C08, P16 F01–F08, P18 M01–M08 and P35 local ceiling/lighting workflows are implemented within their agreed scopes. Further work follows actual needs for product models/mechanisms, diagonal walls/irregular elements, additional installation details and model compatibility; external online vendor brand services still await provider selection and connection. Drawing/model exchange remains lower priority. Procurement quantities, construction pricing, cloud collaboration and AI layout are not implemented. Nineteen directions retain future scope: 11 have a main workflow and eight lack the stated target workflow. These counts are not completion percentages.
 
 ## Documentation languages and publication
 

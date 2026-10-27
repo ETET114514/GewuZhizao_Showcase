@@ -97,4 +97,13 @@ Before publication, 407 Node/480 Python tests and the net-length browser checks 
 
 GLB overrides locate source node/mesh/primitive with a model-content fingerprint, preventing old part overrides from applying to replacement models. Custom UVs clone geometry, keeping original model assets restorable. Room wall sides clip actual surfaces along adjacency intervals, preserving openings and union corners; ambiguous ownership falls back with a notice. Cross-object batch operations carry a document-version fingerprint and reject the whole application if any type is invalid. Floor layout directions/per-piece overrides remain intact.
 
-Latest full suites: 427 Node/495 Python, plus 48 targeted final checks and 23 final cache checks, all passed. Overlapping sets are not added. New P18 and existing materials/upload-library/GLB/wall-paint browser checks passed; P16 retains its own acceptance record. See [update and verification](updates-2026-10-27.md).
+P16/P18 historical snapshot: 427 Node/495 Python, plus 48 targeted final checks and 23 final cache checks, all passed. Overlapping sets are not added. New P18 and existing materials/upload-library/GLB/wall-paint browser checks passed; P16 retains its own acceptance record. See [update and verification](updates-2026-10-27.md).
+
+
+## P35 geometry, runtime preview and asset data · 2026-10-27
+
+Authored arc/cubic controls and height grids produce derived meshes clipped to actual boundaries and holes, with closed slab sides and mounting against the actual triangles. Variable-profile stations interpolate corresponding vertices; checks use the maximum envelope. Rails use actual arc length and deterministic time-based transforms. Runtime motion is separate from persisted authoring state, so pause/seek/export can use the visible frame while stop/edit restores the applied state.
+
+Section caps reconstruct actual intersection loops, preserve nested holes and combine material-split faces by logical solid. Rotated/multiple planes participate in cap geometry and picking. Open meshes report unclosed contours; they are not treated as closed solids. Brand metadata preserves source provenance and binds catalog records to model content hashes; atomic local imports and project-carried resources do not imply an online vendor connection.
+
+Current source: [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). Recorded verification: 437 full Node tests, a 517-test full Python snapshot and 80 final relevant Python checks, with overlapping sets not added. New/original P35 and existing ceiling/cove browser workflows passed, including narrow layout, 4K and recovery. See [current scope and verification](updates-2026-10-27-p35.md).

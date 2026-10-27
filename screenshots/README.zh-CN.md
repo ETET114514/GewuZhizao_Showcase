@@ -15,7 +15,16 @@
 | [material-library.jpg](material-library.jpg) | 八类、160 款基础材质总览 | 材质样片 |
 | [furniture-models.jpg](furniture-models.jpg) | 五个内置 CC0 家具 GLB 预览 | 模型缩略图 |
 
-## 本轮更新 · 2026-10-27
+## 本轮更新 · 2026-10-27 · P35
+
+对应 New [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d)。实际隔离验收场景的未修改截图，详见[当前范围与验证](../docs/updates-2026-10-27-p35.zh-CN.md)。展示剖切查看和顶面控制，不代表施工图或在线品牌商品库。
+
+| 文件 | 内容 |
+| --- | --- |
+| [p35-section-caps.png](p35-section-caps.png) | 旋转/多切面及真实网格截线封口 |
+| [p35-ceiling-narrow.png](p35-ceiling-narrow.png) | 390 px 双曲率顶面控制 |
+
+## 同日早前更新 · 2026-10-27 · P16/P18
 
 对应 New `2164415`，均为隔离验收场景的原始截图，功能边界和测试见[更新概要](../docs/updates-2026-10-27.zh-CN.md)。红框表示当前碰撞辅助显示，路径净距使用项目自定义判据。
 
