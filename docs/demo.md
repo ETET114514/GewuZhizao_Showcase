@@ -2,6 +2,12 @@
 
 **English** | [中文](demo.zh-CN.md)
 
+## 2026-10-28 · Complete-plan and delivery workflow
+
+Select a room → complete layout/path/motion validation → choose room/all rooms and generate → compare separate metrics → preview → apply once or cancel. Author path points on the map and verify walking/carrying with current door poses; check an opening from closed to its authored endpoint. Use project backup/import and version comparison for delivery, saved-view ZIP for images, local model organization for reuse and independent dimensions for scale checks.
+
+See [scope, screenshots and verification](updates-2026-10-28.md).
+
 Explore the project in the following order. All images come from the running interface or scene rendering; some 3D detail scenes demonstrate one specific feature.
 
 2026-10-23: the top 2D/3D switch uses one workbench with five shared tool groups/property positions. 2D zoom/scroll and 3D camera state are retained separately. Preview changes, then use the bottom **Apply changes** (`应用修改`) or **Cancel preview** (`取消预览`). Esc cancels ordinary form drafts. Resolve unapplied changes before switching objects/tools. Expand auxiliary views for a small 3D preview or 2D camera map. UI labels below are translated for reference; screenshots retain the captured application interface.

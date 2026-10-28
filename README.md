@@ -10,7 +10,7 @@ GewuZhizao is an interior design tool prototype under active development. It bri
 
 This repository presents project documentation, actual application screenshots and an architecture overview. The current demo runs through a local service; a public online trial is not available.
 
-**Status: active development · Showcase updated: 2026-10-27**
+**Status: active development · Showcase updated: 2026-10-28**
 
 [Features and limitations](docs/features.md) · [Architecture](docs/architecture.md) · [Demo guide](docs/demo.md) · [Screenshot index](screenshots/README.md)
 
@@ -18,7 +18,17 @@ This repository presents project documentation, actual application screenshots a
 
 *An actual floor plan reconstructed as a 3D scene. This image comes from the running project at real-time preview quality.*
 
-## Latest update · 2026-10-27 · P35
+## Latest update · 2026-10-28 · Local workflows and P30
+
+- **P30 Z01–Z06**: room-use confirmation, rule reports/snapshots, individual and complete room/whole-house existing-furniture candidates, multi-plan comparison/map previews and atomic batch application. Authored walking/carrying paths check actual walls, frames, leaves and heights; modeled opening intervals check independent leaves/screens; explicit four-side zones also cover imported furniture.
+- **Local reuse and delivery**: P17 favorites/display names/groups/tags; P19 saved-view JPG/PNG ZIP export; P25 front-cell/bay-surface materials; P29 portable ZIP projects and read-only version comparison; P31 independent reference-dimension checks.
+- **Limits**: finite sampling of existing confirmed independent furniture, up to 40 objects/30 rooms/3 plans. No automatic model addition, route finding or global-optimum guarantee. Close contact, missing geometry and exhausted budgets remain unproven; product-specific ergonomics/new mechanisms and accounts/cloud remain separate scope.
+
+New source: [01e2db7](https://github.com/ETET114514/GewuZhizaoNew/commit/01e2db70b7088779dd65c642b5c09e74e3e72365). Latest evidence: **503 full frontend tests, 43 targeted Python tests and 18 new browser acceptance groups**, plus original bed-foot/snapshot/candidate browser regressions; includes desktop/390 px, cancel/stale rejection, undo/redo, save/reopen, recovery and portable backups. Earlier feature-specific counts are historical, not a fresh full Python run. See [release details](docs/updates-2026-10-28.md).
+
+![Complete layout candidates and preview](screenshots/p30-plans.png)
+
+## Earlier update · 2026-10-27 · P35
 
 - **Ceilings and fixtures**: six refined procedural fixtures and six original CC0 lamp GLBs, local product-model imports, part PBR, per-face ceiling/cove/rail materials and physical texture origins. Closed arc/cubic Bézier contours, custom profiles and 2–16 variable-profile stations, plus double-curvature ceiling slabs from a 4 × 4 height grid, clipped to rooms and holes.
 - **Rails and motion**: independent polyline, arc and cubic rails; actual arc-length placement, translation and tangent-following rotation; play, pause, seek and reset with once/loop/ping-pong modes. Current lighting and collision follow the preview frame.

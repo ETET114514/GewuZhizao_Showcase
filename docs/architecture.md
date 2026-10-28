@@ -2,6 +2,12 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
+## 2026-10-28 · Versioned layout plans and continuous checks
+
+Worker-isolated finite search produces poses without mutating the scene. Preview/application validate a SHA-256 revision of the full source document; pose validation is copy-on-write and the batch commits once. Authored walking/carrying paths use continuous collision intervals and walking-floor/door bridging. Opening intervals interpolate current modeled parameters; collision witnesses fail early, while clear requires exclusion of all intervals. Missing geometry, near contact and exhausted budgets remain unproven. P29 validates portable packages in isolation; P17 organization is local library metadata; P31 references do not change scale until explicitly requested.
+
+See [release scope and evidence](updates-2026-10-28.md).
+
 This page describes the prototype's responsibilities and engineering choices. It contains no source code, credentials, training data or specific recognition rules.
 
 ## Overall structure

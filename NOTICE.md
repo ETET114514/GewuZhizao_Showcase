@@ -2,6 +2,10 @@
 
 **English** | [中文](NOTICE.zh-CN.md)
 
+## 2026-10-28 additions
+
+The new P30/P29/P31 images are actual isolated acceptance scenes, shared by both language versions. Only screenshots/documentation are published, without project ZIPs, plan JSON, model assets or texture data. Source checkpoint 01e2db7.
+
 This repository presents GewuZhizao's features and development results through documentation and actual application screenshots. Source code remains private; this repository grants no access or usage rights to that private source.
 
 ## Screenshots

@@ -2,6 +2,16 @@
 
 [English](README.md) | **中文**
 
+## 2026-10-28 截图
+
+整套布局比较/390 px、路径/开合验证、保存版本对比及独立尺寸均来自 New 01e2db7 的验收场景。仅复制 PNG 运行截图，不复制项目包或原始资产。见[验证](../docs/updates-2026-10-28.zh-CN.md)。
+
+![整套方案](p30-plans.png)
+![窄屏方案](p30-plans-narrow.png)
+![路径与开合验证](p30-validation.png)
+![版本对比](p29-comparison.png)
+![独立尺寸](p31-scale-checks.png)
+
 所有图片来自实际运行界面或渲染，保留原图，不含 AI 生成的产品效果示意。
 
 | 文件 | 展示内容 | 场景类型 |

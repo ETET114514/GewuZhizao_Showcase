@@ -2,6 +2,16 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-10-28 captures
+
+Complete layout comparison/390 px, current path/opening validation, saved-version comparison and independent dimensions are acceptance-scene captures from New 01e2db7. Only PNG screenshots are copied; no project archives or source assets. See [verification](../docs/updates-2026-10-28.md).
+
+![Complete plans](p30-plans.png)
+![Narrow plans](p30-plans-narrow.png)
+![Path and opening validation](p30-validation.png)
+![Version comparison](p29-comparison.png)
+![Independent dimensions](p31-scale-checks.png)
+
 All images are original captures from the running interface or rendering. They do not include AI-generated product mockups.
 
 | File | Content | Scene type |
