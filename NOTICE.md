@@ -2,6 +2,11 @@
 
 **English** | [中文](NOTICE.zh-CN.md)
 
+
+## 2026-10-30 checkpoint materials
+
+Corresponds to New [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e). [Scope and verification](docs/updates-2026-10-30.md). P21 CAD/boundary/opening/residential scenes, P31 OCR, P17 glTF and P30 route captures come from actual isolated acceptance runs; both languages share images with translated descriptions. Only PNGs and summaries are copied, without source, CAD/project packages, models/textures or annotations. Synthetic scenes do not establish real-world generalization accuracy.
+
 ## 2026-10-28 additions
 
 The new P30/P29/P31 images are actual isolated acceptance scenes, shared by both language versions. Only screenshots/documentation are published, without project ZIPs, plan JSON, model assets or texture data. Source checkpoint 01e2db7.

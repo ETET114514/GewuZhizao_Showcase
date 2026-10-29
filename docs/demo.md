@@ -2,6 +2,18 @@
 
 **English** | [中文](demo.zh-CN.md)
 
+
+## 2026-10-30 · CAD, templates, correction and routes
+
+Source checkpoint: [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e).
+
+- Open the local plan-template library, choose one of seven skeletons, set dimensions/orientation and preview before creating. Inspect names, net areas and bounds; templates do not include complete furnishing/equipment designs.
+- In DXF import, check units/layers and optionally display attached attributes, saved dimensions, fills and line styles. Use explicit centerlines or selected boundary candidates; re-preview after selecting boundary candidates. Assign separate symbol layers to doors/windows, review hosts/widths, select openings and room-name text, then confirm independent creation. Cancel keeps the source project.
+- Preview stretch/rotation/shear/four-corner perspective copies, then recognize/trace/calibrate again. OCR supplies text and room-name proposals; confirm names separately, author complete annotations and evaluate. Diagnostic lines do not become editable angled walls.
+- Furniture/lamp imports accept static glTF ZIP or embedded .gltf; review materials/units/orientation before applying. Automatic walking/fixed-pose carrying routes in the layout assistant only fill inputs after continuous checks; they do not turn or move objects automatically.
+
+[Full scope, limits and evidence](updates-2026-10-30.md). Captures retain the actual Chinese interface; English labels here are translated descriptions.
+
 ## 2026-10-28 · Complete-plan and delivery workflow
 
 Select a room → complete layout/path/motion validation → choose room/all rooms and generate → compare separate metrics → preview → apply once or cancel. Author path points on the map and verify walking/carrying with current door poses; check an opening from closed to its authored endpoint. Use project backup/import and version comparison for delivery, saved-view ZIP for images, local model organization for reuse and independent dimensions for scale checks.

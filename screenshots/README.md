@@ -2,6 +2,25 @@
 
 **English** | [中文](README.zh-CN.md)
 
+
+## 2026-10-30 checkpoint materials
+
+Corresponds to New [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e). [Scope and verification](../docs/updates-2026-10-30.md). P21 CAD/boundary/opening/residential scenes, P31 OCR, P17 glTF and P30 route captures come from actual isolated acceptance runs; both languages share images with translated descriptions. Only PNGs and summaries are copied, without source, CAD/project packages, models/textures or annotations. Synthetic scenes do not establish real-world generalization accuracy.
+
+![CAD references, cached dimensions and fills](p21-cad-reference.png)
+
+![Boundary-wall candidates](p21-outline-candidates.png)
+
+![Door/window candidates](p21-opening-candidates.png)
+
+![Seven-template library and two-bathroom skeleton](p21-residential-template.png)
+
+![Local OCR workbench](p31-ocr-workbench.png)
+
+![Separated-resource glTF import](p17-gltf-import.png)
+
+![Fixed-pose furniture route](p30-furniture-route.png)
+
 ## 2026-10-28 captures
 
 Complete layout comparison/390 px, current path/opening validation, saved-version comparison and independent dimensions are acceptance-scene captures from New 01e2db7. Only PNG screenshots are copied; no project archives or source assets. See [verification](../docs/updates-2026-10-28.md).

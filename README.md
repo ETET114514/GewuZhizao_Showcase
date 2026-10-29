@@ -10,7 +10,7 @@ GewuZhizao is an interior design tool prototype under active development. It bri
 
 This repository presents project documentation, actual application screenshots and an architecture overview. The current demo runs through a local service; a public online trial is not available.
 
-**Status: active development · Showcase updated: 2026-10-28**
+**Status: active development · Showcase updated: 2026-10-30**
 
 [Features and limitations](docs/features.md) · [Architecture](docs/architecture.md) · [Demo guide](docs/demo.md) · [Screenshot index](screenshots/README.md)
 
@@ -18,7 +18,17 @@ This repository presents project documentation, actual application screenshots a
 
 *An actual floor plan reconstructed as a 3D scene. This image comes from the running project at real-time preview quality.*
 
-## Latest update · 2026-10-28 · Local workflows and P30
+## Latest update · 2026-10-30 · Local P21 and import tools
+
+- **P21**: seven structure templates; text/binary DXF, ordinary blocks, rotation/crop, text/saved dimensions/fills/basic styles; confirmed boundary-wall, opening-symbol and room-name candidates create editable projects.
+- **P17 / P30 / P31**: separated-resource glTF import; obstacle-avoiding walking/fixed-pose carrying routes; image-correction copies, local OCR, complete annotations/grouped evaluation tools.
+- **Scope**: the agreed local version passed acceptance. DWG, arbitrary angled/curved walls/complex CAD/symbols and independent real-world generalization remain open. Candidates need review; universal file compatibility is not claimed.
+
+Source: [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e). **514 frontend tests, 138 DXF Python checks, 41 template checks and 215 P21 browser groups** passed, with additional project/opening and final targeted rechecks. Python groups overlap and are not summed. [Full scope and dated evidence](docs/updates-2026-10-30.md).
+
+![Three-bedroom two-bathroom structure template](screenshots/p21-residential-template.png)
+
+## Earlier update · 2026-10-28 · Local workflows and P30
 
 - **P30 Z01–Z06**: room-use confirmation, rule reports/snapshots, individual and complete room/whole-house existing-furniture candidates, multi-plan comparison/map previews and atomic batch application. Authored walking/carrying paths check actual walls, frames, leaves and heights; modeled opening intervals check independent leaves/screens; explicit four-side zones also cover imported furniture.
 - **Local reuse and delivery**: P17 favorites/display names/groups/tags; P19 saved-view JPG/PNG ZIP export; P25 front-cell/bay-surface materials; P29 portable ZIP projects and read-only version comparison; P31 independent reference-dimension checks.
@@ -228,7 +238,7 @@ Engineering focuses on consistent 2D/3D data, a complete preview/apply/undo/save
 
 ## Future directions
 
-P23 C01–C08, P16 F01–F08, P18 M01–M08 and P35 local ceiling/lighting workflows are implemented within their agreed scopes. Further work follows actual needs for product models/mechanisms, diagonal walls/irregular elements, additional installation details and model compatibility; external online vendor brand services still await provider selection and connection. Drawing/model exchange remains lower priority. Procurement quantities, construction pricing, cloud collaboration and AI layout are not implemented. Nineteen directions retain future scope: 11 have a main workflow and eight lack the stated target workflow. These counts are not completion percentages.
+P23 C01–C08, P16 F01–F08, P18 M01–M08 and P35 local ceiling/lighting workflows are implemented within their agreed scopes. Further work follows actual needs for product models/mechanisms, diagonal walls/irregular elements, additional installation details and model compatibility; external online vendor brand services still await provider selection and connection. Drawing/model exchange remains lower priority. Procurement quantities, construction pricing, cloud collaboration and AI layout are not implemented. Nineteen directions retain future scope: thirteen have a main workflow and six lack the stated target workflow. These counts are not completion percentages.
 
 ## Documentation languages and publication
 

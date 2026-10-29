@@ -2,32 +2,41 @@
 
 **English** | [中文](features.zh-CN.md)
 
+
+## 2026-10-30 implementation checkpoint
+
+The agreed local P21 version passed acceptance: seven templates, DXF references and confirmed modeling, plus P17 glTF imports, P30 obstacle-avoiding walking/fixed-pose carrying and P31 correction/OCR/complete evaluation tools. Complete CAD and independent generalization remain open. Source [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e); [full scope and evidence](updates-2026-10-30.md).
+
+138 DXF/41 template Python checks, 514 frontend tests and 50 new/165 existing P21 browser groups passed. Python groups overlap and are not summed. Nineteen directions retain future scope: thirteen have corresponding main workflows and six have not implemented the listed target workflow. No completion percentage is calculated.
+
 ## 2026-10-28 implementation checkpoint
 
 P30 Z01–Z06, P17 local organization, P19 batch-view export, P25 cell/bay materials, P29 portable projects/comparison and P31 independent dimensions are implemented in their stated scope. See [scope and 503 frontend / 43 Python / 18 browser verification](updates-2026-10-28.md).
 
-Updated: 2026-10-28. This page separates current implementation from future plans.
+Updated: 2026-10-30. This page separates current implementation from future plans.
 
 ## Implemented capabilities
 
 | Module | Implemented | Current limitations |
 | --- | --- | --- |
-| P30 complete-plan assistance | Room-use confirmation, reports/snapshots, individual and full-room/whole-house existing-furniture candidates, comparison/map preview, plan transfer and atomic apply; authored paths, opening intervals and operation zones | Finite search/current envelopes; no auto-added models/routes or product-specific ergonomics |
+| P21 local CAD/templates | Seven skeletons/personal reuse, CAD reference display, confirmed centerline/boundary walls, opening symbols and room-name text; shared 3D/history/persistence | Candidates need review; complete CAD, DWG, arbitrary symbols and independent real-data generalization are open |
+| P31 correction/evaluation | Corrected image copies, line proposals, local OCR/confirmed names, complete rectangle/polygon annotations and grouped whole-image evaluation CLI | Does not transform existing project objects; synthetic evidence validates tools, not independent real-world accuracy |
+| P30 complete-plan assistance | Usage/reports/snapshots, existing-furniture plans/atomic apply; bounded walking/fixed-pose carrying search followed by continuous checks, authored paths, opening intervals and operation zones | Finite search/current envelopes; no automatic new models, turning/lifting/tilting, global-optimum or product-specific ergonomics guarantee |
 | Independent scale references | Up to 10 known-length references, tolerance/deviation and explicit recalibration with history/persistence | Does not correct stretched/perspective images |
 | Local model organization | Favorites, display names, groups/tags and hash-bound metadata-file transfer | Local metadata; original model/source/license preserved |
 | Project transfer and comparison | Resource-carrying ZIP export/isolated import; saved-version object/property comparison | No cloud sync or full cross-session undo |
 | Saved-view batch images | Multi-select saved views, serial JPG/PNG ZIP, progress/cancel and scene restoration | At most 50 views / 256 MB; no video or offline renderer |
-| Image import | PNG, JPG and WebP; separate plan/element layers | No DWG/DXF parsing |
+| Image import | PNG/JPG/WebP plus text/binary DXF with units/layers/ordinary blocks/rotation/crop and confirmed modeling | No DWG; arbitrary angled/curved editable walls, complex CAD and independent real-file compatibility remain open |
 | Wall recognition | Horizontal/vertical candidates; solid/double-line walls and multiple wall colors | Unusual drawing conventions, short/diagonal/curved walls require supplementation and review |
 | Opening recognition/editing | Confirm/reject candidates, add/move along walls, edit opening width/height and sill | Complex symbols can produce false/missed detections; uncertain boundaries require confirmation |
 | Furniture recognition/addition | Legend matching and optional model recognition; manually add/change category, bounds and orientation | Legend matching depends on sample sources; no general recognition-accuracy figure is published |
 | Wall review | Edit position/thickness/length, add walls, connect short gaps and diagnose closure locally | Does not guarantee automatic repair of a full plan; long missing walls require judgment |
 | Precise wall drawing | Blank or calibrated traced plans; continuous horizontal/vertical walls, physical length/thickness, fixed ends, endpoint dragging, snapping and connection checks | No diagonal/curved walls or local wall heights in the initial version; recheck room finishes after boundary changes |
 | Scale and measurement | Known length/opening/wall-thickness scale; original centerlines/corner segments, room-side net lengths and solid-wall segments excluding horizontal opening projections | No definite values for unconfirmed openings; opposite sides/different rooms counted separately; structural reference lengths exclude finish clearances and construction drawings |
-| Room regions | Automatic candidates, manual drawing/redrawing, splitting, merging, excluding and naming | Missing walls/openings/incomplete boundaries affect regions; 13 room-use classes have rule-based candidates and explicit confirmation; no room-text OCR |
+| Room regions | Automatic candidates, drawing/redrawing/splitting/merging/excluding/naming; 13 usage classes with confirmation, local OCR and confirmed DXF room-name text | Incomplete boundaries affect partitioning; OCR scores are not calibrated and naming does not confirm usage |
 | 3D walls | Merged wall solids, flush connected corners, actual openings with wall retained above/below | Generated from current 2D segments and height; not a full BIM element system |
 | Furniture and mixed-object editing | Temporary move/rotate/copy/delete; box/click selection of furniture, independent elements and lights; mixed/nested groups, member editing/ungrouping, copied-reference rebinding, proportional scaling, batch properties, individual 2D rotation and fitting within a rectangle at any angle | Attached objects retain hosts; structural elements/kitchens remain orthogonal; original object count/dimension/clearance limits apply; additional product mechanisms are separate scope |
-| Real models | Five built-in CC0 GLBs; local static GLB import/replacement, unit/orientation correction and size fitting | Initial support is static meshes with embedded resources, without animation or compression decoding; favorites/groups/tags are local metadata |
+| Real models | Five built-in CC0 furniture GLBs and existing lamp library; static GLB, separated-resource glTF ZIP/embedded .gltf imports, unit/orientation/part materials and portable project resources | No compressed meshes/animation; packages have resource/path budgets; no external online vendor service |
 | Materials | 160 base/14 furniture materials and solid colors; five-map PBR, DirectX normals, stable GLB mesh parts with original UV/physical projection, local room-side clipping, cross-object batch assignment/replacement/restoration | Each map ≤12 MB/16 million pixels, set ≤48 MB, normalized longest edge 2048; opaque JPEG color/lossless PNG data; no map generation, transparency/displacement/height maps or mesh modeling; P35 fixture-part appearance is implemented |
 | Upload-library management | Name search, multi-select prefix/suffix renaming/removal, cache usage/protection reasons and cleanup after fresh checks | Up to 200 materials; only hidden caches without project/history/save/recovery/preview references can be removed; unverifiable references block deletion; library operations do not alter project history |
 | Floor origins and patterns | Straight/two offset patterns, physical herringbone, 20–70° chevron, diamond/hexagon/basket weave and editable repeating motifs of 2–16 subpieces; clipping to concavity/holes/element occupancy | 6000 candidate cells per room/24000 per project; curved units, unlimited patterns, procurement waste and construction drawings not implemented |
@@ -63,17 +72,17 @@ Updated: 2026-10-28. This page separates current implementation from future plan
 | Workflow extensions | Arbitrary-angle kitchen groups, more product mechanisms/host types and specific transport standards; temporary selection, mixed/nested groups and custom path checks complete |
 | Future material types | External online vendor brand services await provider selection/integration; P35 local product models/appearance are implemented; cross-device asset sync, transparency/displacement/height maps and mesh modeling separately scoped; P18 M01–M08 complete |
 | Plan drawing | Diagonal/curved walls, more angle constraints and local wall heights; blank plans/continuous orthogonal drawing implemented |
-| Drawing/model exchange | Dimensioned PNG/PDF plans, GLB/glTF export and DXF/DWG support |
-| Recognition generalization | Independent test images, false/missed detection evaluation, complex symbols and image correction |
+| Drawing/model exchange | Dimensioned PNG/PDF plans, GLB/glTF export, DXF/DWG export and DWG import; bounded DXF import is implemented |
+| Recognition generalization | Independent real complete annotations, angled/complex-symbol structure writeback, measured generalization and probability calibration; image-copy correction/OCR/complete annotations/evaluation tools are implemented |
 | Project management | Persistent full history and cloud sync; version comparison, packaged migration, names/thumbnails/search/recovery/redo implemented |
 | Professional delivery | Construction drawings, elevations/sections, quantities, bills of materials and quotations |
 | Rendering/sharing | Multiple indirect bounces, IES, panoramas, walkthrough video and read-only sharing |
-| Cloud/intelligent assistance | Cloud sync, collaboration permissions, automatic model addition/routes and generative style assistance; finite existing-furniture plans implemented |
+| Cloud/intelligent assistance | Cloud/collaboration, new-model addition, automatic turning/lifting/tilting routes and generative style assistance; finite existing-furniture plans/walking/fixed-pose routing are implemented |
 
 These are development directions, not current deliverables. The present focus remains the interior editing workflow.
 
 Current implementation and separately scoped extensions are listed above; completed subscopes do not imply every product-specific variant is implemented.
 
-Current release: [01e2db7](https://github.com/ETET114514/GewuZhizaoNew/commit/01e2db70b7088779dd65c642b5c09e74e3e72365), [scope and verification](updates-2026-10-28.md). Earlier P35 summary corresponds to New commit [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). See [earlier P35 verification](updates-2026-10-27-p35.md). [2026-10-26](updates-2026-10-26.md) and [2026-10-25](updates-2026-10-25.md) retain their historical scope; [2026-10-24](updates-2026-10-24.md), [2026-10-23](updates-2026-10-23.md), [2026-10-20](updates-2026-10-20.md) and [2026-10-19](updates-2026-10-19.md) retain historical verification.
+Current release: [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e), [scope and verification](updates-2026-10-30.md). Earlier P35 summary corresponds to New commit [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). See [earlier P35 verification](updates-2026-10-27-p35.md). [2026-10-26](updates-2026-10-26.md) and [2026-10-25](updates-2026-10-25.md) retain their historical scope; [2026-10-24](updates-2026-10-24.md), [2026-10-23](updates-2026-10-23.md), [2026-10-20](updates-2026-10-20.md) and [2026-10-19](updates-2026-10-19.md) retain historical verification.
 
 [Back to project home](../README.md)

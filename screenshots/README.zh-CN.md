@@ -2,6 +2,25 @@
 
 [English](README.md) | **中文**
 
+
+## 2026-10-30 本轮材料
+
+对应New [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e)。[范围与验证](../docs/updates-2026-10-30.zh-CN.md)。P21 CAD/双线/门窗/住宅骨架、P31 OCR、P17 glTF及P30路线图片为隔离验收场景的实际运行截图；中英文共用图片并分别翻译说明。仅发布PNG和概要，不复制源代码、CAD/工程包、模型/贴图或标注数据。合成场景不能作为真实泛化精度证明。
+
+![CAD底图、已有标注与填充](p21-cad-reference.png)
+
+![双线墙候选](p21-outline-candidates.png)
+
+![门窗候选](p21-opening-candidates.png)
+
+![7种模板与双卫结构骨架](p21-residential-template.png)
+
+![本机OCR工作台](p31-ocr-workbench.png)
+
+![分离资源glTF导入](p17-gltf-import.png)
+
+![保持姿态家具路线](p30-furniture-route.png)
+
 ## 2026-10-28 截图
 
 整套布局比较/390 px、路径/开合验证、保存版本对比及独立尺寸均来自 New 01e2db7 的验收场景。仅复制 PNG 运行截图，不复制项目包或原始资产。见[验证](../docs/updates-2026-10-28.zh-CN.md)。
