@@ -3,6 +3,18 @@
 **English** | [中文](README.zh-CN.md)
 
 
+## 2026-10-30 · Design checkpoint materials
+
+Source [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf); [scope and evidence](../docs/updates-2026-10-30-design.md). New P15/P26/P27/P28 images are actual isolated acceptance screenshots. Both languages share PNG assets with translated captions. No source, user projects, CAD files, model/texture assets or video packages are mirrored. Source-side videos remain separately documented; these synthetic scenes do not establish independent recognition accuracy.
+
+![Angled and circular-arc wall modeling](p15-curved-walls.png)
+
+![Entry-to-room guided tour controls](p26-guided-tour.png)
+
+![Live door positioning dimensions](p27-position-dimensions.png)
+
+![Basic quantities and reference quotes](p28-basic-quote.png)
+
 ## 2026-10-30 checkpoint materials
 
 Corresponds to New [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e). [Scope and verification](../docs/updates-2026-10-30.md). P21 CAD/boundary/opening/residential scenes, P31 OCR, P17 glTF and P30 route captures come from actual isolated acceptance runs; both languages share images with translated descriptions. Only PNGs and summaries are copied, without source, CAD/project packages, models/textures or annotations. Synthetic scenes do not establish real-world generalization accuracy.

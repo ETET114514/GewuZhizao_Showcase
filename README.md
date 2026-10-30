@@ -18,7 +18,18 @@ This repository presents project documentation, actual application screenshots a
 
 *An actual floor plan reconstructed as a 3D scene. This image comes from the running project at real-time preview quality.*
 
-## Latest update · 2026-10-30 · Local P21 and import tools
+## Latest update · 2026-10-30 · Drawing, walkthroughs, dimensions and quotes
+
+- **P15:** individual wall heights/splitting and arbitrary-angle straight/circular-arc walls with basic hosted openings, real geometry, rooms/materials and project reuse.
+- **P26:** entry interior → living room → selected rooms through actual doors; manual points, bounded avoidance, room looks/pauses and optional temporary door opening/restoration. Silent 720p WebM recording/preview/download and 2K/4K single-point JPG/PNG panoramas.
+- **P27 / P28:** associated room/door/window/custom dimensions with scale/geometry updates and split migration; basic quantities, alternative cabinet pricing bases, reference totals and quote/board CSV.
+- **Limits:** complete CAD constraints and curved-wall detailing, multilevel/MP4/shared tours, complete construction sets and manufacturing/procurement/formal quotations remain outside these delivered subscopes.
+
+Source: [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf). Latest evidence: **555 frontend tests**, a **79-test related Python snapshot plus 4 overlapping final rechecks**, **18 + 6 P27 browser checks** and the original P13 regression. Earlier P15/P26/P28 evidence is dated separately. [Scope and evidence](docs/updates-2026-10-30-design.md).
+
+![Door positioning and associated dimensions in the running workbench](screenshots/p27-position-dimensions.png)
+
+## Earlier update · 2026-10-30 · Local P21 and import tools
 
 - **P21**: seven structure templates; text/binary DXF, ordinary blocks, rotation/crop, text/saved dimensions/fills/basic styles; confirmed boundary-wall, opening-symbol and room-name candidates create editable projects.
 - **P17 / P30 / P31**: separated-resource glTF import; obstacle-avoiding walking/fixed-pose carrying routes; image-correction copies, local OCR, complete annotations/grouped evaluation tools.

@@ -3,6 +3,19 @@
 **English** | [中文](demo.zh-CN.md)
 
 
+## 2026-10-30 · Entry-to-room tours, dimensions and quotes
+
+Source [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf); [scope and evidence](updates-2026-10-30-design.md).
+
+1. Author/edit wall heights, split by actual length, or use straight/arc parameter walls and basic hosted openings.
+2. In 3D choose the visible tour-recording shortcut. Specify entry door/interior room/living room when classification is missing or ambiguous. Generate entry interior → living → selected rooms, or edit manual waypoints. Preview, record, inspect and download silent 720p WebM. Optional temporary door opening is restored at end/cancel. Current standing-point panorama export produces 2:1 2K/4K JPG/PNG.
+3. In Plan → Measure → Dimensions, select units/automatic room or opening lines and apply display settings. Pick or drag two custom anchors; inspect associations/offsets, save, edit/hide/delete. Missing hosts are reported instead of showing stale numbers.
+4. Open basic quantities/quotes, inspect each formula/source, choose one cabinet pricing basis, enter rates/loss/inclusion and export quote/board CSV. Missing/unsupported quantities stay explicit.
+
+![Continuous tour route controls](../screenshots/p26-guided-tour.png)
+
+![Door positioning dimensions](../screenshots/p27-position-dimensions.png)
+
 ## 2026-10-30 · CAD, templates, correction and routes
 
 Source checkpoint: [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e).

@@ -3,6 +3,18 @@
 [English](README.md) | **中文**
 
 
+## 2026-10-30 · 设计功能材料
+
+源码[0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf)；[范围与验证](../docs/updates-2026-10-30-design.zh-CN.md)。新增P15/P26/P27/P28图片均为隔离验收场景的实际运行截图，两种语言共用PNG并分别翻译说明。不镜像源码、用户工程、CAD文件、模型/贴图或录像包；源码侧测试录像单独记录，合成场景不证明独立真实识别精度。
+
+![斜墙与圆弧墙建模](p15-curved-walls.png)
+
+![入户连续带看操作区](p26-guided-tour.png)
+
+![实时门窗定位尺寸](p27-position-dimensions.png)
+
+![基础工程量与参考报价](p28-basic-quote.png)
+
 ## 2026-10-30 本轮材料
 
 对应New [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e)。[范围与验证](../docs/updates-2026-10-30.zh-CN.md)。P21 CAD/双线/门窗/住宅骨架、P31 OCR、P17 glTF及P30路线图片为隔离验收场景的实际运行截图；中英文共用图片并分别翻译说明。仅发布PNG和概要，不复制源代码、CAD/工程包、模型/贴图或标注数据。合成场景不能作为真实泛化精度证明。

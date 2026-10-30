@@ -3,6 +3,10 @@
 [English](architecture.md) | **中文**
 
 
+## 2026-10-30 · 关联设计意图与可恢复带看场景
+
+源码[0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf)。参数直/弧墙保留宿主门窗和对象编号。尺寸保存端点关联而非过期长度，随几何/比例重算，拆墙迁移宿主；失效关联不继续报旧数值。带看可使用临时开门副本，结束恢复原工程/镜头；录像与全景捕获恢复渲染状态。工程量从当前几何派生，工程保存计价选择而非冻结总价。[边界与验证](updates-2026-10-30-design.zh-CN.md)。
+
 ## 2026-10-30 · 有界导入、明确来源与确认创建
 
 源码检查点：[d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e).

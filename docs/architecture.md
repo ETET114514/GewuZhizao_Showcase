@@ -3,6 +3,10 @@
 **English** | [中文](architecture.zh-CN.md)
 
 
+## 2026-10-30 · Geometry-linked design intent and reversible tour scenes
+
+Source [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf). Parameterized straight/arc walls keep hosted openings and stable object IDs. Dimensions persist anchor intent rather than stale numeric lengths, recompute from current geometry/scale and migrate hosts on split; unresolved references do not keep old measurements. Guided playback uses an optional temporary open-door scene and restores the original project/camera. Video and panoramic captures restore renderer state. Quantities are derived from current geometry; the project stores pricing choices rather than frozen totals. [Scope and evidence](updates-2026-10-30-design.md).
+
 ## 2026-10-30 · Bounded imports, explicit sources and confirmed creation
 
 Source checkpoint: [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e).
