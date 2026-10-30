@@ -3,6 +3,10 @@
 [English](NOTICE.md) | **中文**
 
 
+## 2026-10-31 · 全景验收素材
+
+源码 [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65); [范围与证据](docs/updates-2026-10-31-panorama.zh-CN.md). 新增四张PNG来自本机生成的空房间验收场景；两种语言共用图片。仅复制截图与概要，没有用户图纸、源码、全景/工程包、贴图或模型素材。
+
 ## 2026-10-30 · 设计功能材料
 
 源码[0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf)；[范围与验证](docs/updates-2026-10-30-design.zh-CN.md)。新增P15/P26/P27/P28图片均为隔离验收场景的实际运行截图，两种语言共用PNG并分别翻译说明。不镜像源码、用户工程、CAD文件、模型/贴图或录像包；源码侧测试录像单独记录，合成场景不证明独立真实识别精度。

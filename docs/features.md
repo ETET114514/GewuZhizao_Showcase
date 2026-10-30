@@ -3,7 +3,13 @@
 **English** | [中文](features.zh-CN.md)
 
 
-## Current design checkpoint · 2026-10-30
+## Current panorama checkpoint · 2026-10-31
+
+Source [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65); [scope and verification](updates-2026-10-31-panorama.md). Local 2:1 interactive panorama viewing, optional JPG/PNG GPano, text hotspots and up to 10 scenes with jump hotspots and image-carrying packages. Serial 2K/4K JPG/PNG capture accepts 1-10 saved human views with per-view display and lighting settings; optional ordered previous/next navigation, preview and explicit download. P27 applying unchanged default dimension display settings no longer adds history, clears redo or rewrites autosave.
+
+Local static images/packages only: no hosting, accounts/permissions, web sharing, automatic room viewpoint choice, live model updates or project-bound panorama storage. Ordered navigation is not doorway placement or verified passage. Limits: 32MB per image, 10 scenes/64MB images, 92MB input package; download before refresh. The standalone viewer does not infer north/GPS or interpret external crop/orientation metadata. Audio/MP4, offline rendering and the remaining P26 roadmap are still open.
+
+## Earlier design checkpoint · 2026-10-30
 
 Source [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf); [full scope, limits and dated verification](updates-2026-10-30-design.md). P15 wall heights/splitting/angled and arc walls, P26 continuous entry-to-room walkthroughs/recording/panoramas, P27 live associated dimensions and P28 basic quantities/reference quotes are implemented in their stated subscopes. Complete CAD, construction drawing sets, manufacturing/procurement quotations, multilevel/shared tours and independent recognition generalization remain open. The current 19 directions comprise 15 with corresponding workflows and 4 without the listed target workflow; no completion percentage is calculated.
 
@@ -17,14 +23,14 @@ The agreed local P21 version passed acceptance: seven templates, DXF references 
 
 P30 Z01–Z06, P17 local organization, P19 batch-view export, P25 cell/bay materials, P29 portable projects/comparison and P31 independent dimensions are implemented in their stated scope. See [scope and 503 frontend / 43 Python / 18 browser verification](updates-2026-10-28.md).
 
-Updated: 2026-10-30. This page separates current implementation from future plans.
+Updated: 2026-10-31. This page separates current implementation from future plans.
 
 ## Implemented capabilities
 
 | Module | Implemented | Current limitations |
 | --- | --- | --- |
 | P15 wall authoring | Heights, physical splitting, arbitrary-angle straight/arc walls, basic hosted openings, actual rooms/materials/persistence | Full CAD constraints and specialized curved-wall detailing pending |
-| P26 guided presentation | Entry interior → living → rooms via real doors; manual waypoints, temporary open-door scene, 720p silent WebM preview/download, 2K/4K panoramic JPG/PNG | Single level; orthogonal entry placement; no MP4/audio/shared web/hotspots/GPano metadata |
+| P26 presentation | Existing guided tours/video; 2K/4K panoramas, interactive viewer, GPano, text/jump hotspots, multi-scene packages and saved-human-view capture | Local snapshots; no hosted sharing/automatic viewpoint choice/live updates; ordered jumps do not validate passage |
 | P27 dimension intent | Interior region scans, door/window positioning, associated/fixed dimensions, units/offsets/history/geometry and scale updates, split migration | Structure/region reference distances, not finish-surface certified construction sets |
 | P28 basic quantities/quotes | Floors/wall references/cabinet projection or rectangular-board area/items; rates/loss/inclusion/totals and CSV | Complex boards pause area pricing; no procurement nesting/hardware/formal contracts |
 | P21 local CAD/templates | Seven skeletons/personal reuse, CAD reference display, confirmed centerline/boundary walls, opening symbols and room-name text; shared 3D/history/persistence | Candidates need review; complete CAD, DWG, arbitrary symbols and independent real-data generalization are open |
@@ -84,13 +90,13 @@ Updated: 2026-10-30. This page separates current implementation from future plan
 | Recognition generalization | Independent real complete annotations, angled/complex-symbol structure writeback, measured generalization and probability calibration; image-copy correction/OCR/complete annotations/evaluation tools are implemented |
 | Project management | Persistent full history and cloud sync; version comparison, packaged migration, names/thumbnails/search/recovery/redo implemented |
 | Professional delivery | Complete elevations/sections/construction sets, finish-surface/level systems, manufacturing/procurement BOM and formal quotes; P27 dimension intent and P28 basic quantities/reference quotes are implemented |
-| Rendering/sharing | Multiple indirect bounces, IES, multilevel/shared tours, hotspots/metadata and MP4 editing; P26 silent WebM and single-point panoramic images are implemented |
+| Rendering/sharing | Multiple indirect bounces, IES, multilevel/web sharing, automatic viewpoint choice/live updates and MP4 editing; P26 WebM, GPano, hotspots/multi-scene packages and saved-human-view capture are implemented |
 | Cloud/intelligent assistance | Cloud/collaboration, new-model addition, automatic turning/lifting/tilting routes and generative style assistance; finite existing-furniture plans/walking/fixed-pose routing are implemented |
 
 These are development directions, not current deliverables. The present focus remains the interior editing workflow.
 
 Current implementation and separately scoped extensions are listed above; completed subscopes do not imply every product-specific variant is implemented.
 
-Current design release: [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf), [design scope](updates-2026-10-30-design.md). Earlier CAD release: [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e), [scope and verification](updates-2026-10-30.md). Earlier P35 summary corresponds to New commit [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). See [earlier P35 verification](updates-2026-10-27-p35.md). [2026-10-26](updates-2026-10-26.md) and [2026-10-25](updates-2026-10-25.md) retain their historical scope; [2026-10-24](updates-2026-10-24.md), [2026-10-23](updates-2026-10-23.md), [2026-10-20](updates-2026-10-20.md) and [2026-10-19](updates-2026-10-19.md) retain historical verification.
+Current panorama release: [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65), [panorama scope](updates-2026-10-31-panorama.md). Earlier design release: [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf), [design scope](updates-2026-10-30-design.md). Earlier CAD release: [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e), [scope and verification](updates-2026-10-30.md). Earlier P35 summary corresponds to New commit [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). See [earlier P35 verification](updates-2026-10-27-p35.md). [2026-10-26](updates-2026-10-26.md) and [2026-10-25](updates-2026-10-25.md) retain their historical scope; [2026-10-24](updates-2026-10-24.md), [2026-10-23](updates-2026-10-23.md), [2026-10-20](updates-2026-10-20.md) and [2026-10-19](updates-2026-10-19.md) retain historical verification.
 
 [Back to project home](../README.md)

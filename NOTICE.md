@@ -3,6 +3,10 @@
 **English** | [中文](NOTICE.zh-CN.md)
 
 
+## 2026-10-31 · Panorama acceptance materials
+
+Source [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65); [scope and evidence](docs/updates-2026-10-31-panorama.md). Four new PNGs come from locally generated empty-room acceptance scenes and are shared by both languages. Only screenshots and summaries are copied, without user plans, source, panorama/project packages, textures or models.
+
 ## 2026-10-30 · Design checkpoint materials
 
 Source [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf); [scope and evidence](docs/updates-2026-10-30-design.md). New P15/P26/P27/P28 images are actual isolated acceptance screenshots. Both languages share PNG assets with translated captions. No source, user projects, CAD files, model/texture assets or video packages are mirrored. Source-side videos remain separately documented; these synthetic scenes do not establish independent recognition accuracy.

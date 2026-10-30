@@ -10,7 +10,7 @@ GewuZhizao is an interior design tool prototype under active development. It bri
 
 This repository presents project documentation, actual application screenshots and an architecture overview. The current demo runs through a local service; a public online trial is not available.
 
-**Status: active development · Showcase updated: 2026-10-30**
+**Status: active development · Showcase updated: 2026-10-31**
 
 [Features and limitations](docs/features.md) · [Architecture](docs/architecture.md) · [Demo guide](docs/demo.md) · [Screenshot index](screenshots/README.md)
 
@@ -18,7 +18,17 @@ This repository presents project documentation, actual application screenshots a
 
 *An actual floor plan reconstructed as a 3D scene. This image comes from the running project at real-time preview quality.*
 
-## Latest update · 2026-10-30 · Drawing, walkthroughs, dimensions and quotes
+## Latest update · 2026-10-31 · Panoramas, hotspots and capture
+
+Local 2:1 interactive panorama viewing, optional JPG/PNG GPano, text hotspots and up to 10 scenes with jump hotspots and image-carrying packages. Serial 2K/4K JPG/PNG capture accepts 1-10 saved human views with per-view display and lighting settings; optional ordered previous/next navigation, preview and explicit download. P27 applying unchanged default dimension display settings no longer adds history, clears redo or rewrites autosave.
+
+Source [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65). Final local evidence: **575 full frontend tests, 18 related Python tests and 76 browser checks**. The browser total includes 58 prior checks and 18 batch-capture checks; overlapping rounds are not added. The 812-Python/555-frontend baseline predates these changes and remains historical; there was no final full Python rerun. The second-source rejection uses fault injection to test failure isolation. [Scope and evidence](docs/updates-2026-10-31-panorama.md).
+
+Local static images/packages only: no hosting, accounts/permissions, web sharing, automatic room viewpoint choice, live model updates or project-bound panorama storage. Ordered navigation is not doorway placement or verified passage. Limits: 32MB per image, 10 scenes/64MB images, 92MB input package; download before refresh. The standalone viewer does not infer north/GPS or interpret external crop/orientation metadata. Audio/MP4, offline rendering and the remaining P26 roadmap are still open.
+
+![Multiple panorama scenes and a jump marker](screenshots/p26-panorama-tour.png)
+
+## Earlier update · 2026-10-30 · Drawing, walkthroughs, dimensions and quotes
 
 - **P15:** individual wall heights/splitting and arbitrary-angle straight/circular-arc walls with basic hosted openings, real geometry, rooms/materials and project reuse.
 - **P26:** entry interior → living room → selected rooms through actual doors; manual points, bounded avoidance, room looks/pauses and optional temporary door opening/restoration. Silent 720p WebM recording/preview/download and 2K/4K single-point JPG/PNG panoramas.

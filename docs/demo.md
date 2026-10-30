@@ -3,6 +3,17 @@
 **English** | [中文](demo.zh-CN.md)
 
 
+## 2026-10-31 · View, connect and capture panoramas
+
+Source [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65); [scope and evidence](updates-2026-10-31-panorama.md).
+
+1. In 3D open the tour shortcut, export a panorama and drag/zoom in the interactive viewer; GPano is optional.
+2. Expand text hotspots, click to add notes, edit/delete or undo, then export an image-carrying hotspot package.
+3. Create a multi-scene tour, add images/single-image packages, choose entry/arrival views and assign hotspot destinations in the list.
+4. Save human views as bookmarks, select 1-10 in batch capture and optionally add ordered navigation. Generate, inspect, then explicitly download. Cancel/failure retains the prior result; save the package before refresh.
+
+![Saved-human-view capture and explicit download](../screenshots/p26-panorama-capture.png)
+
 ## 2026-10-30 · Entry-to-room tours, dimensions and quotes
 
 Source [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf); [scope and evidence](updates-2026-10-30-design.md).

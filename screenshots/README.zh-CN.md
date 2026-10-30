@@ -3,6 +3,20 @@
 [English](README.md) | **中文**
 
 
+## 2026-10-31 · 全景与批量采集
+
+源码 [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65); [范围与验证](../docs/updates-2026-10-31-panorama.zh-CN.md).
+
+![多站位全景与跳转编号](p26-panorama-tour.png)
+
+![本机文字热点编辑](p26-panorama-hotspots.png)
+
+![已保存人视批量采集与显式下载](p26-panorama-capture.png)
+
+![390px全景批量采集](p26-panorama-capture-narrow.png)
+
+两种语言共用生成验收场景的PNG，说明分别翻译；不复制源码、用户工程、全景文件包或模型素材。
+
 ## 2026-10-30 · 设计功能材料
 
 源码[0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf)；[范围与验证](../docs/updates-2026-10-30-design.zh-CN.md)。新增P15/P26/P27/P28图片均为隔离验收场景的实际运行截图，两种语言共用PNG并分别翻译说明。不镜像源码、用户工程、CAD文件、模型/贴图或录像包；源码侧测试录像单独记录，合成场景不证明独立真实识别精度。

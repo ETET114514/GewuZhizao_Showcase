@@ -3,6 +3,17 @@
 [English](demo.md) | **中文**
 
 
+## 2026-10-31 · 查看、串联与批量采集全景
+
+源码 [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65); [范围与验证](updates-2026-10-31-panorama.zh-CN.md).
+
+1. 三维“漫游录像”导出单站全景，使用交互查看拖动/缩放；导出可选GPano。
+2. 展开文字热点，点选添加说明、编辑/删除或撤销，导出含图片的热点包。
+3. 建立多站位漫游，添加图片/单张包，指定起始站及入场朝向，在热点列表设跳转目标。
+4. 在命名视角保存人视，再在批量采集区选1～10个；按需添加顺序跳转。生成后查看，显式下载。取消或失败保留上次结果，刷新前保存文件包。
+
+![已保存人视批量采集与显式下载](../screenshots/p26-panorama-capture.png)
+
 ## 2026-10-30 · 入户连续带看、尺寸与报价
 
 源码[0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf)；[范围与验证](updates-2026-10-30-design.zh-CN.md)。

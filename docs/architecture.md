@@ -3,6 +3,12 @@
 **English** | [中文](architecture.zh-CN.md)
 
 
+## 2026-10-31 · Independent panorama packages and restorable capture
+
+Source [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65); [scope and evidence](updates-2026-10-31-panorama.md).
+
+GPano is inserted without recompressing the image. Text/jump hotspots attach by spherical direction; packages validate IDs, versions, input budgets and target references, with explicit single-image packages taking priority over temporary drafts. Serial capture freezes motion, snapshots its queue and restores the camera on cancel/failure. Results remain separate from model projects. Unchanged P27 settings retain the document, redo and autosave identity.
+
 ## 2026-10-30 · Geometry-linked design intent and reversible tour scenes
 
 Source [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf). Parameterized straight/arc walls keep hosted openings and stable object IDs. Dimensions persist anchor intent rather than stale numeric lengths, recompute from current geometry/scale and migrate hosts on split; unresolved references do not keep old measurements. Guided playback uses an optional temporary open-door scene and restores the original project/camera. Video and panoramic captures restore renderer state. Quantities are derived from current geometry; the project stores pricing choices rather than frozen totals. [Scope and evidence](updates-2026-10-30-design.md).
@@ -125,4 +131,4 @@ Authored arc/cubic controls and height grids produce derived meshes clipped to a
 
 Section caps reconstruct actual intersection loops, preserve nested holes and combine material-split faces by logical solid. Rotated/multiple planes participate in cap geometry and picking. Open meshes report unclosed contours; they are not treated as closed solids. Brand metadata preserves source provenance and binds catalog records to model content hashes; atomic local imports and project-carried resources do not imply an online vendor connection.
 
-Current source: [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). Recorded verification: 437 full Node tests, a 517-test full Python snapshot and 80 final relevant Python checks, with overlapping sets not added. New/original P35 and existing ceiling/cove browser workflows passed, including narrow layout, 4K and recovery. See [current scope and verification](updates-2026-10-27-p35.md).
+P35 checkpoint source: [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). Recorded verification: 437 full Node tests, a 517-test full Python snapshot and 80 final relevant Python checks, with overlapping sets not added. New/original P35 and existing ceiling/cove browser workflows passed, including narrow layout, 4K and recovery. See [P35 checkpoint scope and verification](updates-2026-10-27-p35.md).

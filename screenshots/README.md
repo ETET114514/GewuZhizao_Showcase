@@ -3,6 +3,20 @@
 **English** | [中文](README.zh-CN.md)
 
 
+## 2026-10-31 · Panoramas and batch capture
+
+Source [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65); [scope and evidence](../docs/updates-2026-10-31-panorama.md).
+
+![Multiple panorama scenes and a jump marker](p26-panorama-tour.png)
+
+![Local text hotspot editing](p26-panorama-hotspots.png)
+
+![Saved-human-view capture and explicit download](p26-panorama-capture.png)
+
+![Panorama batch capture at 390 px](p26-panorama-capture-narrow.png)
+
+Both languages share PNGs from generated acceptance scenes with translated descriptions. No source, user projects, panorama packages or model assets are mirrored.
+
 ## 2026-10-30 · Design checkpoint materials
 
 Source [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf); [scope and evidence](../docs/updates-2026-10-30-design.md). New P15/P26/P27/P28 images are actual isolated acceptance screenshots. Both languages share PNG assets with translated captions. No source, user projects, CAD files, model/texture assets or video packages are mirrored. Source-side videos remain separately documented; these synthetic scenes do not establish independent recognition accuracy.
