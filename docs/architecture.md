@@ -2,6 +2,15 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
+## 2026-10-31 · P26 and P13 closeout · Project resources, isolated sharing and deterministic output
+
+Source [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [scope and evidence](updates-2026-10-31-closeout.md).
+
+Panoramas/audio are project-carried SHA256 resources. Geometry/view signatures flag stale captures; recapture preserves scenes/hotspots. The sharing-only listener omits editor tokens/project APIs; salted PBKDF2 passwords, expiry and revocation are checked server-side. Sequential JPEG frame jobs encode MP4 locally with FFmpeg and clean up on cancellation/completion. P13/P27 share finish boundaries and linked intent, recomputing after geometry changes rather than retaining stale numbers.
+
+The dated sections below retain historical snapshots and do not override this current status.
+
+
 
 ## 2026-10-31 · Independent panorama packages and restorable capture
 

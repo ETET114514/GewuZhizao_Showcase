@@ -2,6 +2,23 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-10-31 · P26 and P13 closeout
+
+Source [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [scope and evidence](../docs/updates-2026-10-31-closeout.md).
+
+![Video clips, audio and deterministic MP4](p26-production.png)
+
+![Video production at 390 px](p26-production-narrow.png)
+
+![Read-only password panorama sharing and jumps at 390 px](p26-share-narrow.png)
+
+![Finish faces, height conventions and linked wall lengths](p13-wall-measurements.png)
+
+![Wall measurement conventions at 390 px](p13-wall-measurements-narrow.png)
+
+Five PNGs come from synthetic empty-room acceptance scenes and are shared by both languages. No real user plans, project packages, audio/video or model resources are mirrored.
+
+
 
 ## 2026-10-31 · Panoramas and batch capture
 

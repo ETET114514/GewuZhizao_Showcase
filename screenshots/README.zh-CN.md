@@ -2,6 +2,23 @@
 
 [English](README.md) | **中文**
 
+## 2026-10-31 · P26与P13整项收尾
+
+源码 [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [范围与证据](../docs/updates-2026-10-31-closeout.zh-CN.md).
+
+![视频剪辑、音轨和逐帧MP4](p26-production.png)
+
+![390px视频制作](p26-production-narrow.png)
+
+![390px只读密码全景分享与跳转](p26-share-narrow.png)
+
+![完成面、标高与关联墙长尺寸](p13-wall-measurements.png)
+
+![390px墙长施工口径](p13-wall-measurements-narrow.png)
+
+五张截图来自合成空房间验收，两种语言共用PNG；无真实用户图纸、工程包、音视频或模型资源镜像。
+
+
 
 ## 2026-10-31 · 全景与批量采集
 

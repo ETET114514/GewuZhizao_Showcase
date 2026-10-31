@@ -2,8 +2,23 @@
 
 **English** | [中文](features.zh-CN.md)
 
+## 2026-10-31 · P26 and P13 closeout · Current features and boundaries
 
-## Current panorama checkpoint · 2026-10-31
+Source [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [scope and evidence](updates-2026-10-31-closeout.md).
+
+P26 local/self-hosted delivery adds automatic room viewpoints, project-carried panoramas/hotspots/recipes and explicit model recapture preserving scene identity. A separate read-only service provides optional passwords, server expiry and revocation. Ordered/trimmed clips, one local audio track with offset/volume and deterministic 720p/1080p, 24/30fps H.264/AAC MP4 use preview followed by explicit download.
+
+P13 closes its established orthogonal room-side scope: global → room → wall-side finish thickness, finish-face net lengths, horizontal height sections/full-band continuous solid lengths and datum. P27 stores linked dimension intent rather than cached numbers, with batch deduplication, split migration, invalid references and shared units. Relevant project resources/settings support history, recovery and ZIP transfer; measurement snapshots export as CSV/JSON.
+
+The current inventory retains 17 future directions: 13 with corresponding main workflows and 4 without the listed target workflow. No completion percentage is calculated. P26 local/self-hosted and P13 established orthogonal measurement scopes are removed from the pending list.
+
+Sharing defaults to loopback and supports a separate network interface/fixed port/public origin configuration; no hosted public deployment or team-account service is supplied. Recapture is explicit and published shares remain snapshots; ordered hotspots do not certify passage. MP4 samples existing real-time lighting, rather than offline ray tracing or a professional multitrack editor. P13 finish thickness defines a manual calculation boundary within orthogonal wall sides; nonorthogonal finishes, full building levels and construction PDF/DXF sets remain future scope.
+
+The dated sections below retain historical snapshots and do not override this current status.
+
+
+
+## Earlier panorama checkpoint (before closeout) · 2026-10-31
 
 Source [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65); [scope and verification](updates-2026-10-31-panorama.md). Local 2:1 interactive panorama viewing, optional JPG/PNG GPano, text hotspots and up to 10 scenes with jump hotspots and image-carrying packages. Serial 2K/4K JPG/PNG capture accepts 1-10 saved human views with per-view display and lighting settings; optional ordered previous/next navigation, preview and explicit download. P27 applying unchanged default dimension display settings no longer adds history, clears redo or rewrites autosave.
 
@@ -30,7 +45,7 @@ Updated: 2026-10-31. This page separates current implementation from future plan
 | Module | Implemented | Current limitations |
 | --- | --- | --- |
 | P15 wall authoring | Heights, physical splitting, arbitrary-angle straight/arc walls, basic hosted openings, actual rooms/materials/persistence | Full CAD constraints and specialized curved-wall detailing pending |
-| P26 presentation | Existing guided tours/video; 2K/4K panoramas, interactive viewer, GPano, text/jump hotspots, multi-scene packages and saved-human-view capture | Local snapshots; no hosted sharing/automatic viewpoint choice/live updates; ordered jumps do not validate passage |
+| P26 presentation | Walking/guided tours, panoramas/GPano/hotspots/scenes, room/saved-view capture, project resources/explicit updates, password/expiry/revocable read-only shares and clipped audio MP4 | Local/self-hosted; public reachability needs deployment; no offline ray tracing/professional multitrack editing or certified jump passage |
 | P27 dimension intent | Interior region scans, door/window positioning, associated/fixed dimensions, units/offsets/history/geometry and scale updates, split migration | Structure/region reference distances, not finish-surface certified construction sets |
 | P28 basic quantities/quotes | Floors/wall references/cabinet projection or rectangular-board area/items; rates/loss/inclusion/totals and CSV | Complex boards pause area pricing; no procurement nesting/hardware/formal contracts |
 | P21 local CAD/templates | Seven skeletons/personal reuse, CAD reference display, confirmed centerline/boundary walls, opening symbols and room-name text; shared 3D/history/persistence | Candidates need review; complete CAD, DWG, arbitrary symbols and independent real-data generalization are open |
@@ -76,6 +91,7 @@ Updated: 2026-10-31. This page separates current implementation from future plan
 | Saving and undo | Preview/cancel/apply, latest 50 undo/redo steps, independent local manual versions, atomic autosave/recovery of applied edits including plan/imported GLB/applied uploaded materials | Unapplied forms are not restored; undo stack restarts after reopening/recovery; read-only saved-version comparison and portable ZIP are implemented; no cloud sync |
 | Project search | Name current project/rename saved versions, thumbnails, search by name/plan filename/version | Up to 100 matches; local management only |
 | Workflow U01–U05 | Same workbench top 2D/3D switch, five shared tool groups/property positions; collapsible 3D preview/2D camera map; furniture/kitchen axis/plane/rotation handles; unified apply/cancel/Esc, unapplied/unchanged-edit protection | Handles cover furniture/general groups/kitchens, general groups support 2D dragging; kitchens remain orthogonal. P16 adds mixed/nested groups, cross-object selection and multi-segment paths subject to object constraints. Auxiliary views start collapsed; 2D zoom/scroll and 3D camera are retained separately; copy/remove reflect existing object scope |
+| P13 shared measurement | Inherited finish thickness/net lengths, height sections/continuous solid bands/datum, linked P27 dimensions/deduplication/split migration, CSV/JSON and project transfer | Existing orthogonal room-side scope; complete construction sets, building levels and nonorthogonal finishes remain future scope |
 
 ## Planned, unimplemented or awaiting expansion
 
@@ -89,14 +105,14 @@ Updated: 2026-10-31. This page separates current implementation from future plan
 | Drawing/model exchange | Dimensioned PNG/PDF plans, GLB/glTF export, DXF/DWG export and DWG import; bounded DXF import is implemented |
 | Recognition generalization | Independent real complete annotations, angled/complex-symbol structure writeback, measured generalization and probability calibration; image-copy correction/OCR/complete annotations/evaluation tools are implemented |
 | Project management | Persistent full history and cloud sync; version comparison, packaged migration, names/thumbnails/search/recovery/redo implemented |
-| Professional delivery | Complete elevations/sections/construction sets, finish-surface/level systems, manufacturing/procurement BOM and formal quotes; P27 dimension intent and P28 basic quantities/reference quotes are implemented |
-| Rendering/sharing | Multiple indirect bounces, IES, multilevel/web sharing, automatic viewpoint choice/live updates and MP4 editing; P26 WebM, GPano, hotspots/multi-scene packages and saved-human-view capture are implemented |
+| Professional delivery | Complete elevations/sections/construction sets, full building levels/nonorthogonal finishes, manufacturing/procurement BOM and formal quotes; P13 orthogonal finish/height wall lengths, linked P27 dimensions and P28 basic quotes are implemented |
+| Rendering/sharing | Multiple indirect bounces, IES, multilevel, hosted cloud/team accounts, automatic background recapture and professional multitrack editing; local permissioned sharing, room viewpoints, explicit updates and deterministic MP4 are implemented |
 | Cloud/intelligent assistance | Cloud/collaboration, new-model addition, automatic turning/lifting/tilting routes and generative style assistance; finite existing-furniture plans/walking/fixed-pose routing are implemented |
 
 These are development directions, not current deliverables. The present focus remains the interior editing workflow.
 
 Current implementation and separately scoped extensions are listed above; completed subscopes do not imply every product-specific variant is implemented.
 
-Current panorama release: [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65), [panorama scope](updates-2026-10-31-panorama.md). Earlier design release: [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf), [design scope](updates-2026-10-30-design.md). Earlier CAD release: [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e), [scope and verification](updates-2026-10-30.md). Earlier P35 summary corresponds to New commit [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). See [earlier P35 verification](updates-2026-10-27-p35.md). [2026-10-26](updates-2026-10-26.md) and [2026-10-25](updates-2026-10-25.md) retain their historical scope; [2026-10-24](updates-2026-10-24.md), [2026-10-23](updates-2026-10-23.md), [2026-10-20](updates-2026-10-20.md) and [2026-10-19](updates-2026-10-19.md) retain historical verification.
+Current closeout release: [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9), [scope](updates-2026-10-31-closeout.md). Earlier panorama release: [b9ee167](https://github.com/ETET114514/GewuZhizaoNew/commit/b9ee167b494268e74a54c2e242c904004dbced65), [panorama scope](updates-2026-10-31-panorama.md). Earlier design release: [0f28b3e](https://github.com/ETET114514/GewuZhizaoNew/commit/0f28b3e043333f733bcf8c89ca6fc11f0b6eb1cf), [design scope](updates-2026-10-30-design.md). Earlier CAD release: [d9338b5](https://github.com/ETET114514/GewuZhizaoNew/commit/d9338b5dd8194e8acb36768fa068e6626959531e), [scope and verification](updates-2026-10-30.md). Earlier P35 summary corresponds to New commit [99882a8](https://github.com/ETET114514/GewuZhizaoNew/commit/99882a803e649666153e617bcf2b132661040c9d). See [earlier P35 verification](updates-2026-10-27-p35.md). [2026-10-26](updates-2026-10-26.md) and [2026-10-25](updates-2026-10-25.md) retain their historical scope; [2026-10-24](updates-2026-10-24.md), [2026-10-23](updates-2026-10-23.md), [2026-10-20](updates-2026-10-20.md) and [2026-10-19](updates-2026-10-19.md) retain historical verification.
 
 [Back to project home](../README.md)

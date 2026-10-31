@@ -2,6 +2,11 @@
 
 **English** | [中文](NOTICE.zh-CN.md)
 
+## 2026-10-31 · P26 and P13 closeout
+
+Source [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [scope and evidence](docs/updates-2026-10-31-closeout.md). Five new PNGs are actual acceptance captures of generated empty rooms, covering P13 finish/height measurements and P26 production/read-only sharing. Only summaries/screenshots are copied; test tones, MP4s, project ZIPs, panorama packages and source remain in New.
+
+
 
 ## 2026-10-31 · Panorama acceptance materials
 

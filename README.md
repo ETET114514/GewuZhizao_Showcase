@@ -18,7 +18,19 @@ This repository presents project documentation, actual application screenshots a
 
 *An actual floor plan reconstructed as a 3D scene. This image comes from the running project at real-time preview quality.*
 
-## Latest update · 2026-10-31 · Panoramas, hotspots and capture
+## Latest update · P26 and P13 closeout
+
+P26 local/self-hosted delivery adds automatic room viewpoints, project-carried panoramas/hotspots/recipes and explicit model recapture preserving scene identity. A separate read-only service provides optional passwords, server expiry and revocation. Ordered/trimmed clips, one local audio track with offset/volume and deterministic 720p/1080p, 24/30fps H.264/AAC MP4 use preview followed by explicit download.
+
+P13 closes its established orthogonal room-side scope: global → room → wall-side finish thickness, finish-face net lengths, horizontal height sections/full-band continuous solid lengths and datum. P27 stores linked dimension intent rather than cached numbers, with batch deduplication, split migration, invalid references and shared units. Relevant project resources/settings support history, recovery and ZIP transfer; measurement snapshots export as CSV/JSON.
+
+Source [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9). Final P13-stage evidence: **598 full frontend tests and 60 related Python tests**, with **13 new browser groups and the existing P13 12/P27 18 groups**. The earlier P26 stage has 585 frontend/56 related Python tests, 13 new groups and existing panorama 76/video 15 groups. Stages and subsets overlap and are not added. [Scope and evidence](docs/updates-2026-10-31-closeout.md).
+
+Sharing defaults to loopback and supports a separate network interface/fixed port/public origin configuration; no hosted public deployment or team-account service is supplied. Recapture is explicit and published shares remain snapshots; ordered hotspots do not certify passage. MP4 samples existing real-time lighting, rather than offline ray tracing or a professional multitrack editor. P13 finish thickness defines a manual calculation boundary within orthogonal wall sides; nonorthogonal finishes, full building levels and construction PDF/DXF sets remain future scope.
+
+![Video clips, audio and deterministic MP4](screenshots/p26-production.png)
+
+## Earlier update · 2026-10-31 · Panoramas, hotspots and capture (before closeout)
 
 Local 2:1 interactive panorama viewing, optional JPG/PNG GPano, text hotspots and up to 10 scenes with jump hotspots and image-carrying packages. Serial 2K/4K JPG/PNG capture accepts 1-10 saved human views with per-view display and lighting settings; optional ordered previous/next navigation, preview and explicit download. P27 applying unchanged default dimension display settings no longer adds history, clears redo or rewrites autosave.
 

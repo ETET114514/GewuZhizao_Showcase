@@ -2,6 +2,11 @@
 
 [English](NOTICE.md) | **中文**
 
+## 2026-10-31 · P26与P13整项收尾
+
+源码 [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [范围与证据](docs/updates-2026-10-31-closeout.zh-CN.md). 本轮新增五张PNG为程序生成空房间中的真实验收画面，包含P13厚度/标高与P26成片/只读分享。仅复制概要和截图；测试音调、MP4、项目ZIP、全景包和源码仍仅在New中。
+
+
 
 ## 2026-10-31 · 全景验收素材
 

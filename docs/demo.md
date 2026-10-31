@@ -2,6 +2,18 @@
 
 **English** | [中文](demo.zh-CN.md)
 
+## 2026-10-31 · P26 and P13 closeout · Project panoramas, sharing, videos and wall measurements
+
+Source [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [scope and evidence](updates-2026-10-31-closeout.md).
+
+1. In 3D → tours, choose saved human views or automatic room viewpoints; generate and save a project panorama. Edit hotspots and save to the project; explicitly recapture after model changes.
+2. Select a project panorama, set optional password/1–720 hour expiry and publish. Verify in a separate browser; default links are local and external service needs deployment. Revoke from the list.
+3. In video production enter start/end seconds per line, choose audio/offset/volume, 720p/1080p and 24/30fps; generate, preview and download MP4. Save the route before saving production settings.
+4. In Measure → wall measurement conventions, choose structure/finish, thickness inheritance and height section/band/datum, then preview/apply. Save certain spans as P27 dimensions or download CSV/JSON; use project/ZIP saving for continued editing.
+
+The dated sections below retain historical snapshots and do not override this current status.
+
+
 
 ## 2026-10-31 · View, connect and capture panoramas
 
