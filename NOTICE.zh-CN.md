@@ -2,6 +2,12 @@
 
 [English](NOTICE.md) | **中文**
 
+## 2026-11-07 · 本机渲染与模型/平面交付
+
+源码 [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [素材与验证](docs/updates-2026-11-07-render-exchange.zh-CN.md)
+
+新增三张PNG仅来自独立合成验收工程；两种语言共用。来源为New中的`output/p20-model-export/plan-paper-{desktop,mobile}.png`及`output/render-studio/full-render.png`。不携带用户户型、源码、模型/贴图/HDR或工程/导出包，不改变既有素材许可。
+
 ## 2026-10-31 · P26与P13整项收尾
 
 源码 [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [范围与证据](docs/updates-2026-10-31-closeout.zh-CN.md). 本轮新增五张PNG为程序生成空房间中的真实验收画面，包含P13厚度/标高与P26成片/只读分享。仅复制概要和截图；测试音调、MP4、项目ZIP、全景包和源码仍仅在New中。

@@ -2,6 +2,12 @@
 
 **English** | [中文](NOTICE.zh-CN.md)
 
+## 2026-11-07 · Local rendering and model/plan delivery
+
+Source [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [Materials and evidence](docs/updates-2026-11-07-render-exchange.md)
+
+Three added PNGs come only from isolated synthetic acceptance projects and are shared by both languages. Sources in New: `output/p20-model-export/plan-paper-{desktop,mobile}.png` and `output/render-studio/full-render.png`. No user plans, source, models/textures/HDR or project/exchange packages are included; existing material licenses remain unchanged.
+
 ## 2026-10-31 · P26 and P13 closeout
 
 Source [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [scope and evidence](docs/updates-2026-10-31-closeout.md). Five new PNGs are actual acceptance captures of generated empty rooms, covering P13 finish/height measurements and P26 production/read-only sharing. Only summaries/screenshots are copied; test tones, MP4s, project ZIPs, panorama packages and source remain in New.

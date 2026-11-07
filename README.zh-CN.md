@@ -2,6 +2,18 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-07 · 本机渲染与模型/平面交付
+
+源码 [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [范围与验证](docs/updates-2026-11-07-render-exchange.zh-CN.md)
+
+P19本机路径追踪已使用独立Worker/OffscreenCanvas场景，支持多次反射、有限面光/聚光、本地HDRI、局部出图、保存视角批量、参数复用、暂停/继续和提前结束，记录实际/目标采样数。P20接入米制静态GLB/内嵌glTF、毫米制DXF轴线与实墙/房间/家具占地分层，以及A4/A3固定比例矢量PDF或带DPI的PNG；保留房间孔洞、门窗缺口和旋转家具矩形占地，标签避让轮廓。上次展示之后的源码更新还扩展家具，并加入墙体清理、批量布置和全局设计助手入口。
+
+这只是P19/P20已交付的子范围，并不表示整项完成。云渲染、IES、EXR、地理日照、跨会话成图历史、DWG、成套施工图与P27关联尺寸上图均未实现。家具导出为矩形占地，门窗仍是轴线，不含精细框型或开合符号；纸图非ASCII名称暂为Unicode转义，DXF保留原文。渲染要求本机WebGL2/浮点缓冲，图库仅本次会话保留。小型合成样例不能证明高清速度、摄影级画质或识别泛化。
+
+源码阶段验证：**666项全量Node、28项相关Python**通过；实际GLB/glTF往返、DXF/PDF/PNG下载、ezdxf/Pillow/pypdf独立读回、矢量比例尺、取消/失败恢复和390px布局通过。一次glTF下载等待超时，独立重跑通过，失败日志保留。此前渲染控制验收为660项Node/12项相关Python，含真实暂停/继续/提前结束；计数重叠，不累加。渲染样例为320×180/64次采样，另有16×16/1024次采样HDR与32×18/64次采样局部图验证，均非1920～3840px性能基准。本次展示同步检查文档、链接和素材来源，不声称重新运行源码测试套件。
+
+![固定比例平面导出](screenshots/plan-export.png)
+
 **从二维户型图，到可编辑的三维室内场景。**
 
 Browser-based floor plan recognition, editing and interior visualization.
@@ -10,7 +22,7 @@ Browser-based floor plan recognition, editing and interior visualization.
 
 本仓库公开项目介绍、实际运行截图和技术架构概览。当前演示版本通过本地服务运行，尚未提供公开在线体验地址。
 
-**项目状态：持续开发 · 展示更新：2026-10-31**
+**项目状态：持续开发 · 展示更新：2026-11-07**
 
 [功能与当前边界](docs/features.zh-CN.md) · [架构与工程设计](docs/architecture.zh-CN.md) · [演示导览](docs/demo.zh-CN.md) · [截图索引](screenshots/README.zh-CN.md)
 
@@ -18,7 +30,7 @@ Browser-based floor plan recognition, editing and interior visualization.
 
 *实际户型构建的三维场景。截图来自项目运行结果，当前为实时预览画质。*
 
-## 最新更新 · P26与P13整项收尾
+## 历史更新 · 2026-10-31 · P26与P13整项收尾
 
 P26本机与自托管版补齐房间自动选点、随项目保存的全景/热点/来源和保留站位身份的模型重采集，接入密码、服务端有效期和撤销的独立只读分享服务；视频可剪切/重排片段、配一条音轨并设置偏移/音量，逐帧生成720p/1080p、24/30fps H.264/AAC MP4，先预览再显式下载。
 

@@ -2,6 +2,18 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-07 · Local rendering and model/plan delivery
+
+Source [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [Scope and evidence](../docs/updates-2026-11-07-render-exchange.md)
+
+Three PNGs from isolated synthetic acceptance scenes: desktop/390px plan-export forms and a 320×180/64-sample path-traced image with remaining noise, not a high-resolution quality benchmark. Both languages share these assets.
+
+![Plan export](plan-export.png)
+
+![Narrow export form](plan-export-narrow.png)
+
+![Small sampling acceptance image](render-sample.png)
+
 ## 2026-10-31 · P26 and P13 closeout
 
 Source [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [scope and evidence](../docs/updates-2026-10-31-closeout.md).

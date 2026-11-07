@@ -2,6 +2,18 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-07 · 本机渲染与模型/平面交付
+
+源码 [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [范围与验证](../docs/updates-2026-11-07-render-exchange.zh-CN.md)
+
+三张图片来自独立合成验收场景：桌面/390px平面导出表单及320×180/64次采样的路径追踪图片（仍有噪点，非高清画质基准）。两种语言共用素材。
+
+![平面导出](plan-export.png)
+
+![窄屏导出](plan-export-narrow.png)
+
+![小图采样验收](render-sample.png)
+
 ## 2026-10-31 · P26与P13整项收尾
 
 源码 [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [范围与证据](../docs/updates-2026-10-31-closeout.zh-CN.md).
