@@ -2,19 +2,29 @@
 
 **English** | [中文](features.zh-CN.md)
 
+## 2026-11-10 · Project delivery, native CAD dimensions and geographic sunlight
+
+Source [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · Scope and evidence: [Project delivery, native CAD dimensions and geographic sunlight](updates-2026-11-10-delivery-sun.md)
+
+Project delivery now combines four recomputed schedules (room areas, furniture sizes/room assignment, openings and structural elements), searchable review lists, filtered CSV and offline HTML/JSON with a same-snapshot drawing/schedule ZIP. Drawing sets add optional project covers/directories; straight DXF dimensions can be native DIMENSION entities, retaining unit-aware numeric placeholders and graphic blocks. Geographic sunlight uses latitude/longitude, local date/time, an explicit UTC offset and drawing north, with 24 hourly samples, CSV/JSON records and preview/apply/cancel/history. Below-horizon direct sun is disabled.
+
+Source updates since the previous showcase also include arbitrary-angle structural/member transforms, visible-dimension reference sheets/drawing sets, labor/custom-fee/tax quote sheets and a persistent local render gallery. See dated source records; these earlier subscope tests are not claimed as rerun by this showcase update.
+
+These remain reference deliverables: exported CAD dimensions are not constrained to walls; arc/net conventions that differ from endpoint distance stay static. Schedules are not manufacturing/procurement BOMs or formal approvals. NOAA fractional-year solar positions are approximate geometric directions, without refraction/weather/timezone lookup or regulatory sunlight-duration/illuminance analysis. Ambient/HDRI/interior lighting remains separately controlled. No cloud collaboration or DWG completion is claimed.
+
+Source-stage final evidence: **692 full Node tests and 75 related Python tests**, plus real Edge workflows, 390px checks and independent read-back of native DXF entities, ZIP hashes/shared revisions and downloaded solar CSV/JSON. Earlier stage counts overlap and are not added; no full Python rerun. Showcase publication checks documentation, relative links, bilingual navigation and image provenance, without rerunning application suites.
+
 ## 2026-11-07 · Local rendering and model/plan delivery
 
 Source [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [Scope and evidence](updates-2026-11-07-render-exchange.md)
 
 Local P19 path tracing now uses an isolated Worker/OffscreenCanvas scene, multiple light bounces, finite area/spot lights, local HDRI, region rendering, saved-view batches, reusable recipes, pause/resume and early finish with actual/target sample metadata. P20 exports static meter-based GLB/embedded glTF, millimeter DXF axes and wall/room/furniture footprint layers, plus fixed-scale A4/A3 vector PDF or DPI-tagged PNG. Room holes, opening gaps and rotated furniture envelopes are retained; labels avoid outlines. Earlier source changes since the previous showcase also expanded furniture and added wall cleanup, batch arrangement and a globally accessible design assistant.
 
-
-
 These are delivered subscopes, not completion of all P19/P20 work. No cloud renderer, IES, EXR import, geographic sun study, persistent render history, DWG, construction drawing sets or P27-linked sheet dimensions. Furniture exports are envelopes; door/window symbols remain axes, not detailed frames/swings. Non-ASCII paper labels currently use Unicode escapes; DXF preserves original text. Rendering requires local WebGL2/float buffers; the gallery is session-only. Small synthetic samples do not establish high-resolution speed, photorealistic quality or recognition generalization.
 
 Source-stage evidence: **666 full Node tests and 28 related Python tests**; actual GLB/glTF round trips, DXF/PDF/PNG downloads, independent ezdxf/Pillow/pypdf reads, vector scale bars, cancellation/failure restoration and 390px layouts passed. One glTF download run timed out; the isolated retry passed and the failed log is retained. Earlier render-control acceptance reported 660 Node/12 related Python tests and real pause/resume/early-finish checks. Counts overlap and are not summed. The render sample is 320×180/64 samples; separate 16×16/1024-sample HDR and 32×18/64-sample region checks are small-scene evidence, not 1920–3840px benchmarks. This showcase synchronization checks documentation, links and asset provenance; it does not rerun the source test suites.
 
-Dated sections below are historical snapshots; this section is the latest status.
+Earlier dated sections preserve their historical scope; see the newest dated section above for current status.
 
 ## 2026-10-31 · P26 and P13 closeout · Current features and boundaries
 
@@ -29,8 +39,6 @@ The current inventory retains 17 future directions: 13 with corresponding main w
 Sharing defaults to loopback and supports a separate network interface/fixed port/public origin configuration; no hosted public deployment or team-account service is supplied. Recapture is explicit and published shares remain snapshots; ordered hotspots do not certify passage. MP4 samples existing real-time lighting, rather than offline ray tracing or a professional multitrack editor. P13 finish thickness defines a manual calculation boundary within orthogonal wall sides; nonorthogonal finishes, full building levels and construction PDF/DXF sets remain future scope.
 
 The dated sections below retain historical snapshots and do not override this current status.
-
-
 
 ## Earlier panorama checkpoint (before closeout) · 2026-10-31
 

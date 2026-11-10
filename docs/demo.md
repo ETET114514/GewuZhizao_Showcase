@@ -2,6 +2,18 @@
 
 **English** | [中文](demo.zh-CN.md)
 
+## 2026-11-10 · Project delivery, native CAD dimensions and geographic sunlight
+
+Source [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · Scope and evidence: [Project delivery, native CAD dimensions and geographic sunlight](updates-2026-11-10-delivery-sun.md)
+
+Project delivery now combines four recomputed schedules (room areas, furniture sizes/room assignment, openings and structural elements), searchable review lists, filtered CSV and offline HTML/JSON with a same-snapshot drawing/schedule ZIP. Drawing sets add optional project covers/directories; straight DXF dimensions can be native DIMENSION entities, retaining unit-aware numeric placeholders and graphic blocks. Geographic sunlight uses latitude/longitude, local date/time, an explicit UTC offset and drawing north, with 24 hourly samples, CSV/JSON records and preview/apply/cancel/history. Below-horizon direct sun is disabled.
+
+Restart the local service and refresh. Calibrate/open a synthetic project; File → drawing set enables cover/native DXF dimensions; File → project schedules filters/reviews/exports lists or the combined package. In 3D, Design tools → lighting → sunlight opens location/date calculation; choose an hour, preview, then apply or cancel. Use your actual north direction and explicit UTC offset; examples are not automatic geolocation.
+
+These remain reference deliverables: exported CAD dimensions are not constrained to walls; arc/net conventions that differ from endpoint distance stay static. Schedules are not manufacturing/procurement BOMs or formal approvals. NOAA fractional-year solar positions are approximate geometric directions, without refraction/weather/timezone lookup or regulatory sunlight-duration/illuminance analysis. Ambient/HDRI/interior lighting remains separately controlled. No cloud collaboration or DWG completion is claimed.
+
+Source-stage final evidence: **692 full Node tests and 75 related Python tests**, plus real Edge workflows, 390px checks and independent read-back of native DXF entities, ZIP hashes/shared revisions and downloaded solar CSV/JSON. Earlier stage counts overlap and are not added; no full Python rerun. Showcase publication checks documentation, relative links, bilingual navigation and image provenance, without rerunning application suites.
+
 ## 2026-11-07 · Local rendering and model/plan delivery
 
 Source [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [Scope and evidence](updates-2026-11-07-render-exchange.md)
@@ -14,7 +26,7 @@ These are delivered subscopes, not completion of all P19/P20 work. No cloud rend
 
 Source-stage evidence: **666 full Node tests and 28 related Python tests**; actual GLB/glTF round trips, DXF/PDF/PNG downloads, independent ezdxf/Pillow/pypdf reads, vector scale bars, cancellation/failure restoration and 390px layouts passed. One glTF download run timed out; the isolated retry passed and the failed log is retained. Earlier render-control acceptance reported 660 Node/12 related Python tests and real pause/resume/early-finish checks. Counts overlap and are not summed. The render sample is 320×180/64 samples; separate 16×16/1024-sample HDR and 32×18/64-sample region checks are small-scene evidence, not 1920–3840px benchmarks. This showcase synchronization checks documentation, links and asset provenance; it does not rerun the source test suites.
 
-Dated sections below are historical snapshots; this section is the latest status.
+Earlier dated sections preserve their historical scope; see the newest dated section above for current status.
 
 ## 2026-10-31 · P26 and P13 closeout · Project panoramas, sharing, videos and wall measurements
 
@@ -26,8 +38,6 @@ Source [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e
 4. In Measure → wall measurement conventions, choose structure/finish, thickness inheritance and height section/band/datum, then preview/apply. Save certain spans as P27 dimensions or download CSV/JSON; use project/ZIP saving for continued editing.
 
 The dated sections below retain historical snapshots and do not override this current status.
-
-
 
 ## 2026-10-31 · View, connect and capture panoramas
 

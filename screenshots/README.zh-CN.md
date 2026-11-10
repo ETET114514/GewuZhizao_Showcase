@@ -2,6 +2,26 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-10 · 资料交付、原生CAD尺寸与地理日光
+
+源码 [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · 范围与验证: [资料交付、原生CAD尺寸与地理日光](../docs/updates-2026-11-10-delivery-sun.zh-CN.md)
+
+本批交付四类重算清单（房间面积、家具尺寸/房间归属、门窗洞口及柱梁构件）、搜索/待校核筛选、筛选CSV及离线HTML/JSON，并与图纸组成同快照ZIP。图纸集新增可选项目封面/目录，直线DXF尺寸可选原生DIMENSION、单位数值占位符及图形块。地理日光按经纬度、当地日期时间、明确UTC时差和图上北向计算，支持24整点、CSV/JSON及预览/应用/取消/历史，地平线下关闭直射。
+
+四张实际合成验收截图：资料中心、封面目录、原生CAD导出设置、地点日期日光。展示界面和参考交付，不是客户成果或定量光照分析。
+
+当前仍为参考交付：导出CAD尺寸不与墙体约束关联，弧长/端点不等的净长口径保留静态；清单不是制造采购BOM或正式签审。NOAA分数年公式计算近似几何方向，不含折射/天气/时区检索或规范日照时数/照度分析；环境光/HDRI/室内灯另行控制。不据此宣布云协作或DWG等完整目标完成。
+
+源码阶段最终证据：**692项全量Node、75项相关Python**，以及实际Edge流程、390px与原生DXF/ZIP校验及共同修订/太阳位置CSV和JSON独立读回。更早各阶段数字有重叠，不相加；未跑全量Python。Showcase发布只检查文档、相对链接、双语导航与素材来源，不重新运行应用测试集。
+
+![项目资料中心](project-schedules.png)
+
+![地点与日期日光](geographic-sun.png)
+
+![封面与目录](drawing-cover.png)
+
+![原生CAD尺寸设置](native-cad.png)
+
 ## 2026-11-07 · 本机渲染与模型/平面交付
 
 源码 [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [范围与验证](../docs/updates-2026-11-07-render-exchange.zh-CN.md)
@@ -29,8 +49,6 @@
 ![390px墙长施工口径](p13-wall-measurements-narrow.png)
 
 五张截图来自合成空房间验收，两种语言共用PNG；无真实用户图纸、工程包、音视频或模型资源镜像。
-
-
 
 ## 2026-10-31 · 全景与批量采集
 

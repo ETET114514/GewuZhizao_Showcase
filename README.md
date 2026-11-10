@@ -2,6 +2,20 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-10 · Project delivery, native CAD dimensions and geographic sunlight
+
+Source [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · Scope and evidence: [Project delivery, native CAD dimensions and geographic sunlight](docs/updates-2026-11-10-delivery-sun.md)
+
+Project delivery now combines four recomputed schedules (room areas, furniture sizes/room assignment, openings and structural elements), searchable review lists, filtered CSV and offline HTML/JSON with a same-snapshot drawing/schedule ZIP. Drawing sets add optional project covers/directories; straight DXF dimensions can be native DIMENSION entities, retaining unit-aware numeric placeholders and graphic blocks. Geographic sunlight uses latitude/longitude, local date/time, an explicit UTC offset and drawing north, with 24 hourly samples, CSV/JSON records and preview/apply/cancel/history. Below-horizon direct sun is disabled.
+
+These remain reference deliverables: exported CAD dimensions are not constrained to walls; arc/net conventions that differ from endpoint distance stay static. Schedules are not manufacturing/procurement BOMs or formal approvals. NOAA fractional-year solar positions are approximate geometric directions, without refraction/weather/timezone lookup or regulatory sunlight-duration/illuminance analysis. Ambient/HDRI/interior lighting remains separately controlled. No cloud collaboration or DWG completion is claimed.
+
+Source-stage final evidence: **692 full Node tests and 75 related Python tests**, plus real Edge workflows, 390px checks and independent read-back of native DXF entities, ZIP hashes/shared revisions and downloaded solar CSV/JSON. Earlier stage counts overlap and are not added; no full Python rerun. Showcase publication checks documentation, relative links, bilingual navigation and image provenance, without rerunning application suites.
+
+![Project schedule center](screenshots/project-schedules.png)
+
+![Location/date sunlight](screenshots/geographic-sun.png)
+
 ## 2026-11-07 · Local rendering and model/plan delivery
 
 Source [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [Scope and evidence](docs/updates-2026-11-07-render-exchange.md)
@@ -22,7 +36,7 @@ GewuZhizao is an interior design tool prototype under active development. It bri
 
 This repository presents project documentation, actual application screenshots and an architecture overview. The current demo runs through a local service; a public online trial is not available.
 
-**Status: active development · Showcase updated: 2026-11-07**
+**Status: active development · Showcase updated: 2026-11-10**
 
 [Features and limitations](docs/features.md) · [Architecture](docs/architecture.md) · [Demo guide](docs/demo.md) · [Screenshot index](screenshots/README.md)
 

@@ -2,6 +2,18 @@
 
 [English](NOTICE.md) | **中文**
 
+## 2026-11-10 · 资料交付、原生CAD尺寸与地理日光
+
+源码 [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · 范围与验证: [资料交付、原生CAD尺寸与地理日光](docs/updates-2026-11-10-delivery-sun.zh-CN.md)
+
+本批交付四类重算清单（房间面积、家具尺寸/房间归属、门窗洞口及柱梁构件）、搜索/待校核筛选、筛选CSV及离线HTML/JSON，并与图纸组成同快照ZIP。图纸集新增可选项目封面/目录，直线DXF尺寸可选原生DIMENSION、单位数值占位符及图形块。地理日光按经纬度、当地日期时间、明确UTC时差和图上北向计算，支持24整点、CSV/JSON及预览/应用/取消/历史，地平线下关闭直射。
+
+新增四张PNG为隔离合成工程的实际验收截图，两种语言共用。源码路径：wall-recognition/output/project-schedules/desktop.png、p27-drawing-cover/render-1.png、native-dimensions/desktop.png及solar-position/desktop.png。没有复制客户图纸、完整源码、项目/交换包、贴图或模型素材，原有许可保持。太阳位置公式来源：https://gml.noaa.gov/grad/solcalc/solareqns.PDF 。
+
+当前仍为参考交付：导出CAD尺寸不与墙体约束关联，弧长/端点不等的净长口径保留静态；清单不是制造采购BOM或正式签审。NOAA分数年公式计算近似几何方向，不含折射/天气/时区检索或规范日照时数/照度分析；环境光/HDRI/室内灯另行控制。不据此宣布云协作或DWG等完整目标完成。
+
+源码阶段最终证据：**692项全量Node、75项相关Python**，以及实际Edge流程、390px与原生DXF/ZIP校验及共同修订/太阳位置CSV和JSON独立读回。更早各阶段数字有重叠，不相加；未跑全量Python。Showcase发布只检查文档、相对链接、双语导航与素材来源，不重新运行应用测试集。
+
 ## 2026-11-07 · 本机渲染与模型/平面交付
 
 源码 [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [素材与验证](docs/updates-2026-11-07-render-exchange.zh-CN.md)
@@ -11,8 +23,6 @@
 ## 2026-10-31 · P26与P13整项收尾
 
 源码 [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [范围与证据](docs/updates-2026-10-31-closeout.zh-CN.md). 本轮新增五张PNG为程序生成空房间中的真实验收画面，包含P13厚度/标高与P26成片/只读分享。仅复制概要和截图；测试音调、MP4、项目ZIP、全景包和源码仍仅在New中。
-
-
 
 ## 2026-10-31 · 全景验收素材
 

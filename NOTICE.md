@@ -2,6 +2,18 @@
 
 **English** | [中文](NOTICE.zh-CN.md)
 
+## 2026-11-10 · Project delivery, native CAD dimensions and geographic sunlight
+
+Source [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · Scope and evidence: [Project delivery, native CAD dimensions and geographic sunlight](docs/updates-2026-11-10-delivery-sun.md)
+
+Project delivery now combines four recomputed schedules (room areas, furniture sizes/room assignment, openings and structural elements), searchable review lists, filtered CSV and offline HTML/JSON with a same-snapshot drawing/schedule ZIP. Drawing sets add optional project covers/directories; straight DXF dimensions can be native DIMENSION entities, retaining unit-aware numeric placeholders and graphic blocks. Geographic sunlight uses latitude/longitude, local date/time, an explicit UTC offset and drawing north, with 24 hourly samples, CSV/JSON records and preview/apply/cancel/history. Below-horizon direct sun is disabled.
+
+Four added PNGs are actual captures of isolated synthetic acceptance projects, shared by both languages. Source paths: wall-recognition/output/project-schedules/desktop.png, p27-drawing-cover/render-1.png, native-dimensions/desktop.png and solar-position/desktop.png. No customer drawings, full source, project/exchange packages, textures or model assets are copied. Existing asset licenses remain unchanged. Solar formula attribution: https://gml.noaa.gov/grad/solcalc/solareqns.PDF .
+
+These remain reference deliverables: exported CAD dimensions are not constrained to walls; arc/net conventions that differ from endpoint distance stay static. Schedules are not manufacturing/procurement BOMs or formal approvals. NOAA fractional-year solar positions are approximate geometric directions, without refraction/weather/timezone lookup or regulatory sunlight-duration/illuminance analysis. Ambient/HDRI/interior lighting remains separately controlled. No cloud collaboration or DWG completion is claimed.
+
+Source-stage final evidence: **692 full Node tests and 75 related Python tests**, plus real Edge workflows, 390px checks and independent read-back of native DXF entities, ZIP hashes/shared revisions and downloaded solar CSV/JSON. Earlier stage counts overlap and are not added; no full Python rerun. Showcase publication checks documentation, relative links, bilingual navigation and image provenance, without rerunning application suites.
+
 ## 2026-11-07 · Local rendering and model/plan delivery
 
 Source [f913696](https://github.com/ETET114514/GewuZhizaoNew/commit/f913696701fd4c8e94aaea153ea14f6d65bb86b1). [Materials and evidence](docs/updates-2026-11-07-render-exchange.md)
@@ -11,8 +23,6 @@ Three added PNGs come only from isolated synthetic acceptance projects and are s
 ## 2026-10-31 · P26 and P13 closeout
 
 Source [77736ba](https://github.com/ETET114514/GewuZhizaoNew/commit/77736bac6b0e83db23a9c269ad21c66d09f9c1d9); [scope and evidence](docs/updates-2026-10-31-closeout.md). Five new PNGs are actual acceptance captures of generated empty rooms, covering P13 finish/height measurements and P26 production/read-only sharing. Only summaries/screenshots are copied; test tones, MP4s, project ZIPs, panorama packages and source remain in New.
-
-
 
 ## 2026-10-31 · Panorama acceptance materials
 
