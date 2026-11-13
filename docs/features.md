@@ -2,6 +2,21 @@
 
 **English** | [中文](features.zh-CN.md)
 
+## 2026-11-13 · P28 manufacturing references and local procurement
+
+Source [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28 manufacturing references and local procurement](updates-2026-11-13-p28.md)
+
+- Frozen quote versions retain source revisions and SHA-256, settings reuse, per-item/specification comparisons and complete HTML/CSV/JSON differences independent of UI filtering.
+- Material BOM confirmations expire when source geometry changes. Cabinet reconstruction and manual concave boards preserve through holes, top-face pockets, contour edging and depth-aware volume; circles use 64-sided geometry. CNY/USD/EUR/GBP/HKD use manually confirmed exchange rates and mixed tax/discount allocation.
+- Cover/contact deductions are limited to supported cuboids; overlapping contributors are unioned once and geometry fingerprints invalidate stale confirmations. Unsupported shapes require review.
+- Rectangular-blank guillotine planning compares up to 16 deterministic strategies within a fixed search budget, respects trim/kerf/rotation, and lists reusable/small offcuts. It does not guarantee the global optimum.
+- Frozen manufacturing packs include A4 vector PDF, dimensioned SVG, millimeter DXF with native linear dimensions and depth/source XData, feature/directory CSV, geometry JSON, stock SVG, piece labels and a per-file hash manifest. These are manufacturing references, not controller-ready CNC.
+- Local purchase drafts use frozen manufacturing demand; stock-sheet lines replace board-piece demand to prevent duplication within an order. Release, partial receive, return, re-receive and closure validate quantities, exact retry IDs and source state. Project history/save/reopen and complete CSV/HTML/ZIP exports retain source provenance.
+
+Remaining work includes arbitrary surface/solid deductions and external board reconstruction, multi-/back-face machining, manufacturer hardware/load checks, global irregular nesting and actual inventory, additional currency/tax rules, real identities/roles and shared approvals, online signatures, supplier ERP/payment and machine-specific CNC. Supplier/API/deployment, tooling and hardware documentation is still required for the external scope. Local approvals and entered actor names are not authenticated identities; the hash-linked event history is editable through project history and is not an immutable ledger.
+
+Validation on 2026-11-13: **737 full Node tests and 70 related Python tests passed in the final pre-push rerun**; this is not a full Python-suite run. Earlier acceptance in this development batch passed the new procurement browser workflow and five existing P28 browser flows sequentially, including narrow layouts, plus independent ZIP/SHA-256, DXF, CSV and PDF read-back. These browser/export checks were not rerun for Showcase publication. Earlier counts overlap and must not be added. One earlier parallel browser startup failure was retained; subsequent sequential runs passed.
+
 ## 2026-11-10 · Project delivery, native CAD dimensions and geographic sunlight
 
 Source [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · Scope and evidence: [Project delivery, native CAD dimensions and geographic sunlight](updates-2026-11-10-delivery-sun.md)

@@ -2,6 +2,12 @@
 
 **English** | [中文](NOTICE.zh-CN.md)
 
+## 2026-11-13 · P28 manufacturing references and local procurement
+
+Source [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28 manufacturing references and local procurement](docs/updates-2026-11-13-p28.md)
+
+This update adds only three self-produced synthetic acceptance captures: p28-custom-board.png, p28-stock-planning.png, p28-procurement.png. See the [screenshot index](screenshots/README.md) for source paths and captions. No full source, customer projects, commercial/purchase delivery packages, models or textures are copied; existing third-party asset licenses remain unchanged. Manufacturing-reference and local-procurement validation is scoped in the update record above.
+
 ## 2026-11-10 · Project delivery, native CAD dimensions and geographic sunlight
 
 Source [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · Scope and evidence: [Project delivery, native CAD dimensions and geographic sunlight](docs/updates-2026-11-10-delivery-sun.md)

@@ -2,6 +2,12 @@
 
 [English](NOTICE.md) | **中文**
 
+## 2026-11-13 · P28制造参考交付与本机采购收退货
+
+源码 [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28制造参考交付与本机采购收退货](docs/updates-2026-11-13-p28.zh-CN.md)
+
+本轮仅新增三张自行生成的合成验收截图：p28-custom-board.png, p28-stock-planning.png, p28-procurement.png。来源与说明见[截图索引](screenshots/README.zh-CN.md)。未复制完整源码、客户项目、合同/采购交付包、模型或贴图；既有第三方素材许可不变。制造参考和本机采购的验证范围见上方更新记录。
+
 ## 2026-11-10 · 资料交付、原生CAD尺寸与地理日光
 
 源码 [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · 范围与验证: [资料交付、原生CAD尺寸与地理日光](docs/updates-2026-11-10-delivery-sun.zh-CN.md)

@@ -2,6 +2,26 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-13 · P28 manufacturing references and local procurement
+
+Source [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28 manufacturing references and local procurement](../docs/updates-2026-11-13-p28.md)
+
+All three are actual captures of synthetic acceptance projects, shared by both languages; no real customer project is included.
+
+![Manual concave board with through hole and overlapping pockets](p28-custom-board.png)
+
+Manual concave board with through hole and overlapping pockets · [New: p28-custom-boards/desktop.png](https://github.com/ETET114514/GewuZhizaoNew/blob/7714f0486a557d35aa069b249a37d29947030ed6/wall-recognition/output/p28-custom-boards/desktop.png)
+
+![Bounded stock comparison and reusable offcut](p28-stock-planning.png)
+
+Bounded stock comparison and reusable offcut · [New: p28-stock-planning/desktop.png](https://github.com/ETET114514/GewuZhizaoNew/blob/7714f0486a557d35aa069b249a37d29947030ed6/wall-recognition/output/p28-stock-planning/desktop.png)
+
+![Closed local purchase with independent prices and receipt balances](p28-procurement.png)
+
+Closed local purchase with independent prices and receipt balances · [New: p28-procurement/desktop.png](https://github.com/ETET114514/GewuZhizaoNew/blob/7714f0486a557d35aa069b249a37d29947030ed6/wall-recognition/output/p28-procurement/desktop.png)
+
+Validation on 2026-11-13: **737 full Node tests and 70 related Python tests passed in the final pre-push rerun**; this is not a full Python-suite run. Earlier acceptance in this development batch passed the new procurement browser workflow and five existing P28 browser flows sequentially, including narrow layouts, plus independent ZIP/SHA-256, DXF, CSV and PDF read-back. These browser/export checks were not rerun for Showcase publication. Earlier counts overlap and must not be added. One earlier parallel browser startup failure was retained; subsequent sequential runs passed.
+
 ## 2026-11-10 · Project delivery, native CAD dimensions and geographic sunlight
 
 Source [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · Scope and evidence: [Project delivery, native CAD dimensions and geographic sunlight](../docs/updates-2026-11-10-delivery-sun.md)

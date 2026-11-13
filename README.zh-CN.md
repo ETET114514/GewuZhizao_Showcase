@@ -2,6 +2,20 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-13 · P28制造参考交付与本机采购收退货
+
+源码 [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28制造参考交付与本机采购收退货](docs/updates-2026-11-13-p28.zh-CN.md)
+
+P28现已串起冻结报价比较、材料制造核对、柜体板件与手工异形板、限定覆盖扣减、有限直切排版、绑定冻结来源的制造参考图、逐块标签，以及本机采购和收退货记录。采购单价独立于销售报价填写。完整P28仍未完成，P24整柜立面与装配深化尚未开始。
+
+余项包括任意曲面/实体扣减与外部板件重构、多面/背面加工、厂家五金与承载校核、全局异形套料与实际库存、更多币种税制、真实身份权限与多人审批、在线电子签章、供应商ERP/支付及机型专用CNC。外部范围仍需要供应商、接口、部署、刀具与五金资料。本机审批和录入的操作人不代表认证身份；哈希串联事件仍可随工程历史回退，不是不可篡改账本。
+
+2026-11-13验证：**推送前重新运行737项全量Node测试、70项相关Python测试，全部通过**；未声称全量Python测试。本开发批次此前已顺序通过新增采购浏览器流程及五项原有P28浏览器流程（含窄屏），并独立回读ZIP/SHA-256、DXF、CSV和PDF；Showcase发布未重跑这些浏览器/导出验收。此前测试数有重叠，不累加。更早并行浏览器启动失败的记录保留，后续顺序复验已通过。
+
+![有限直切方案比较与可复用余料](screenshots/p28-stock-planning.png)
+
+![独立采购价、收退货余额与本机结单](screenshots/p28-procurement.png)
+
 ## 2026-11-10 · 资料交付、原生CAD尺寸与地理日光
 
 源码 [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · 范围与验证: [资料交付、原生CAD尺寸与地理日光](docs/updates-2026-11-10-delivery-sun.zh-CN.md)
@@ -36,7 +50,7 @@ Browser-based floor plan recognition, editing and interior visualization.
 
 本仓库公开项目介绍、实际运行截图和技术架构概览。当前演示版本通过本地服务运行，尚未提供公开在线体验地址。
 
-**项目状态：持续开发 · 展示更新：2026-11-10**
+**项目状态：持续开发 · 展示更新：2026-11-13**
 
 [功能与当前边界](docs/features.zh-CN.md) · [架构与工程设计](docs/architecture.zh-CN.md) · [演示导览](docs/demo.zh-CN.md) · [截图索引](screenshots/README.zh-CN.md)
 

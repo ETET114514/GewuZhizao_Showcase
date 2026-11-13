@@ -2,6 +2,20 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-13 · P28 manufacturing references and local procurement
+
+Source [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28 manufacturing references and local procurement](docs/updates-2026-11-13-p28.md)
+
+P28 now connects frozen quote comparisons, material/manufacturing review, reconstructed cabinet boards and manual concave boards, limited cover deductions, bounded stock cutting, source-bound manufacturing references, piece labels and local purchase/receipt/return records. Purchase prices are entered independently of selling prices. Full P28 remains unfinished; P24 whole-cabinet elevations and assembly detailing have not started.
+
+Remaining work includes arbitrary surface/solid deductions and external board reconstruction, multi-/back-face machining, manufacturer hardware/load checks, global irregular nesting and actual inventory, additional currency/tax rules, real identities/roles and shared approvals, online signatures, supplier ERP/payment and machine-specific CNC. Supplier/API/deployment, tooling and hardware documentation is still required for the external scope. Local approvals and entered actor names are not authenticated identities; the hash-linked event history is editable through project history and is not an immutable ledger.
+
+Validation on 2026-11-13: **737 full Node tests and 70 related Python tests passed in the final pre-push rerun**; this is not a full Python-suite run. Earlier acceptance in this development batch passed the new procurement browser workflow and five existing P28 browser flows sequentially, including narrow layouts, plus independent ZIP/SHA-256, DXF, CSV and PDF read-back. These browser/export checks were not rerun for Showcase publication. Earlier counts overlap and must not be added. One earlier parallel browser startup failure was retained; subsequent sequential runs passed.
+
+![Bounded stock comparison and reusable offcut](screenshots/p28-stock-planning.png)
+
+![Closed local purchase with independent prices and receipt balances](screenshots/p28-procurement.png)
+
 ## 2026-11-10 · Project delivery, native CAD dimensions and geographic sunlight
 
 Source [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · Scope and evidence: [Project delivery, native CAD dimensions and geographic sunlight](docs/updates-2026-11-10-delivery-sun.md)
@@ -36,7 +50,7 @@ GewuZhizao is an interior design tool prototype under active development. It bri
 
 This repository presents project documentation, actual application screenshots and an architecture overview. The current demo runs through a local service; a public online trial is not available.
 
-**Status: active development · Showcase updated: 2026-11-10**
+**Status: active development · Showcase updated: 2026-11-13**
 
 [Features and limitations](docs/features.md) · [Architecture](docs/architecture.md) · [Demo guide](docs/demo.md) · [Screenshot index](screenshots/README.md)
 

@@ -2,6 +2,26 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-13 · P28制造参考交付与本机采购收退货
+
+源码 [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28制造参考交付与本机采购收退货](../docs/updates-2026-11-13-p28.zh-CN.md)
+
+三张均为合成验收工程的实际界面截图，两种语言共用图片；不含真实客户项目。
+
+![手工凹多边形板、通孔与重叠盲槽](p28-custom-board.png)
+
+手工凹多边形板、通孔与重叠盲槽 · [New: p28-custom-boards/desktop.png](https://github.com/ETET114514/GewuZhizaoNew/blob/7714f0486a557d35aa069b249a37d29947030ed6/wall-recognition/output/p28-custom-boards/desktop.png)
+
+![有限直切方案比较与可复用余料](p28-stock-planning.png)
+
+有限直切方案比较与可复用余料 · [New: p28-stock-planning/desktop.png](https://github.com/ETET114514/GewuZhizaoNew/blob/7714f0486a557d35aa069b249a37d29947030ed6/wall-recognition/output/p28-stock-planning/desktop.png)
+
+![独立采购价、收退货余额与本机结单](p28-procurement.png)
+
+独立采购价、收退货余额与本机结单 · [New: p28-procurement/desktop.png](https://github.com/ETET114514/GewuZhizaoNew/blob/7714f0486a557d35aa069b249a37d29947030ed6/wall-recognition/output/p28-procurement/desktop.png)
+
+2026-11-13验证：**推送前重新运行737项全量Node测试、70项相关Python测试，全部通过**；未声称全量Python测试。本开发批次此前已顺序通过新增采购浏览器流程及五项原有P28浏览器流程（含窄屏），并独立回读ZIP/SHA-256、DXF、CSV和PDF；Showcase发布未重跑这些浏览器/导出验收。此前测试数有重叠，不累加。更早并行浏览器启动失败的记录保留，后续顺序复验已通过。
+
 ## 2026-11-10 · 资料交付、原生CAD尺寸与地理日光
 
 源码 [0de6906](https://github.com/ETET114514/GewuZhizaoNew/commit/0de69064f7a98e5cab7dd4db0e9707ab3a6ce458) · 范围与验证: [资料交付、原生CAD尺寸与地理日光](../docs/updates-2026-11-10-delivery-sun.zh-CN.md)
