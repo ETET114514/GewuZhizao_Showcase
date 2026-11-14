@@ -2,6 +2,16 @@
 
 **English** | [中文](demo.zh-CN.md)
 
+## 2026-11-14 · Spatial tools, cabinet views and purchasing
+
+[Source 2c0bbbb](https://github.com/ETET114514/GewuZhizaoNew/commit/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da) · [Scope and evidence](updates-2026-11-14.md)
+
+Restart the local service and refresh the workbench. Under Draw plan → Plan review, open Functional zones, draw a polygon, preview and save; optionally add lamps or enable the 3D illustration color. Under Measurement, open Dimension chains and confirm ticks, segment sizes and basis before saving. Under Import, choose vector PDF/HouseSpec and review skipped content before proceeding. P24 cabinet drawings and P28 procurement tools are under detailing; exported files remain explicit downloads.
+
+Zones preserve physical rooms and flooring quantities; color overlays are illustrations. Dimension suggestions do not move geometry. PDF extraction is limited to independently drawn straight/polygon edges, and HouseSpec imports one floor of supported structure with explicit unsupported-item reports. Full P24 kitchen/assembly/process drawings and full P28 inventory, arbitrary manufacturing and external identities/ERP/payment/signature/CNC integrations remain open. No universal recognition accuracy is claimed.
+
+Evidence: 744 full Node and 58 related Python tests, 22 new browser groups and existing P31/DXF-axis/wall-review regressions passed in this development batch. Immediately before publication, another 27 P24/P28-related Python checks passed. Counts overlap; no full Python-suite or complete rerun of prior cabinet/procurement browser evidence is claimed. Showcase publication checks bilingual documentation, links and image provenance.
+
 ## 2026-11-13 · P28 manufacturing references and local procurement
 
 Source [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28 manufacturing references and local procurement](updates-2026-11-13-p28.md)

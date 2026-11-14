@@ -2,6 +2,42 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-14 · 空间工具、整柜视图与采购续作
+
+[源码 2c0bbbb](https://github.com/ETET114514/GewuZhizaoNew/commit/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da) · [范围与验证](../docs/updates-2026-11-14.zh-CN.md)
+
+四项约定改造已串起墙体原图证据、独立功能区与实际灯具、尺寸链诊断，以及限定范围的矢量PDF/HouseSpec结构导入；本次源码还交付P24单柜四视图与板件联查，以及P28多单核对、剩余需求草稿、整批收退货、供应商单据和凭据追溯。
+
+功能区保持物理房间与铺装工程量，色层仅作示意；尺寸建议不改几何。PDF仅提取独立直线/多边形边界，HouseSpec只导入选定单层的支持结构并逐项列未转换内容。P24整组厨房/装配/工艺图，以及P28真实库存、任意制造和身份/ERP/支付/签章/CNC等完整外部目标仍待，不据此宣称通用识别精度。
+
+验证：本开发批次744项全量Node、58项相关Python、22组新浏览器及原P31/DXF轴线/墙体复核回归通过；发布前另复跑27项P24/P28相关Python，通过。计数重叠，不声称全量Python或已完整重跑此前柜体/采购浏览器验收。Showcase发布检查双语文档、链接和截图来源。
+
+以下均为合成验收工程的实际截图。
+
+![只读墙体原图证据叠加](wall-evidence.png)
+
+只读墙体原图证据叠加 · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/wall-image-audit-v1/desktop.png)
+
+![三维功能区与实际灯具](open-zones.png)
+
+三维功能区与实际灯具 · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/learned-design-complete/zone-3d.png)
+
+![尺寸链总标注冲突](dimension-chains.png)
+
+尺寸链总标注冲突 · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/learned-design-complete/chain-conflict.png)
+
+![替换前的HouseSpec结构预览](source-import.png)
+
+替换前的HouseSpec结构预览 · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/learned-design-complete/house-preview.png)
+
+![整柜视图与实体板尺寸联查](cabinet-views.png)
+
+整柜视图与实体板尺寸联查 · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/p24-cabinet-drawings/report.png)
+
+![供应商单据与收退货凭据追溯](purchase-documents.png)
+
+供应商单据与收退货凭据追溯 · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/p28-purchase-documents/documents-desktop.png)
+
 ## 2026-11-13 · P28制造参考交付与本机采购收退货
 
 源码 [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28制造参考交付与本机采购收退货](../docs/updates-2026-11-13-p28.zh-CN.md)

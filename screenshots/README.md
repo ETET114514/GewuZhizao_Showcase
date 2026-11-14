@@ -2,6 +2,42 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-14 · Spatial tools, cabinet views and purchasing
+
+[Source 2c0bbbb](https://github.com/ETET114514/GewuZhizaoNew/commit/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da) · [Scope and evidence](../docs/updates-2026-11-14.md)
+
+The four agreed spatial adaptations now connect wall-image evidence, independent functional zones with actual lamps, diagnostic dimension chains, and bounded vector-PDF/HouseSpec structure import. This source push also delivers P24 single-cabinet four-view/board-linked drawings and P28 multi-order purchasing, remaining-demand drafts, batch receipts/returns and supplier documents with reference histories.
+
+Zones preserve physical rooms and flooring quantities; color overlays are illustrations. Dimension suggestions do not move geometry. PDF extraction is limited to independently drawn straight/polygon edges, and HouseSpec imports one floor of supported structure with explicit unsupported-item reports. Full P24 kitchen/assembly/process drawings and full P28 inventory, arbitrary manufacturing and external identities/ERP/payment/signature/CNC integrations remain open. No universal recognition accuracy is claimed.
+
+Evidence: 744 full Node and 58 related Python tests, 22 new browser groups and existing P31/DXF-axis/wall-review regressions passed in this development batch. Immediately before publication, another 27 P24/P28-related Python checks passed. Counts overlap; no full Python-suite or complete rerun of prior cabinet/procurement browser evidence is claimed. Showcase publication checks bilingual documentation, links and image provenance.
+
+All images below are actual synthetic acceptance captures.
+
+![Read-only wall evidence overlay](wall-evidence.png)
+
+Read-only wall evidence overlay · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/wall-image-audit-v1/desktop.png)
+
+![Functional zone and actual lamps in 3D](open-zones.png)
+
+Functional zone and actual lamps in 3D · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/learned-design-complete/zone-3d.png)
+
+![Dimension-chain total conflict](dimension-chains.png)
+
+Dimension-chain total conflict · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/learned-design-complete/chain-conflict.png)
+
+![HouseSpec structure preview before replacement](source-import.png)
+
+HouseSpec structure preview before replacement · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/learned-design-complete/house-preview.png)
+
+![Whole-cabinet views and physical board dimensions](cabinet-views.png)
+
+Whole-cabinet views and physical board dimensions · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/p24-cabinet-drawings/report.png)
+
+![Supplier documents and receipt-reference history](purchase-documents.png)
+
+Supplier documents and receipt-reference history · [New source](https://github.com/ETET114514/GewuZhizaoNew/blob/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da/wall-recognition/output/p28-purchase-documents/documents-desktop.png)
+
 ## 2026-11-13 · P28 manufacturing references and local procurement
 
 Source [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28 manufacturing references and local procurement](../docs/updates-2026-11-13-p28.md)

@@ -2,6 +2,16 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
+## 2026-11-14 · Spatial tools, cabinet views and purchasing
+
+[Source 2c0bbbb](https://github.com/ETET114514/GewuZhizaoNew/commit/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da) · [Scope and evidence](updates-2026-11-14.md)
+
+Data flow: authored functional_zones and dimension_chains use native project history/validation/ZIP comparison. Derived zone shapes intersect effective floors and preserve holes; existing ceiling components own lamps. PDF workers preserve graphic transforms and produce provenance-carrying DXF layers; HouseSpec workers map millimeter world coordinates into isolated native projects. Existing preview/revision checks reject stale changes. Cabinet and procurement reports remain bound to source hashes.
+
+Zones preserve physical rooms and flooring quantities; color overlays are illustrations. Dimension suggestions do not move geometry. PDF extraction is limited to independently drawn straight/polygon edges, and HouseSpec imports one floor of supported structure with explicit unsupported-item reports. Full P24 kitchen/assembly/process drawings and full P28 inventory, arbitrary manufacturing and external identities/ERP/payment/signature/CNC integrations remain open. No universal recognition accuracy is claimed.
+
+Evidence: 744 full Node and 58 related Python tests, 22 new browser groups and existing P31/DXF-axis/wall-review regressions passed in this development batch. Immediately before publication, another 27 P24/P28-related Python checks passed. Counts overlap; no full Python-suite or complete rerun of prior cabinet/procurement browser evidence is claimed. Showcase publication checks bilingual documentation, links and image provenance.
+
 ## 2026-11-13 · P28 manufacturing references and local procurement
 
 Source [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28 manufacturing references and local procurement](updates-2026-11-13-p28.md)

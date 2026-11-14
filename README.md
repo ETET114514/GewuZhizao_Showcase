@@ -2,6 +2,18 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-14 · Spatial tools, cabinet views and purchasing
+
+[Source 2c0bbbb](https://github.com/ETET114514/GewuZhizaoNew/commit/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da) · [Scope and evidence](docs/updates-2026-11-14.md)
+
+The four agreed spatial adaptations now connect wall-image evidence, independent functional zones with actual lamps, diagnostic dimension chains, and bounded vector-PDF/HouseSpec structure import. This source push also delivers P24 single-cabinet four-view/board-linked drawings and P28 multi-order purchasing, remaining-demand drafts, batch receipts/returns and supplier documents with reference histories.
+
+Zones preserve physical rooms and flooring quantities; color overlays are illustrations. Dimension suggestions do not move geometry. PDF extraction is limited to independently drawn straight/polygon edges, and HouseSpec imports one floor of supported structure with explicit unsupported-item reports. Full P24 kitchen/assembly/process drawings and full P28 inventory, arbitrary manufacturing and external identities/ERP/payment/signature/CNC integrations remain open. No universal recognition accuracy is claimed.
+
+Evidence: 744 full Node and 58 related Python tests, 22 new browser groups and existing P31/DXF-axis/wall-review regressions passed in this development batch. Immediately before publication, another 27 P24/P28-related Python checks passed. Counts overlap; no full Python-suite or complete rerun of prior cabinet/procurement browser evidence is claimed. Showcase publication checks bilingual documentation, links and image provenance.
+
+![Functional zone and actual lamps](screenshots/open-zones.png)
+
 ## 2026-11-13 · P28 manufacturing references and local procurement
 
 Source [7714f04](https://github.com/ETET114514/GewuZhizaoNew/commit/7714f0486a557d35aa069b249a37d29947030ed6) · [P28 manufacturing references and local procurement](docs/updates-2026-11-13-p28.md)
@@ -50,7 +62,7 @@ GewuZhizao is an interior design tool prototype under active development. It bri
 
 This repository presents project documentation, actual application screenshots and an architecture overview. The current demo runs through a local service; a public online trial is not available.
 
-**Status: active development · Showcase updated: 2026-11-13**
+**Status: active development · Showcase updated: 2026-11-14**
 
 [Features and limitations](docs/features.md) · [Architecture](docs/architecture.md) · [Demo guide](docs/demo.md) · [Screenshot index](screenshots/README.md)
 
