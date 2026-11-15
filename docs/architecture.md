@@ -2,6 +2,16 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
+## 2026-11-16 · P12 wall engineering and path-side finish measurement
+
+[Source 9189120](https://github.com/ETET114514/GewuZhizaoNew/commit/918912079639253fb9ad7cfcb07d010239d822ed) · [Scope and evidence](updates-2026-11-16-p12.md)
+
+The exhaustive-search cursor lives outside project history, is bound to session/revision/options and advances atomically after successful batches. Projection creates an isolated exact-support document before using the existing cleanup pipeline. Typed one-to-many migrations keep known dimensions, opening hosts, finish intervals and live decoration chains; unknown references remain protected. Analytic fillet solvers recompute two-host tangencies during supported edits. Saved path_finishes profiles keep explicit values separate from global inheritance; read-only reports split at policy/opening boundaries and use actual offset radii. Server validation, project storage, undo/redo and ZIP share the authored data.
+
+Full P12 remains unfinished. Enumeration certifies only the current finite report after completion (at most 100 reported candidates, 20 selected gaps and 500 resulting wall segments), without report-external semantic or unlimited global-optimum guarantees. Projection requires an explicit supporting line/circle and a tolerance of at most 10px; unknown references and unsupported conflicts reject the complete edit. Fillets require a valid finite analytic solution and preserve explicit thickness steps. Path-side finishes are measurement policies, without new finish solids, whole-room nonorthogonal finished-face reconstruction, step-connector lengths, multi-wall node reconstruction, continuous variable sections or P27-linked construction sheets.
+
+Final source-stage rerun on 2026-11-16: **1342 full Python tests and 744 full Node tests passed**. Real Edge acceptance passed 5 new path-finish groups plus the existing 9 closeout and 10 engineering groups, with no unexpected page/HTTP errors. Coverage includes independent arc formulas, real CSV/JSON read-back, preview/cancel/history, actual panel pieces/volume, door poses, project save/reopen, and 390px layouts; Python also checks restore/ZIP. The 8 new Python tests are included in the full-suite count. Earlier dated counts overlap and are not added. Showcase publication checks bilingual documentation, relative links and screenshot provenance; it does not repeat application tests.
+
 ## 2026-11-14 · Spatial tools, cabinet views and purchasing
 
 [Source 2c0bbbb](https://github.com/ETET114514/GewuZhizaoNew/commit/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da) · [Scope and evidence](updates-2026-11-14.md)

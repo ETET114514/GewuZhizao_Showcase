@@ -2,6 +2,22 @@
 
 **English** | [中文](features.zh-CN.md)
 
+## 2026-11-16 · P12 wall engineering and path-side finish measurement
+
+[Source 9189120](https://github.com/ETET114514/GewuZhizaoNew/commit/918912079639253fb9ad7cfcb07d010239d822ed) · [Scope and evidence](updates-2026-11-16-p12.md)
+
+P12 now connects resumable exhaustive enumeration of the current diagnostic report; explicit straight, bent and circular gap routes between supported wall ends; tolerance-based overlap projection and known-reference migration; adjacent orthogonal/collinear/cocircular wall sections with independent height, real materials and inheritance; and analytic two-host line/arc fillets with explicit unequal-thickness steps, radius edits and continued following. Cross-section wall panels and skirting preserve live host chains and existing piece data. Angled/arc wall sides also gain piecewise construction-finish policies, global inheritance, along-path axis/structure/finish lengths, opening projection/section/full-height-band deductions, and revision-bearing CSV/JSON.
+
+Full P12 remains unfinished. Enumeration certifies only the current finite report after completion (at most 100 reported candidates, 20 selected gaps and 500 resulting wall segments), without report-external semantic or unlimited global-optimum guarantees. Projection requires an explicit supporting line/circle and a tolerance of at most 10px; unknown references and unsupported conflicts reject the complete edit. Fillets require a valid finite analytic solution and preserve explicit thickness steps. Path-side finishes are measurement policies, without new finish solids, whole-room nonorthogonal finished-face reconstruction, step-connector lengths, multi-wall node reconstruction, continuous variable sections or P27-linked construction sheets.
+
+Final source-stage rerun on 2026-11-16: **1342 full Python tests and 744 full Node tests passed**. Real Edge acceptance passed 5 new path-finish groups plus the existing 9 closeout and 10 engineering groups, with no unexpected page/HTTP errors. Coverage includes independent arc formulas, real CSV/JSON read-back, preview/cancel/history, actual panel pieces/volume, door poses, project save/reopen, and 390px layouts; Python also checks restore/ZIP. The 8 new Python tests are included in the full-suite count. Earlier dated counts overlap and are not added. Showcase publication checks bilingual documentation, relative links and screenshot provenance; it does not repeat application tests.
+
+| Implemented in this batch | Remaining P12 scope |
+| --- | --- |
+| Current-report enumeration; explicit routes; projected overlap and known-reference migration; independent adjacent sections; two-host tangent fillets; path-side finish/height-band reports | Report-external unlimited inference; arbitrary curves/topology; whole-room nonorthogonal finished faces and linked construction sheets; multi-wall nodes, continuous variable sections and unknown references |
+
+![Arc-side inherited and explicit finish policies](../screenshots/p12-path-finishes.png)
+
 ## 2026-11-14 · Spatial tools, cabinet views and purchasing
 
 [Source 2c0bbbb](https://github.com/ETET114514/GewuZhizaoNew/commit/2c0bbbb7c9481c78dec968c07d40b92ef56eb7da) · [Scope and evidence](updates-2026-11-14.md)
