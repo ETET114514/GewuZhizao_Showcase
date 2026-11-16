@@ -2,6 +2,16 @@
 
 **English** | [中文](demo.zh-CN.md)
 
+## 2026-11-16 · Continuous wall sections, curved junctions and typed references
+
+[Source 00dd9d8](https://github.com/ETET114514/GewuZhizaoNew/commit/00dd9d883d67ce5c9be5de6e7b9fae626efedbc0) · [Scope and evidence](updates-2026-11-16-p12-sections.md)
+
+Select an angled/arc wall and enter rows of station %, thickness cm and height cm under Continuous sections; leave every height empty for global inheritance. Preview/cancel or apply, add a window and inspect 3D, then split and reopen the project. Under Closure diagnostics, enable continuous fillet transitions or choose a multi-wall node mode; inspect the real preview before applying. Duplicate-wall sections require explicit thickness/height/material sources. Declare existing external node paths under External reference migration rules. Under Whole-room finishes, select a custom angle or endpoint elevation/band and link valid intervals to P27 before drawing export.
+
+Full P12 remains unfinished. Profiles have 2–64 controls, 50–600 mm thickness and 100–20000 mm height; all heights may inherit globally, without mixing inherited and numeric controls. Junctions select 3–12 wall ends with 0–1000 mm movement: retain supports, explicitly rotate straight supports, or reconstruct a circle while retaining its far endpoint/tangent and curvature direction. No valid finite solution or unsupported references rejects the edit. Typed JSON Pointer bindings cover fraction, station and host semantics, including one-to-many rebinding; undeclared business/program semantics stay protected. Elevation checks qualify the measurement-line endpoints, without inferring a new room partition/area at that height. Arc geometry uses the existing bounded sampling; collision stays conservative and quantities retain nominal axis-based face-area conventions. Arbitrary surface/topology transition bodies, undefined reference semantics, complete construction sections/details and unlimited report-external inference/global-optimum guarantees remain open.
+
+Source validation on 2026-11-16: **1363 full Python tests** across all 183 modules, **760 full Node tests**, **78 final related Python checks**, and **14 new real Edge workflow groups** passed. Six existing browser suites were rerun: path finishes, closeout, engineering, whole-room/node, original path walls and P27 drawing export. Final related checks also verify the last calibration/projection binding branches. Coverage includes independent mesh-volume and spiral-length checks, real 3D viewing, holes, split conservation, inheritance, transition following, curve-support reconstruction, explicit overlap sources, external bindings, undo/redo, save/reopen and 390px. Independent downloaded DXF/PDF extraction confirms 5317 mm angled and 3760 mm height-band net dimensions. Counts overlap and are not added. Showcase publication verifies bilingual pages, local links and screenshot provenance without rerunning application suites.
+
 ## 2026-11-16 · P12 room finishes, live net dimensions and straight-wall junctions
 
 [Source 65ad14a](https://github.com/ETET114514/GewuZhizaoNew/commit/65ad14a203f1e00fc7e36aebf07fda4530b349a2) · [Scope and evidence](updates-2026-11-16-p12-room.md)
