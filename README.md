@@ -2,6 +2,18 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
+
+[Source 9b48db1](https://github.com/ETET114514/GewuZhizaoNew/commit/9b48db190e64f437662d0ac37662332151c6fe97) · [Scope and evidence](docs/updates-2026-11-18-p12-p24.md)
+
+This release adds declared multi-segment wall references and single-wall reference drawings, then extends P24 with straight/L/U kitchen sheets, explicitly selected upper/lower groups, single-cabinet isometric/exploded views, and physical material-contact checks. Blind-corner shelf positioning now avoids the former half-board-thickness side-panel penetration.
+
+Full P12 and P24 remain unfinished. These are bounded reference drawings and geometric checks. Unknown reference semantics, arbitrary wall topology, complete construction details, professional hidden-line removal, hardware/connection strength, installation constraints, assembly order/motion and manufacturer CNC remain open. Equipment is the existing schematic geometry; an overlap may be intended embedding and requires review.
+
+Development evidence: 809 full Node tests, 57 related Python tests, 15 new Edge workflow groups, and the existing 14 cross-cabinet/11 single-cabinet browser groups passed. Independent GEOS checks cover 24 normal/low-upper-cabinet cases; actual ZIP/CSV/HTML/JSON and native-dimension CAD downloads were read back. Publication preparation additionally passed 22 P12 reference-range/wall-drawing Python tests on 2026-11-18. Counts overlap and are not added; no full Python rerun or fresh rerun of every earlier browser suite is claimed. Showcase publication checks bilingual pages, links and screenshot provenance.
+
+![Explicitly selected upper/lower kitchen elevations](screenshots/p24-kitchen-combined.png)
+
 ## 2026-11-16 · Continuous wall sections, curved junctions and typed references
 
 [Source 00dd9d8](https://github.com/ETET114514/GewuZhizaoNew/commit/00dd9d883d67ce5c9be5de6e7b9fae626efedbc0) · [Scope and evidence](docs/updates-2026-11-16-p12-sections.md)

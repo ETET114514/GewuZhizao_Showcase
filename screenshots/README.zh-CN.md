@@ -2,6 +2,30 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
+
+[源码 9b48db1](https://github.com/ETET114514/GewuZhizaoNew/commit/9b48db190e64f437662d0ac37662332151c6fe97) · [范围与验收](../docs/updates-2026-11-18-p12-p24.zh-CN.md)
+
+![指定标高的弧墙水平截面](p12-wall-slice.png)
+
+指定标高的弧墙水平截面 · [来源](https://github.com/ETET114514/GewuZhizaoNew/blob/9b48db190e64f437662d0ac37662332151c6fe97/wall-recognition/output/p12-wall-drawings/arc-elevation.png)
+
+![明确选择的上下柜联合立面](p24-kitchen-combined.png)
+
+明确选择的上下柜联合立面 · [来源](https://github.com/ETET114514/GewuZhizaoNew/blob/9b48db190e64f437662d0ac37662332151c6fe97/wall-recognition/output/p24-kitchen-combined/aligned-dialog.png)
+
+![实体板件爆炸参考投影](p24-cabinet-exploded.png)
+
+实体板件爆炸参考投影 · [来源](https://github.com/ETET114514/GewuZhizaoNew/blob/9b48db190e64f437662d0ac37662332151c6fe97/wall-recognition/output/p24-cabinet-assembly/single-assembly-exploded.png)
+
+![板件、台面和设备实体接触检查](p24-component-contacts.png)
+
+板件、台面和设备实体接触检查 · [来源](https://github.com/ETET114514/GewuZhizaoNew/blob/9b48db190e64f437662d0ac37662332151c6fe97/wall-recognition/output/p24-kitchen-components/overlap-checks.png)
+
+P12和P24整项仍未完成。当前为有限参考图与几何检查；未知引用语义、任意墙体拓扑、完整施工节点、专业隐藏线、五金/连接强度、安装约束、拆装顺序/运动及厂家CNC继续保留。设备采用现有示意几何，材料重叠可能属于预期嵌入，需要人工核对。
+
+开发验收：809项全量Node、57项相关Python、新15组Edge及原跨柜14组/单柜11组浏览器通过；24套正常/低吊柜工程经GEOS独立核验，实际ZIP/CSV/HTML/JSON和原生尺寸CAD下载经独立读回。2026-11-18发布准备另补验22项P12区间引用/单墙图Python并通过。计数交叠不累加，不声称本轮跑全量Python或重新跑全部历史浏览器。Showcase发布核对双语、链接与截图来源。
+
 ## 2026-11-16 · 连续截面、曲线节点与声明式引用迁移
 
 [源码 00dd9d8](https://github.com/ETET114514/GewuZhizaoNew/commit/00dd9d883d67ce5c9be5de6e7b9fae626efedbc0) · [范围与验收](../docs/updates-2026-11-16-p12-sections.zh-CN.md)

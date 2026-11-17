@@ -2,6 +2,16 @@
 
 **English** | [中文](demo.zh-CN.md)
 
+## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
+
+[Source 9b48db1](https://github.com/ETET114514/GewuZhizaoNew/commit/9b48db190e64f437662d0ac37662332151c6fe97) · [Scope and evidence](updates-2026-11-18-p12-p24.md)
+
+In the workbench, open Detail design → Whole-kitchen elevations/countertop-equipment sheets. Select a main group and optional additional groups, then read the sheets. Choose one cabinet to append isometric/exploded reference views. Enable cross-cabinet checks and/or countertop-equipment checks explicitly; each option change invalidates the old report. Click a board, cabinet or equipment-part number to inspect the source geometry; selecting another entity from a single-cabinet isometric view returns to the overall plan. Download SVG/DXF/CSV/offline HTML/JSON/ZIP, or cancel and retry. For P12, declare supported external interval semantics and use the wall-drawing panel to choose the host, station and section level. Check stale-source refusal and save/reopen regeneration.
+
+Full P12 and P24 remain unfinished. These are bounded reference drawings and geometric checks. Unknown reference semantics, arbitrary wall topology, complete construction details, professional hidden-line removal, hardware/connection strength, installation constraints, assembly order/motion and manufacturer CNC remain open. Equipment is the existing schematic geometry; an overlap may be intended embedding and requires review.
+
+Development evidence: 809 full Node tests, 57 related Python tests, 15 new Edge workflow groups, and the existing 14 cross-cabinet/11 single-cabinet browser groups passed. Independent GEOS checks cover 24 normal/low-upper-cabinet cases; actual ZIP/CSV/HTML/JSON and native-dimension CAD downloads were read back. Publication preparation additionally passed 22 P12 reference-range/wall-drawing Python tests on 2026-11-18. Counts overlap and are not added; no full Python rerun or fresh rerun of every earlier browser suite is claimed. Showcase publication checks bilingual pages, links and screenshot provenance.
+
 ## 2026-11-16 · Continuous wall sections, curved junctions and typed references
 
 [Source 00dd9d8](https://github.com/ETET114514/GewuZhizaoNew/commit/00dd9d883d67ce5c9be5de6e7b9fae626efedbc0) · [Scope and evidence](updates-2026-11-16-p12-sections.md)
