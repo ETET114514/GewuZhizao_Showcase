@@ -378,7 +378,11 @@ P23 C01～C08、P16 F01～F08、P18 M01～M08 及 P35 本机顶面/灯具流程�
 
 仓库默认首页为英文 `README.md`，点击顶部“中文”进入 `README.zh-CN.md`。所有展示文档均有英文 `.md` 与中文 `.zh-CN.md` 对应版本，顶部可切换同一页面；功能、架构、演示、截图说明/替代文本、素材说明及每轮更新均同步维护。站内导航保持所选语言，图片共用原始截图，截图中的软件界面保留拍摄时的文案。
 
-每次 push 必须同步更新两种语言的已有能力、未实现边界、验证范围及对应 New 提交号；历史验证仍归属原轮次。发布前检查内容一致性、语言切换和相对链接，全部完成后才报告发布完成。持续生效的 push 规则维护在 New 的 README 和 FEATURES 中（[本次规则提交](https://github.com/ETET114514/GewuZhizaoNew/commit/b5bb1f164d8c7927297b45cac5aeb62f499b120a)）。
+每次发布用两种语言同步记录已有能力、未实现边界、验证范围及对应 New 提交号。历史验证仍归属原轮次。发布前检查内容一致性、语言切换和相对链接。
+
+两个仓库都通过工作分支和 PR 提交。先合并 New 的 PR，再用合并后的完整 New 提交 SHA 开 Showcase PR。展示 PR 合并且核对两个远端 `main` 后，才算完成发布。源码 README 还规定了协作者及其 AI 工具应遵循的代码格式、测试和审查要求。[源码协作规范](https://github.com/ETET114514/GewuZhizaoNew/blob/main/README.md#github-%E6%8E%A8%E9%80%81%E7%BA%A6%E5%AE%9A)
+
+2026-11-19 更新协作规范。源码 PR 检查了文档链接、锚点和 Git 差异，Node 与 Python 定向测试通过。[源码 PR](https://github.com/ETET114514/GewuZhizaoNew/pull/1) · [合并后的源码提交](https://github.com/ETET114514/GewuZhizaoNew/commit/a2602ebc5220ffc69f50745fcbb8181c4647c05e)
 
 ## 源码与素材说明
 
