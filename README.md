@@ -377,7 +377,11 @@ P23 C01–C08, P16 F01–F08, P18 M01–M08 and P35 local ceiling/lighting workf
 
 English is the default repository home (`README.md`); [中文](README.zh-CN.md) opens the Chinese home. Every documentation page has an English `.md` and a Chinese `.zh-CN.md` counterpart, with a language switch to the same page. Feature lists, architecture, demo guides, screenshot captions/alt text, asset notices and dated updates are maintained in both languages. Navigation stays in the selected language; both versions share the original screenshots, whose application UI remains as captured.
 
-Every push must update both languages together, including implemented capabilities, pending scope, verification and the corresponding New commit. Historical verification remains attributed to its original round. Check content consistency, language switches and relative links before declaring publication complete. The persistent push rules are maintained in New's README and FEATURES ([documentation-rule commit](https://github.com/ETET114514/GewuZhizaoNew/commit/b5bb1f164d8c7927297b45cac5aeb62f499b120a)).
+Each release records implemented capabilities, remaining scope, verification and the corresponding New commit in both languages. Historical verification remains attributed to its original round. Check content consistency, language switches and relative links before declaring publication complete.
+
+Both repositories use working branches and pull requests. Merge the New PR first, then open the Showcase PR with the full merged New commit SHA. A release is complete after the Showcase PR merges and both remote `main` branches are verified. The source README also covers code style, tests and review requirements for contributors and their AI tools. [Source collaboration guide](https://github.com/ETET114514/GewuZhizaoNew/blob/main/README.md#github-%E6%8E%A8%E9%80%81%E7%BA%A6%E5%AE%9A)
+
+The 2026-11-19 update covers collaboration documentation. The source PR checked documentation links, anchors and Git diffs, and passed targeted Node and Python checks. [Source PR](https://github.com/ETET114514/GewuZhizaoNew/pull/1) · [Merged source commit](https://github.com/ETET114514/GewuZhizaoNew/commit/a2602ebc5220ffc69f50745fcbb8181c4647c05e)
 
 ## Source code and assets
 
