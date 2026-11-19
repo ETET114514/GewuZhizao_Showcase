@@ -379,7 +379,9 @@ English is the default repository home (`README.md`); [中文](README.zh-CN.md) 
 
 Each release records implemented capabilities, remaining scope, verification and the corresponding New commit in both languages. Historical verification remains attributed to its original round. Check content consistency, language switches and relative links before declaring publication complete.
 
-Both repositories use working branches and pull requests. Merge the New PR first, then open the Showcase PR with the full merged New commit SHA. A release is complete after the Showcase PR merges and both remote `main` branches are verified. The source README also covers code style, tests and review requirements for contributors and their AI tools. [Source collaboration guide](https://github.com/ETET114514/GewuZhizaoNew/blob/main/README.md#github-%E6%8E%A8%E9%80%81%E7%BA%A6%E5%AE%9A)
+Push the source working branch and update Showcase in the same round. Open or update the source pull request against New’s `main`. Push Showcase documentation directly to its `main` using a fast-forward update. Showcase does not require a PR or wait for the source PR to merge. While the source PR is pending, record its full branch commit SHA and PR link. After it merges, sync the SHA recorded in Showcase to the commit on New’s `main`. Verify the source branch, source PR and Showcase `main` after pushing. [Source collaboration guide](https://github.com/ETET114514/GewuZhizaoNew/blob/main/README.md#github-%E6%8E%A8%E9%80%81%E7%BA%A6%E5%AE%9A)
+
+Current policy update: [source PR](https://github.com/ETET114514/GewuZhizaoNew/pull/2) · [source branch commit](https://github.com/ETET114514/GewuZhizaoNew/commit/97b163714fc8d0a180a88fb59d70b9d99828238a). The source change is pending merge.
 
 The 2026-11-19 update covers collaboration documentation. The source PR checked documentation links, anchors and Git diffs, and passed targeted Node and Python checks. [Source PR](https://github.com/ETET114514/GewuZhizaoNew/pull/1) · [Merged source commit](https://github.com/ETET114514/GewuZhizaoNew/commit/a2602ebc5220ffc69f50745fcbb8181c4647c05e)
 

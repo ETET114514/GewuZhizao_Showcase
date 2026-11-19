@@ -380,7 +380,9 @@ P23 C01～C08、P16 F01～F08、P18 M01～M08 及 P35 本机顶面/灯具流程�
 
 每次发布用两种语言同步记录已有能力、未实现边界、验证范围及对应 New 提交号。历史验证仍归属原轮次。发布前检查内容一致性、语言切换和相对链接。
 
-两个仓库都通过工作分支和 PR 提交。先合并 New 的 PR，再用合并后的完整 New 提交 SHA 开 Showcase PR。展示 PR 合并且核对两个远端 `main` 后，才算完成发布。源码 README 还规定了协作者及其 AI 工具应遵循的代码格式、测试和审查要求。[源码协作规范](https://github.com/ETET114514/GewuZhizaoNew/blob/main/README.md#github-%E6%8E%A8%E9%80%81%E7%BA%A6%E5%AE%9A)
+源码工作分支与 Showcase 在同一轮推送。源码开或更新指向 New 的 `main` 的 PR。Showcase 用普通快进方式直接推送 `main`，无需开 PR，也无需等待源码 PR 合并。源码待合并时记录完整分支 SHA 和源码 PR 链接。源码合并后同步引用实际合入 New 的 `main` 的提交 SHA。推送后核对远端源码分支、源码 PR 和 Showcase 的 `main`。[源码协作规范](https://github.com/ETET114514/GewuZhizaoNew/blob/main/README.md#github-%E6%8E%A8%E9%80%81%E7%BA%A6%E5%AE%9A)
+
+本轮规则更新对应[源码 PR](https://github.com/ETET114514/GewuZhizaoNew/pull/2)及[源码分支提交](https://github.com/ETET114514/GewuZhizaoNew/commit/97b163714fc8d0a180a88fb59d70b9d99828238a)，源码待合并。
 
 2026-11-19 更新协作规范。源码 PR 检查了文档链接、锚点和 Git 差异，Node 与 Python 定向测试通过。[源码 PR](https://github.com/ETET114514/GewuZhizaoNew/pull/1) · [合并后的源码提交](https://github.com/ETET114514/GewuZhizaoNew/commit/a2602ebc5220ffc69f50745fcbb8181c4647c05e)
 
