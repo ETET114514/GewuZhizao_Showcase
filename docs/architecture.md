@@ -2,11 +2,11 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer turns
+## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer collision review
 
-[Source commit 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 601db4d](https://github.com/ETET114514/GewuZhizaoNew/commit/601db4d1e0f2023d0b64d39fac83f5e09edf4a04) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-A verified transfer updates the existing retained entity before approach and board-motion checks. Reuse validates continuity at the new position and orientation. The reverse report lists the transfer turns in inverse order.
+The search retains the position and angular endpoints while checking each candidate with the continuous collision solver. Reverse assembly maps the verified turn to the corresponding reversed segment.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

@@ -2,13 +2,13 @@
 
 **English** | [中文](features.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer turns
+## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer collision review
 
-[Source commit 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 601db4d](https://github.com/ETET114514/GewuZhizaoNew/commit/601db4d1e0f2023d0b64d39fac83f5e09edf4a04) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-A retained tool can turn during selected transfer segments, after arriving, or in place. The check starts from its actual parked orientation. When an obstruction interrupts the transfer, the last verified position and orientation are kept.
+When a retained-tool transfer is blocked, the timing search can move an existing turn to another part of the authored route. Waypoints, turn angles, rotation order and final pose are preserved. The original and candidate can be compared at the same scale, with a shared close-up of the collision.
 
-The next reuse can start from the new physical pose, including reuse within the same step. Reverse assembly undoes both the transfer and its turns. Geometry uses the modeled cabinet solids and rectangular tool envelopes. Board flips, simultaneous independent motion of several tools, manufacturer installation and load checks remain open.
+The full plan is rechecked before a candidate can be applied, including the later reuse of the same physical tool. An in-place transfer without a route has no alternative segment. Geometry uses modeled cabinet solids and rectangular tool envelopes.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

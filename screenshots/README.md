@@ -2,11 +2,15 @@
 
 **English** | [中文](README.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer turns
+## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer collision review
 
-[Source commit 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](../docs/updates-2026-11-20-p24.md)
+[Source commit 601db4d](https://github.com/ETET114514/GewuZhizaoNew/commit/601db4d1e0f2023d0b64d39fac83f5e09edf4a04) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](../docs/updates-2026-11-20-p24.md)
 
-![A retained tool turns on its transfer path before reuse](p24-tool-transfer-turn.png)
+![Focused view of the original retained-tool collision](p24-tool-transfer-timing.png)
+
+[Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/601db4d1e0f2023d0b64d39fac83f5e09edf4a04/wall-recognition/output/p24-tool-transfer-timing/witness.png)
+
+![Retained-tool transfer turn](p24-tool-transfer-turn.png)
 
 [Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d/wall-recognition/output/p24-tool-transfer-turn/preview.png)
 

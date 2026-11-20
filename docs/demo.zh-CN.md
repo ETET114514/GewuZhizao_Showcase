@@ -2,11 +2,11 @@
 
 [English](demo.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与驻留工具搬运转向
+## 2026-11-20 · P24 厨房装拆校核与驻留工具搬运避碰
 
-[源码提交 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码提交 601db4d](https://github.com/ETET114514/GewuZhizaoNew/commit/601db4d1e0f2023d0b64d39fac83f5e09edf4a04) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
-在板件移动前选择驻留工具，填写搬运位移点和各段转角。仅原地转向时清空位移点并填写到位角。保存步骤前可再编辑搬运草稿。
+搬运受阻后，点「试另一种转向时机」。使用「聚焦碰撞」查看原碰撞工具姿态，再切换到同一视野的候选。
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 
