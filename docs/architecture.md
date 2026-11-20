@@ -2,11 +2,11 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and tool approach orientation
+## 2026-11-20 · P24 kitchen disassembly and multi-segment tool turns
 
-[Source commit 0558870](https://github.com/ETET114514/GewuZhizaoNew/commit/0558870f17e7183c7769c00e6432fb3b5b6a3ae7) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-Setup and approach use the tool’s specified orientation. The board starts moving after the tools reach their working orientation. The reverse route undoes each turn in the corresponding phase.
+The report records start and end yaw for each segment. Earlier detours renumber the scheduled segments while preserving their original endpoints. Reverse routes swap the endpoints and invert each turn.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

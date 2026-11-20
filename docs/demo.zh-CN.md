@@ -2,11 +2,11 @@
 
 [English](demo.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与工具进入朝向
+## 2026-11-20 · P24 厨房装拆校核与工具进出逐段转向
 
-[源码提交 0558870](https://github.com/ETET114514/GewuZhizaoNew/commit/0558870f17e7183c7769c00e6432fb3b5b6a3ae7) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码提交 b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
-在厨房图纸报告中设置工具的进入路线和初始朝向。选进入段号可边走边转，留空则到工作位后原地转。可比较替代时机，再应用通过校核的方案。
+展开工具逐段转向选项，逐行填入段号和相对转角。碰撞时可比较替代时机，预览支持查看原方案的碰撞见证和复核后的候选。
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 

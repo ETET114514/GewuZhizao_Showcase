@@ -2,15 +2,19 @@
 
 [English](README.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与工具进入朝向
+## 2026-11-20 · P24 厨房装拆校核与工具进出逐段转向
 
-[源码提交 0558870](https://github.com/ETET114514/GewuZhizaoNew/commit/0558870f17e7183c7769c00e6432fb3b5b6a3ae7) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](../docs/updates-2026-11-20-p24.zh-CN.md)
+[源码提交 b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](../docs/updates-2026-11-20-p24.zh-CN.md)
 
-![同一步内的工具进入与退出转向](p24-tool-entry-turn.png)
+![同一工具在多个进入段和退出段转向](p24-tool-multi-turn.png)
+
+[截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/b82b13b86c1e3e23fd15b07ccec774baf04322d3/wall-recognition/output/p24-tool-multi-turn/preview.png)
+
+![工具进入转向](p24-tool-entry-turn.png)
 
 [截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/0558870f17e7183c7769c00e6432fb3b5b6a3ae7/wall-recognition/output/p24-tool-entry-turn/preview.png)
 
-![工具退出途中同步转向](p24-tool-sync-turn.png)
+![工具退出同步转向](p24-tool-sync-turn.png)
 
 [截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/245b3d21f13ccd6a72919dac7357325099052d83/wall-recognition/output/p24-tool-sync-turn/preview.png)
 

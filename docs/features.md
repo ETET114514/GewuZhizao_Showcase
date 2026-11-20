@@ -2,13 +2,13 @@
 
 **English** | [中文](features.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and tool approach orientation
+## 2026-11-20 · P24 kitchen disassembly and multi-segment tool turns
 
-[Source commit 0558870](https://github.com/ETET114514/GewuZhizaoNew/commit/0558870f17e7183c7769c00e6432fb3b5b6a3ae7) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-P24 checks tools entering at a specified orientation and turning to their working orientation at the work position or during a selected approach segment. Tools may have a separate withdrawal turn. The timing comparison preserves the authored route points and tool order.
+A tool can use independent yaw increments on several segments of its approach and withdrawal routes. Each segment starts at the orientation reached on the preceding segment. A blocked turn can be moved to an unused segment between its neighbors while keeping the other turns, waypoints and tool order.
 
-The checks use modeled cabinet solids and rectangular tool envelopes. Retained tools can be reused when their current position and orientation match the start of the approach. Multiple independent turns within a phase, board flips, manufacturer installation procedures and load checks remain open.
+The work-position turn aligns the tool before the board moves. Retained-tool reuse uses the final withdrawal orientation. Reverse assembly undoes the turns in reverse order. The geometry uses cabinet solids and rectangular tool envelopes. Board flips, simultaneous independent motion of several tools, manufacturer installation and load checks remain open.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

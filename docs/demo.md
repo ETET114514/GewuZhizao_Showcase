@@ -2,11 +2,11 @@
 
 **English** | [中文](demo.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and tool approach orientation
+## 2026-11-20 · P24 kitchen disassembly and multi-segment tool turns
 
-[Source commit 0558870](https://github.com/ETET114514/GewuZhizaoNew/commit/0558870f17e7183c7769c00e6432fb3b5b6a3ae7) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-In the kitchen drawing report, enter the tool’s route and starting orientation. Choose an approach segment to turn while traveling, or leave it blank to turn after arrival. Compare timing candidates before applying one.
+Expand the tool’s segment-turn settings and enter a segment number and angle per line. Compare timing candidates after a collision. The preview shows both the original collision witness and the verified route.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

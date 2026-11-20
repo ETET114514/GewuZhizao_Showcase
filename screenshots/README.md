@@ -2,11 +2,15 @@
 
 **English** | [中文](README.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and tool approach orientation
+## 2026-11-20 · P24 kitchen disassembly and multi-segment tool turns
 
-[Source commit 0558870](https://github.com/ETET114514/GewuZhizaoNew/commit/0558870f17e7183c7769c00e6432fb3b5b6a3ae7) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](../docs/updates-2026-11-20-p24.md)
+[Source commit b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](../docs/updates-2026-11-20-p24.md)
 
-![Independent approach and withdrawal turns in the same step](p24-tool-entry-turn.png)
+![Several approach and withdrawal turns for one tool](p24-tool-multi-turn.png)
+
+[Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/b82b13b86c1e3e23fd15b07ccec774baf04322d3/wall-recognition/output/p24-tool-multi-turn/preview.png)
+
+![Independent approach turn](p24-tool-entry-turn.png)
 
 [Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/0558870f17e7183c7769c00e6432fb3b5b6a3ae7/wall-recognition/output/p24-tool-entry-turn/preview.png)
 
