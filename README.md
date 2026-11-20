@@ -2,6 +2,18 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-20 · P24 kitchen disassembly and tool withdrawal turns
+
+[Source commit bc71e67](https://github.com/ETET114514/GewuZhizaoNew/commit/bc71e6716c54061b871dfe3aea8494355e4cf784) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](docs/updates-2026-11-20-p24.md)
+
+P24 now checks explicit cabinet disassembly plans with staged board and tool motions. A tool can rotate about its own vertical axis after the board reaches its destination and before the tool withdraws. The check uses its actual orientation through withdrawal and across later retained-tool steps.
+
+Implemented workflows also cover custom cabinet layouts and countertop openings, material contact sections, and disassembly sequencing, detours, parking positions and staged yaw. The checks use modeled cabinet solids and rectangular tool envelopes. Board flips, independent yaw during tool translation, manufacturer installation procedures and load checks remain open.
+
+972 Node tests and 18 Edge workflow groups passed, including narrow-width editing, plan reimport and offline reports. Independent readback verified all 41 hashed files in the actual ZIP, a native 67.5° DXF arc, two withdrawal lines and six parked-tool faces. CAD audit reported zero errors. A separate GEOS run checked 361 turn poses.
+
+![Independent tool turn in the disassembly preview](screenshots/p24-tool-withdraw-yaw.png)
+
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 
 [Source 9b48db1](https://github.com/ETET114514/GewuZhizaoNew/commit/9b48db190e64f437662d0ac37662332151c6fe97) · [Scope and evidence](docs/updates-2026-11-18-p12-p24.md)

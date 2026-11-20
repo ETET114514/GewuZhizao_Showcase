@@ -2,6 +2,12 @@
 
 [English](demo.md) | **中文**
 
+## 2026-11-20 · P24 厨房装拆校核与工具退出前转向
+
+[源码提交 bc71e67](https://github.com/ETET114514/GewuZhizaoNew/commit/bc71e6716c54061b871dfe3aea8494355e4cf784) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+
+打开厨房图纸报告并启用装拆检查，为工具填写进入路线、退出路线与退出前转向角。重新读取后，在步骤预览中查看转向。示例使用 390 px 窄屏和示意柜体。
+
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 
 [源码 9b48db1](https://github.com/ETET114514/GewuZhizaoNew/commit/9b48db190e64f437662d0ac37662332151c6fe97) · [范围与验收](updates-2026-11-18-p12-p24.zh-CN.md)

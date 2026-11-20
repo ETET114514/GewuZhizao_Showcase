@@ -2,6 +2,18 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-20 · P24 厨房装拆校核与工具退出前转向
+
+[源码提交 bc71e67](https://github.com/ETET114514/GewuZhizaoNew/commit/bc71e6716c54061b871dfe3aea8494355e4cf784) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](docs/updates-2026-11-20-p24.zh-CN.md)
+
+P24 现在可检查显式柜体装拆方案的分段板件与工具运动。板件到位后，每件工具可在退出前绕自身竖轴独立转向。退出及跨步骤驻留均使用工具的实际朝向。
+
+本批还涵盖自由柜组与台面开孔、分层材料接触图册，以及装拆调序、绕行、放置位置和分段转向。校核使用已建模柜体实体与长方体工具包络。板件翻转、工具平移时独立转向、厂家安装工艺与受力验算仍待实现。
+
+972 项全量 Node 与 18 组 Edge 工作流通过，覆盖窄屏编辑、方案重导入及离线报告。独立读回实际 ZIP 的 41 个清单文件、67.5° DXF 原生圆弧、两条退出线和六个驻留工具面，CAD 审计零错误。GEOS 另核对了 361 个转向姿态。
+
+![装拆预览中的工具独立转向](screenshots/p24-tool-withdraw-yaw.png)
+
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 
 [源码 9b48db1](https://github.com/ETET114514/GewuZhizaoNew/commit/9b48db190e64f437662d0ac37662332151c6fe97) · [范围与验收](docs/updates-2026-11-18-p12-p24.zh-CN.md)
