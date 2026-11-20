@@ -2,13 +2,13 @@
 
 [English](features.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与驻留工具联合避碰
+## 2026-11-20 · P24 板件与工具联合避碰
 
-[源码提交 f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码提交 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
-同一候选可以给驻留工具搬运加绕行点，再调整后续转向时机。搜索保留原位移点、最终姿态和复用接点，并按新的中间朝向核验障碍。
+同一候选可以给受阻平移段加绕行点，并调整转向时机。适用于板件移动、工具独立进入和退出，以及驻留工具搬运。
 
-对照视图同时标明原路线段和加入绕行点后的执行段号。整套装拆复核通过后候选才可应用。
+预览同时标明原路线段号和加入绕行点后的执行段号。整套装拆路径通过几何复核后可应用候选。
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 

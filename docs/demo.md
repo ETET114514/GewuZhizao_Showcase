@@ -2,11 +2,11 @@
 
 **English** | [中文](demo.zh-CN.md)
 
-## 2026-11-20 · P24 cabinet disassembly and joint retained-tool collision search
+## 2026-11-20 · P24 joint collision search for boards and tools
 
-[Source commit f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-Open the blocked transfer report, run the joint search and compare the original with the verified candidate. The comparison shows the inserted detour and the turn’s original and final segment numbers.
+Open the blocked disassembly report, launch the joint search and compare the original with the verified withdrawal route. The step details show which turn moved and which segment executes it.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

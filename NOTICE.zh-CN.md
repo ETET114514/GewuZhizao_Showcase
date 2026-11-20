@@ -2,13 +2,13 @@
 
 [English](NOTICE.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与驻留工具联合避碰
+## 2026-11-20 · P24 板件与工具联合避碰
 
-[源码提交 f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](docs/updates-2026-11-20-p24.zh-CN.md)
+[源码提交 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](docs/updates-2026-11-20-p24.zh-CN.md)
 
-截图是 Edge 验收中程序化柜体样例的已通过候选。
+截图为 Edge 验收中程序化柜体样例的已通过退出路径。
 
-[截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/f062223e28f1a39eab12dd69706d91b9abfc398c/wall-recognition/output/p24-tool-transfer-joint/preview.png)
+[截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/8bc8569d42d706ee2fd10a44722f3d4349c3e28f/wall-recognition/output/p24-joint-stage-turn/preview.png)
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 

@@ -2,11 +2,11 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
-## 2026-11-20 · P24 cabinet disassembly and joint retained-tool collision search
+## 2026-11-20 · P24 joint collision search for boards and tools
 
-[Source commit f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-After a change in intermediate heading, the search recalculates detours from the authored route. Reverse assembly uses the corresponding reversed segment and the opposite turn.
+When a turn moves, the search recalculates detours from the authored waypoints. Turn order, tool dependencies and the route endpoints carry through the full check.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

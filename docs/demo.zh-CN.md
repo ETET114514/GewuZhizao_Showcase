@@ -2,11 +2,11 @@
 
 [English](demo.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与驻留工具联合避碰
+## 2026-11-20 · P24 板件与工具联合避碰
 
-[源码提交 f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码提交 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
-打开受阻的搬运报告，运行联合搜索。可比较原方案与复核通过的候选，查看绕行点及新旧段号。
+打开受阻的装拆报告，运行联合搜索并对照原方案与已复核的退出路径。步骤详情会标明调整的转向和执行段。
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 

@@ -2,13 +2,13 @@
 
 **English** | [中文](NOTICE.zh-CN.md)
 
-## 2026-11-20 · P24 cabinet disassembly and joint retained-tool collision search
+## 2026-11-20 · P24 joint collision search for boards and tools
 
-[Source commit f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](docs/updates-2026-11-20-p24.md)
+[Source commit 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](docs/updates-2026-11-20-p24.md)
 
-The screenshot shows the verified candidate in a generated cabinet fixture used in Edge acceptance testing.
+The screenshot shows the verified tool withdrawal candidate from a generated cabinet fixture used in Edge acceptance testing.
 
-[Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/f062223e28f1a39eab12dd69706d91b9abfc398c/wall-recognition/output/p24-tool-transfer-joint/preview.png)
+[Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/8bc8569d42d706ee2fd10a44722f3d4349c3e28f/wall-recognition/output/p24-joint-stage-turn/preview.png)
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

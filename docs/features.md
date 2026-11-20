@@ -2,13 +2,13 @@
 
 **English** | [中文](features.zh-CN.md)
 
-## 2026-11-20 · P24 cabinet disassembly and joint retained-tool collision search
+## 2026-11-20 · P24 joint collision search for boards and tools
 
-[Source commit f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-One candidate can add a detour to a retained-tool transfer and reschedule a later turn. The search carries forward the authored waypoints, final pose and reuse point, while checking the updated intermediate headings against the obstacles.
+One candidate can detour around a blocked move and change when a board or tool turns. The search covers board movement, independent tool entry and withdrawal, and retained-tool transfers.
 
-The comparison labels both the authored segment and its new execution number after detour points are inserted. A candidate becomes available after the full disassembly sequence rechecks successfully.
+The preview shows both the original segment numbers and the final execution segment after inserting detour points. A candidate can be applied after the full disassembly route passes geometric checks.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 
