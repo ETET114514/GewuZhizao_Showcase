@@ -2,13 +2,13 @@
 
 **English** | [中文](features.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and synchronized tool withdrawal turns
+## 2026-11-20 · P24 kitchen disassembly and tool approach orientation
 
-[Source commit 245b3d2](https://github.com/ETET114514/GewuZhizaoNew/commit/245b3d21f13ccd6a72919dac7357325099052d83) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 0558870](https://github.com/ETET114514/GewuZhizaoNew/commit/0558870f17e7183c7769c00e6432fb3b5b6a3ae7) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-P24 checks explicit cabinet disassembly plans with staged board and tool motions. Once the board reaches its destination, each tool can turn about its own vertical axis, either in place or during a selected withdrawal segment. A comparison can test other timing while keeping the authored waypoints and tool order.
+P24 checks tools entering at a specified orientation and turning to their working orientation at the work position or during a selected approach segment. Tools may have a separate withdrawal turn. The timing comparison preserves the authored route points and tool order.
 
-The update also covers custom cabinet layouts, countertop openings, material contact sections, disassembly sequencing, detours, parking positions and staged board yaw. The checks use modeled cabinet solids and rectangular tool envelopes. Board flips, independent turning during tool entry, manufacturer installation procedures and load checks remain open.
+The checks use modeled cabinet solids and rectangular tool envelopes. Retained tools can be reused when their current position and orientation match the start of the approach. Multiple independent turns within a phase, board flips, manufacturer installation procedures and load checks remain open.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

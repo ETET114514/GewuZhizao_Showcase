@@ -2,11 +2,11 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and synchronized tool withdrawal turns
+## 2026-11-20 · P24 kitchen disassembly and tool approach orientation
 
-[Source commit 245b3d2](https://github.com/ETET114514/GewuZhizaoNew/commit/245b3d21f13ccd6a72919dac7357325099052d83) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 0558870](https://github.com/ETET114514/GewuZhizaoNew/commit/0558870f17e7183c7769c00e6432fb3b5b6a3ae7) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-The same motion parameter controls position and rotation on the selected segment. Reversing the plan reverses that segment and the turn. The report records starting and ending angles, pivot positions and the collision witness. Where an earlier detour adds waypoints, the turn follows the original segment endpoints.
+Setup and approach use the tool’s specified orientation. The board starts moving after the tools reach their working orientation. The reverse route undoes each turn in the corresponding phase.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

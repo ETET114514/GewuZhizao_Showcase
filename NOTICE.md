@@ -2,13 +2,13 @@
 
 **English** | [中文](NOTICE.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and synchronized tool withdrawal turns
+## 2026-11-20 · P24 kitchen disassembly and tool approach orientation
 
-[Source commit 245b3d2](https://github.com/ETET114514/GewuZhizaoNew/commit/245b3d21f13ccd6a72919dac7357325099052d83) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](docs/updates-2026-11-20-p24.md)
+[Source commit 0558870](https://github.com/ETET114514/GewuZhizaoNew/commit/0558870f17e7183c7769c00e6432fb3b5b6a3ae7) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](docs/updates-2026-11-20-p24.md)
 
-The screenshot shows an isometric drawing report from the generated cabinet fixture used in the Edge acceptance workflow.
+The screenshot is an isometric drawing report from the generated cabinet fixture used in Edge acceptance testing.
 
-[Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/245b3d21f13ccd6a72919dac7357325099052d83/wall-recognition/output/p24-tool-sync-turn/preview.png)
+[Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/0558870f17e7183c7769c00e6432fb3b5b6a3ae7/wall-recognition/output/p24-tool-entry-turn/preview.png)
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

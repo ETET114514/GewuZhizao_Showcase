@@ -2,15 +2,19 @@
 
 **English** | [中文](README.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and synchronized tool withdrawal turns
+## 2026-11-20 · P24 kitchen disassembly and tool approach orientation
 
-[Source commit 245b3d2](https://github.com/ETET114514/GewuZhizaoNew/commit/245b3d21f13ccd6a72919dac7357325099052d83) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](../docs/updates-2026-11-20-p24.md)
+[Source commit 0558870](https://github.com/ETET114514/GewuZhizaoNew/commit/0558870f17e7183c7769c00e6432fb3b5b6a3ae7) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](../docs/updates-2026-11-20-p24.md)
 
-![Synchronized turn on the first tool withdrawal segment](p24-tool-sync-turn.png)
+![Independent approach and withdrawal turns in the same step](p24-tool-entry-turn.png)
+
+[Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/0558870f17e7183c7769c00e6432fb3b5b6a3ae7/wall-recognition/output/p24-tool-entry-turn/preview.png)
+
+![Synchronized withdrawal turn](p24-tool-sync-turn.png)
 
 [Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/245b3d21f13ccd6a72919dac7357325099052d83/wall-recognition/output/p24-tool-sync-turn/preview.png)
 
-![Previous in-place tool turn](p24-tool-withdraw-yaw.png)
+![In-place withdrawal turn](p24-tool-withdraw-yaw.png)
 
 [Screenshot source](https://github.com/ETET114514/GewuZhizaoNew/blob/bc71e6716c54061b871dfe3aea8494355e4cf784/wall-recognition/output/p24-tool-withdraw-yaw/preview.png)
 
