@@ -2,13 +2,13 @@
 
 **English** | [中文](features.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer collision review
+## 2026-11-20 · P24 cabinet disassembly and joint retained-tool collision search
 
-[Source commit 601db4d](https://github.com/ETET114514/GewuZhizaoNew/commit/601db4d1e0f2023d0b64d39fac83f5e09edf4a04) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-When a retained-tool transfer is blocked, the timing search can move an existing turn to another part of the authored route. Waypoints, turn angles, rotation order and final pose are preserved. The original and candidate can be compared at the same scale, with a shared close-up of the collision.
+One candidate can add a detour to a retained-tool transfer and reschedule a later turn. The search carries forward the authored waypoints, final pose and reuse point, while checking the updated intermediate headings against the obstacles.
 
-The full plan is rechecked before a candidate can be applied, including the later reuse of the same physical tool. An in-place transfer without a route has no alternative segment. Geometry uses modeled cabinet solids and rectangular tool envelopes.
+The comparison labels both the authored segment and its new execution number after detour points are inserted. A candidate becomes available after the full disassembly sequence rechecks successfully.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

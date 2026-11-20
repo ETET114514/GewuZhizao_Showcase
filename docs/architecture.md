@@ -2,11 +2,11 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer collision review
+## 2026-11-20 · P24 cabinet disassembly and joint retained-tool collision search
 
-[Source commit 601db4d](https://github.com/ETET114514/GewuZhizaoNew/commit/601db4d1e0f2023d0b64d39fac83f5e09edf4a04) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-The search retains the position and angular endpoints while checking each candidate with the continuous collision solver. Reverse assembly maps the verified turn to the corresponding reversed segment.
+After a change in intermediate heading, the search recalculates detours from the authored route. Reverse assembly uses the corresponding reversed segment and the opposite turn.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

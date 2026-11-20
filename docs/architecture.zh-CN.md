@@ -2,11 +2,11 @@
 
 [English](architecture.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与驻留工具搬运避碰
+## 2026-11-20 · P24 厨房装拆校核与驻留工具联合避碰
 
-[源码提交 601db4d](https://github.com/ETET114514/GewuZhizaoNew/commit/601db4d1e0f2023d0b64d39fac83f5e09edf4a04) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码提交 f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
-候选保留路径和朝向端点，经连续碰撞检查才可应用。反向装配在对应的反向线段执行逆转角。
+中间朝向改变后，搜索从原位移点重新计算绕行。反向装配在对应的反向线段执行逆转角。
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 

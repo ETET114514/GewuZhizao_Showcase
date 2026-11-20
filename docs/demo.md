@@ -2,11 +2,11 @@
 
 **English** | [中文](demo.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer collision review
+## 2026-11-20 · P24 cabinet disassembly and joint retained-tool collision search
 
-[Source commit 601db4d](https://github.com/ETET114514/GewuZhizaoNew/commit/601db4d1e0f2023d0b64d39fac83f5e09edf4a04) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-Use the alternate turn timing action on a blocked retained-tool transfer. Use the collision focus control to inspect the original contact and then switch to the candidate in the same view.
+Open the blocked transfer report, run the joint search and compare the original with the verified candidate. The comparison shows the inserted detour and the turn’s original and final segment numbers.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

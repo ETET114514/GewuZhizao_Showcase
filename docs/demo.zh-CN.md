@@ -2,11 +2,11 @@
 
 [English](demo.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与驻留工具搬运避碰
+## 2026-11-20 · P24 厨房装拆校核与驻留工具联合避碰
 
-[源码提交 601db4d](https://github.com/ETET114514/GewuZhizaoNew/commit/601db4d1e0f2023d0b64d39fac83f5e09edf4a04) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码提交 f062223](https://github.com/ETET114514/GewuZhizaoNew/commit/f062223e28f1a39eab12dd69706d91b9abfc398c) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
-搬运受阻后，点「试另一种转向时机」。使用「聚焦碰撞」查看原碰撞工具姿态，再切换到同一视野的候选。
+打开受阻的搬运报告，运行联合搜索。可比较原方案与复核通过的候选，查看绕行点及新旧段号。
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 
