@@ -2,11 +2,11 @@
 
 **English** | [中文](demo.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and multi-segment tool turns
+## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer turns
 
-[Source commit b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-Expand the tool’s segment-turn settings and enter a segment number and angle per line. Compare timing candidates after a collision. The preview shows both the original collision witness and the verified route.
+Select a retained tool before the board-motion step. Enter transfer waypoints and segment turns. To turn in place, leave the waypoints blank and specify a terminal angle. The transfer draft can be edited before saving the step.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

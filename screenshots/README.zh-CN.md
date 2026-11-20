@@ -2,11 +2,15 @@
 
 [English](README.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与工具进出逐段转向
+## 2026-11-20 · P24 厨房装拆校核与驻留工具搬运转向
 
-[源码提交 b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](../docs/updates-2026-11-20-p24.zh-CN.md)
+[源码提交 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](../docs/updates-2026-11-20-p24.zh-CN.md)
 
-![同一工具在多个进入段和退出段转向](p24-tool-multi-turn.png)
+![驻留工具在搬运途中转向，再接入复用](p24-tool-transfer-turn.png)
+
+[截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d/wall-recognition/output/p24-tool-transfer-turn/preview.png)
+
+![工具进出逐段转向](p24-tool-multi-turn.png)
 
 [截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/b82b13b86c1e3e23fd15b07ccec774baf04322d3/wall-recognition/output/p24-tool-multi-turn/preview.png)
 

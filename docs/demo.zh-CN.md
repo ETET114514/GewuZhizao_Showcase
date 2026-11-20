@@ -2,11 +2,11 @@
 
 [English](demo.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与工具进出逐段转向
+## 2026-11-20 · P24 厨房装拆校核与驻留工具搬运转向
 
-[源码提交 b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码提交 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
-展开工具逐段转向选项，逐行填入段号和相对转角。碰撞时可比较替代时机，预览支持查看原方案的碰撞见证和复核后的候选。
+在板件移动前选择驻留工具，填写搬运位移点和各段转角。仅原地转向时清空位移点并填写到位角。保存步骤前可再编辑搬运草稿。
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 

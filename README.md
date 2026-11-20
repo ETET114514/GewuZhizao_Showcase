@@ -2,17 +2,17 @@
 
 **English** | [中文](README.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and multi-segment tool turns
+## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer turns
 
-[Source commit b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](docs/updates-2026-11-20-p24.md)
+[Source commit 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](docs/updates-2026-11-20-p24.md)
 
-A tool can use independent yaw increments on several segments of its approach and withdrawal routes. Each segment starts at the orientation reached on the preceding segment. A blocked turn can be moved to an unused segment between its neighbors while keeping the other turns, waypoints and tool order.
+A retained tool can turn during selected transfer segments, after arriving, or in place. The check starts from its actual parked orientation. When an obstruction interrupts the transfer, the last verified position and orientation are kept.
 
-The work-position turn aligns the tool before the board moves. Retained-tool reuse uses the final withdrawal orientation. Reverse assembly undoes the turns in reverse order. The geometry uses cabinet solids and rectangular tool envelopes. Board flips, simultaneous independent motion of several tools, manufacturer installation and load checks remain open.
+The next reuse can start from the new physical pose, including reuse within the same step. Reverse assembly undoes both the transfer and its turns. Geometry uses the modeled cabinet solids and rectangular tool envelopes. Board flips, simultaneous independent motion of several tools, manufacturer installation and load checks remain open.
 
-984 Node tests, 70 related Python tests and 21 Edge workflow groups passed. A tool hit a waiting tool at 45° on the first withdrawal segment. Moving that turn to the second segment cleared the full route and preserved the third-segment turn. GEOS sampled 3,507 poses. All 41 ZIP files matched their manifest. CAD readback verified 36 3D reference lines and one native arc, with a maximum line error bound of 0.038125 mm and zero audit errors.
+988 Node tests, 70 related Python tests and 22 Edge groups passed. The same tool moved from a 15° parked heading to 105° and was reused from the new pose. GEOS checked 1,503 poses and reproduced a separate mid-turn collision. All 42 files matched the ZIP manifest. CAD readback verified ten 3D traces, two center lines and one native 40° arc, with zero audit errors.
 
-![Several approach and withdrawal turns for one tool](screenshots/p24-tool-multi-turn.png)
+![A retained tool turns on its transfer path before reuse](screenshots/p24-tool-transfer-turn.png)
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

@@ -2,11 +2,11 @@
 
 [English](architecture.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与工具进出逐段转向
+## 2026-11-20 · P24 厨房装拆校核与驻留工具搬运转向
 
-[源码提交 b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码提交 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
-报告逐段记录起止朝向。前段绕行加点时，后续转向段重新编号并保留原起止点。反向方案反转线段及转角。
+搬运通过后，原驻留实体先更新姿态，再检查工具进入与板件运动。复用检查新位置和朝向是否连续。反向报告按相反顺序列出搬运转角。
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 

@@ -2,11 +2,11 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and multi-segment tool turns
+## 2026-11-20 · P24 kitchen disassembly and retained-tool transfer turns
 
-[Source commit b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-The report records start and end yaw for each segment. Earlier detours renumber the scheduled segments while preserving their original endpoints. Reverse routes swap the endpoints and invert each turn.
+A verified transfer updates the existing retained entity before approach and board-motion checks. Reuse validates continuity at the new position and orientation. The reverse report lists the transfer turns in inverse order.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

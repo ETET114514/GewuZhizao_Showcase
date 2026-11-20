@@ -2,13 +2,13 @@
 
 [English](NOTICE.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与工具进出逐段转向
+## 2026-11-20 · P24 厨房装拆校核与驻留工具搬运转向
 
-[源码提交 b82b13b](https://github.com/ETET114514/GewuZhizaoNew/commit/b82b13b86c1e3e23fd15b07ccec774baf04322d3) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](docs/updates-2026-11-20-p24.zh-CN.md)
+[源码提交 27a9f22](https://github.com/ETET114514/GewuZhizaoNew/commit/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](docs/updates-2026-11-20-p24.zh-CN.md)
 
-轴测截图来自 Edge 验收使用的程序化柜体样例。
+轴测截图来自 Edge 验收中的程序化柜体样例。
 
-[截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/b82b13b86c1e3e23fd15b07ccec774baf04322d3/wall-recognition/output/p24-tool-multi-turn/preview.png)
+[截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/27a9f2228e26bf08a6fdfeb6060f9deaab0dee9d/wall-recognition/output/p24-tool-transfer-turn/preview.png)
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 
