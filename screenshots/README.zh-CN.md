@@ -2,11 +2,15 @@
 
 [English](README.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与工具退出前转向
+## 2026-11-20 · P24 厨房装拆校核与工具退出同步转向
 
-[源码提交 bc71e67](https://github.com/ETET114514/GewuZhizaoNew/commit/bc71e6716c54061b871dfe3aea8494355e4cf784) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](../docs/updates-2026-11-20-p24.zh-CN.md)
+[源码提交 245b3d2](https://github.com/ETET114514/GewuZhizaoNew/commit/245b3d21f13ccd6a72919dac7357325099052d83) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](../docs/updates-2026-11-20-p24.zh-CN.md)
 
-![装拆预览中的工具独立转向](p24-tool-withdraw-yaw.png)
+![工具退出第一段的同步转向](p24-tool-sync-turn.png)
+
+[截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/245b3d21f13ccd6a72919dac7357325099052d83/wall-recognition/output/p24-tool-sync-turn/preview.png)
+
+![上一轮工具退出前原地转向](p24-tool-withdraw-yaw.png)
 
 [截图来源](https://github.com/ETET114514/GewuZhizaoNew/blob/bc71e6716c54061b871dfe3aea8494355e4cf784/wall-recognition/output/p24-tool-withdraw-yaw/preview.png)
 

@@ -2,11 +2,11 @@
 
 [English](architecture.md) | **中文**
 
-## 2026-11-20 · P24 厨房装拆校核与工具退出前转向
+## 2026-11-20 · P24 厨房装拆校核与工具退出同步转向
 
-[源码提交 bc71e67](https://github.com/ETET114514/GewuZhizaoNew/commit/bc71e6716c54061b871dfe3aea8494355e4cf784) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码提交 245b3d2](https://github.com/ETET114514/GewuZhizaoNew/commit/245b3d21f13ccd6a72919dac7357325099052d83) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
-连续棱柱校核覆盖整个转向区间，报告记录每件工具的起止朝向、转轴及碰撞见证。反向执行时，工具沿退出路线返回工作位后撤销独立转角。
+所选线段用同一进度控制工具中心位移与转角。反向方案反转对应段号及转角。报告保留起止朝向、转轴位置和碰撞见证。前段绕行加点后，转向追踪原线段的起止点。
 
 ## 2026-11-18 · 墙体区间引用与厨房图纸/接触检查
 

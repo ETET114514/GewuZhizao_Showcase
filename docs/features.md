@@ -2,13 +2,13 @@
 
 **English** | [中文](features.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and tool withdrawal turns
+## 2026-11-20 · P24 kitchen disassembly and synchronized tool withdrawal turns
 
-[Source commit bc71e67](https://github.com/ETET114514/GewuZhizaoNew/commit/bc71e6716c54061b871dfe3aea8494355e4cf784) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 245b3d2](https://github.com/ETET114514/GewuZhizaoNew/commit/245b3d21f13ccd6a72919dac7357325099052d83) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-P24 now checks explicit cabinet disassembly plans with staged board and tool motions. A tool can rotate about its own vertical axis after the board reaches its destination and before the tool withdraws. The check uses its actual orientation through withdrawal and across later retained-tool steps.
+P24 checks explicit cabinet disassembly plans with staged board and tool motions. Once the board reaches its destination, each tool can turn about its own vertical axis, either in place or during a selected withdrawal segment. A comparison can test other timing while keeping the authored waypoints and tool order.
 
-Implemented workflows also cover custom cabinet layouts and countertop openings, material contact sections, and disassembly sequencing, detours, parking positions and staged yaw. The checks use modeled cabinet solids and rectangular tool envelopes. Board flips, independent yaw during tool translation, manufacturer installation procedures and load checks remain open.
+The update also covers custom cabinet layouts, countertop openings, material contact sections, disassembly sequencing, detours, parking positions and staged board yaw. The checks use modeled cabinet solids and rectangular tool envelopes. Board flips, independent turning during tool entry, manufacturer installation procedures and load checks remain open.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

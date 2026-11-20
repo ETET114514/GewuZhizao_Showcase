@@ -2,11 +2,11 @@
 
 **English** | [中文](demo.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and tool withdrawal turns
+## 2026-11-20 · P24 kitchen disassembly and synchronized tool withdrawal turns
 
-[Source commit bc71e67](https://github.com/ETET114514/GewuZhizaoNew/commit/bc71e6716c54061b871dfe3aea8494355e4cf784) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 245b3d2](https://github.com/ETET114514/GewuZhizaoNew/commit/245b3d21f13ccd6a72919dac7357325099052d83) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-Open the kitchen drawing report and enable the disassembly check. Give a tool an entry path, a withdrawal path and a withdrawal turn angle. Read the report again to see the turn in the step preview. The demo uses a 390 px viewport and a schematic cabinet fixture.
+In the kitchen drawing report, give a tool its entry path, withdrawal path and turn angle. Enter the withdrawal segment number to turn during travel, or leave it blank for a turn in place. The timing search checks alternatives before applying them. The screenshot shows the 390 px workflow.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 

@@ -2,11 +2,11 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
-## 2026-11-20 · P24 kitchen disassembly and tool withdrawal turns
+## 2026-11-20 · P24 kitchen disassembly and synchronized tool withdrawal turns
 
-[Source commit bc71e67](https://github.com/ETET114514/GewuZhizaoNew/commit/bc71e6716c54061b871dfe3aea8494355e4cf784) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Source commit 245b3d2](https://github.com/ETET114514/GewuZhizaoNew/commit/245b3d21f13ccd6a72919dac7357325099052d83) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
-Continuous prism checks evaluate the rotation interval. The report keeps each tool’s starting angle, ending angle, pivot and collision witness. Reversing the sequence undoes the tool’s own turn after it returns along the withdrawal path.
+The same motion parameter controls position and rotation on the selected segment. Reversing the plan reverses that segment and the turn. The report records starting and ending angles, pivot positions and the collision witness. Where an earlier detour adds waypoints, the turn follows the original segment endpoints.
 
 ## 2026-11-18 · Wall reference ranges and kitchen drawing/contact workflows
 
