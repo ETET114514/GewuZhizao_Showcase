@@ -2,6 +2,14 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-22 · P24 直行受阻时调整相邻转向
+
+[源码提交 1da5968](https://github.com/ETET114514/GewuZhizaoNew/commit/1da5968fa2d40fd385491d6a124bf77b8d7b175c) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+板件或工具进出时，如果直行段碰撞，系统可提前或推迟相邻的已设转角，保留原位移点、转角顺序和最终朝向。也可与绕行及获准的临时放置位置调整联用。
+
+两柜样例中，长工具在退出第 2 段碰到驻留工具。将 90° 转向从第 3 段提前到第 1 段后，原路线和第 4 段的 −20° 转角均保留。1004 项 Node、70 项厨房与柜体 Python、27 组 Edge 流程通过。ZIP 清单内 42 个文件校验通过，CAD 审计零错误。
+
 ## 2026-11-22 · P24 临时放置、绕行与转向联合搜索
 
 [源码提交 4e31287](https://github.com/ETET114514/GewuZhizaoNew/commit/4e31287f17841f9a1850e05d1deb016851952330) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)

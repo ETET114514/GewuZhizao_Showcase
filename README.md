@@ -2,6 +2,14 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-22 · P24 turn timing for blocked straight legs
+
+[Source commit 1da5968](https://github.com/ETET114514/GewuZhizaoNew/commit/1da5968fa2d40fd385491d6a124bf77b8d7b175c) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+When a straight leg is blocked, the search can advance or delay a neighboring scheduled turn on a board, a tool entering, or a tool withdrawing. This keeps the original waypoints, turn order, and final heading. The search can also combine this change with detours and authorized changes to stopping points.
+
+In the two-cabinet fixture, a long tool collided with a parked tool on withdrawal leg 2. Moving the 90° turn from leg 3 to leg 1 cleared the route and preserved the −20° turn on leg 4. All 1,004 Node tests, 70 kitchen and cabinet Python tests, and 27 Edge workflows passed. The ZIP manifest verified 42 files, and the CAD audit reported zero errors.
+
 ## 2026-11-22 · P24 parking, detours and turn timing
 
 [Source commit 4e31287](https://github.com/ETET114514/GewuZhizaoNew/commit/4e31287f17841f9a1850e05d1deb016851952330) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
