@@ -2,6 +2,14 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-22 · P24 joint detours and in-leg turn timing
+
+[Source commit 8fc9b1d](https://github.com/ETET114514/GewuZhizaoNew/commit/8fc9b1dc345ea563f625d5e5f4b8bc44bd0e71f8) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+One candidate can detour before and after a turn, shorten the turning interval within a straight leg, and adjust authorized temporary stopping points. The preview labels both the original and execution segments. It can also focus on the actual board or tool outline at a straight collision and show the candidate in the same view.
+
+In the two-cabinet fixture, the tool took two detours and completed the 90° turn within the first half of original withdrawal leg 2. The turn executes on leg 3 and reverses on leg 5. All 1,011 Node tests, 70 kitchen and cabinet Python tests, and 30 Edge workflows passed. The ZIP manifest verified 42 files, and the CAD audit reported zero errors.
+
 ## 2026-11-22 · P24 turn timing within a single leg
 
 [Source commit 432aa66](https://github.com/ETET114514/GewuZhizaoNew/commit/432aa662d96d5ee441d2e49d025e5ee7b55581b2) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)

@@ -2,6 +2,14 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-22 · P24 段内转向与绕行联合搜索
+
+[源码提交 8fc9b1d](https://github.com/ETET114514/GewuZhizaoNew/commit/8fc9b1dc345ea563f625d5e5f4b8bc44bd0e71f8) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+同一候选可在转向前后绕行、缩小同步转向区间，也可调整获准的板件临时放置位置。预览同时标注源段号和执行段号。直行碰撞也能聚焦实际板件或工具轮廓，并在同一视野对照候选。
+
+两柜样例中，工具先后绕行两次，在原退出第 2 段前半段完成 90° 转向，实际在第 3 段执行，反向在第 5 段转回。1011 项 Node、70 项厨房与柜体 Python、30 组 Edge 流程通过。ZIP 清单内 42 个文件校验通过，CAD 审计零错误。
+
 ## 2026-11-22 · P24 段内调整同步转向
 
 [源码提交 432aa66](https://github.com/ETET114514/GewuZhizaoNew/commit/432aa662d96d5ee441d2e49d025e5ee7b55581b2) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
