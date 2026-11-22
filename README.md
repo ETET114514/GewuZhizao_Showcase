@@ -2,6 +2,14 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-22 · P24 turn timing within a single leg
+
+[Source commit 432aa66](https://github.com/ETET114514/GewuZhizaoNew/commit/432aa662d96d5ee441d2e49d025e5ee7b55581b2) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+When a synchronized turn collides with an obstacle, the search can place the same turn within a shorter portion of its original straight leg. Board moves, tool entry and withdrawal, and retained-tool transfers keep their original waypoints, centerline, and final heading. A focused preview shows the colliding shapes and uses the same view for the candidate path.
+
+In the two-cabinet fixture, the tool completed a 90° turn over the first 110 mm of its original 220 mm withdrawal leg. The original centerline and later −20° turn were preserved. All 1,007 Node tests, 70 kitchen and cabinet Python tests, and 28 Edge workflows passed. The ZIP manifest verified 42 files, and the CAD audit reported zero errors.
+
 ## 2026-11-22 · P24 turn timing for blocked straight legs
 
 [Source commit 1da5968](https://github.com/ETET114514/GewuZhizaoNew/commit/1da5968fa2d40fd385491d6a124bf77b8d7b175c) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)

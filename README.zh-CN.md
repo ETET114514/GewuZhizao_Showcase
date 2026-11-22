@@ -2,6 +2,14 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-22 · P24 段内调整同步转向
+
+[源码提交 432aa66](https://github.com/ETET114514/GewuZhizaoNew/commit/432aa662d96d5ee441d2e49d025e5ee7b55581b2) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+同步转向碰撞时，可把原转角集中到同一直线段的一部分。板件移动、工具进出和驻留工具搬运保留原位移点、路径中心线和最终朝向。聚焦预览显示碰撞时的轮廓，可在同一视野对照候选路线。
+
+两柜样例中，工具在原 220 mm 退出段的前 110 mm 内完成 90° 转向，保留原中心线及之后的 −20° 转角。1007 项 Node、70 项厨房与柜体 Python 和 28 组 Edge 流程通过。ZIP 清单内 42 个文件校验通过，CAD 审计零错误。
+
 ## 2026-11-22 · P24 直行受阻时调整相邻转向
 
 [源码提交 1da5968](https://github.com/ETET114514/GewuZhizaoNew/commit/1da5968fa2d40fd385491d6a124bf77b8d7b175c) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
