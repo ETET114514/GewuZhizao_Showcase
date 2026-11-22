@@ -2,9 +2,17 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-22 · P24 parking, detours and turn timing
+
+[Source commit 4e31287](https://github.com/ETET114514/GewuZhizaoNew/commit/4e31287f17841f9a1850e05d1deb016851952330) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+In the disassembly report, select the steps that may change their temporary stopping points and set a direction and distance limit. One candidate can move those stops, reorder steps, detour around collisions, and reschedule board or tool turns. The step-by-step preview shows the new stop coordinates and the final execution segments.
+
+In the three-step fixture, the door stopped 25 mm from its original destination. The door and tool each took one detour, and the tool turned 90° on withdrawal segment 3. The final route was exported to CAD and reopened from the saved plan. All 1,001 Node tests, 70 kitchen and cabinet Python tests, and 26 Edge workflows passed. The ZIP manifest verified 43 files, and the CAD audit reported zero errors.
+
 ## 2026-11-20 · P24 joint collision search for boards and tools
 
-[Source commit 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](docs/updates-2026-11-20-p24.md)
+[Source commit 4e634dc](https://github.com/ETET114514/GewuZhizaoNew/commit/4e634dc8d72c61db9b72b6d270e211b1fae3828b) · [Source PR #3, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](docs/updates-2026-11-20-p24.md)
 
 One candidate can detour around a blocked move and change when a board or tool turns. The search covers board movement, independent tool entry and withdrawal, and retained-tool transfers.
 

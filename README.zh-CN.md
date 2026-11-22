@@ -2,9 +2,17 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-22 · P24 临时放置、绕行与转向联合搜索
+
+[源码提交 4e31287](https://github.com/ETET114514/GewuZhizaoNew/commit/4e31287f17841f9a1850e05d1deb016851952330) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+在装拆报告中选定允许调整临时放置位置的步骤，设置移动方向和距离上限。同一候选可调整这些终点、装拆顺序、绕行路线和板件或工具的转向时机。逐步预览显示新终点坐标和最终执行段号。
+
+三步样例中，门板终点移动 25 mm，门板和工具各有一处绕行，工具在退出第 3 段转 90°。最终路线已导出 CAD，并从已保存的方案重新读取。1001 项 Node、70 项厨房与柜体 Python、26 组 Edge 流程通过。ZIP 清单内 43 个文件校验通过，CAD 审计零错误。
+
 ## 2026-11-20 · P24 板件与工具联合避碰
 
-[源码提交 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](docs/updates-2026-11-20-p24.zh-CN.md)
+[源码提交 4e634dc](https://github.com/ETET114514/GewuZhizaoNew/commit/4e634dc8d72c61db9b72b6d270e211b1fae3828b) · [源码 PR #3，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](docs/updates-2026-11-20-p24.zh-CN.md)
 
 同一候选可以给受阻平移段加绕行点，并调整转向时机。适用于板件移动、工具独立进入和退出，以及驻留工具搬运。
 
