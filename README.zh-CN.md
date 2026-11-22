@@ -2,6 +2,14 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-22 · P24 同步转向绕行
+
+[源码提交 5f26429](https://github.com/ETET114514/GewuZhizaoNew/commit/5f264294ac42ee1f909194833634b0b9e80287c1) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+板件或工具转向受阻时，可以先偏离原线段，再沿平行路线完成同步转向，最后接回原位移点。系统复核两端连接段以及完整转向过程，联合搜索还可继续绕过后面的直行障碍。
+
+两柜样例中，工具横移 25 mm，转 90° 后接回原位移点。联合搜索还补上一处直行绕行，保留原来的两个转角。1016 项 Node、70 项厨房与柜体 Python、32 组 Edge 流程通过。ZIP 清单内 42 个文件校验通过，CAD 审计零错误。
+
 ## 2026-11-22 · P24 段内转向与绕行联合搜索
 
 [源码提交 8fc9b1d](https://github.com/ETET114514/GewuZhizaoNew/commit/8fc9b1dc345ea563f625d5e5f4b8bc44bd0e71f8) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)

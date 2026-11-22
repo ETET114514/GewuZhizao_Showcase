@@ -2,6 +2,14 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-22 · P24 detours during synchronized turns
+
+[Source commit 5f26429](https://github.com/ETET114514/GewuZhizaoNew/commit/5f264294ac42ee1f909194833634b0b9e80287c1) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+A board or tool can leave a blocked segment, complete its synchronized turn along a parallel route, and return to the original waypoint. The search checks both connectors and the complete turning sweep. Joint search can also route around a later straight collision.
+
+In the two-cabinet fixture, the tool shifted 25 mm sideways, turned 90°, and returned to the original waypoint. Joint search added a later straight detour without changing the two authored turn angles. All 1,016 Node tests, 70 kitchen and cabinet Python tests, and 32 Edge workflows passed. The ZIP manifest verified 42 files, and the CAD audit reported zero errors.
+
 ## 2026-11-22 · P24 joint detours and in-leg turn timing
 
 [Source commit 8fc9b1d](https://github.com/ETET114514/GewuZhizaoNew/commit/8fc9b1dc345ea563f625d5e5f4b8bc44bd0e71f8) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
