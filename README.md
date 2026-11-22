@@ -2,6 +2,14 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-22 · P24 detours for stationary turns
+
+[Source commit 8d9e607](https://github.com/ETET114514/GewuZhizaoNew/commit/8d9e607c455f67dee9282c195d17840ddc7359e1) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+When a stationary turn is blocked, a board or tool can leave the turn point, complete the turn over a short offset segment, and return at the intended heading. This applies to parked boards, tool entry and withdrawal, and retained tools. The same candidate can also detour a synchronized turn or a later straight leg.
+
+In the two-cabinet fixture, the tool moved 25 mm before turning 90° over the next 5 mm, then returned to the same work point. Joint search also cleared a later straight collision. All 1,019 Node tests, 70 kitchen and cabinet Python tests, and 35 Edge workflows passed. The ZIP manifest verified 42 files and CAD reported zero audit errors.
+
 ## 2026-11-22 · P24 detours during synchronized turns
 
 [Source commit 5f26429](https://github.com/ETET114514/GewuZhizaoNew/commit/5f264294ac42ee1f909194833634b0b9e80287c1) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)

@@ -2,6 +2,14 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-22 · P24 原地转向绕行
+
+[源码提交 8d9e607](https://github.com/ETET114514/GewuZhizaoNew/commit/8d9e607c455f67dee9282c195d17840ddc7359e1) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+原地转向受阻时，板件或工具可离开原转向点，在偏移短段内完成转向，再带着目标朝向返回。板件停放后、工具进出及驻留工具均可使用。同一候选也可处理同步转向或后续直行绕行。
+
+两柜样例中，工具先横移 25 mm，在接下来的 5 mm 内转 90°，再回到原工作点。联合搜索也处理了后续的直行碰撞。1019 项 Node、70 项厨房与柜体 Python、35 组 Edge 流程通过。ZIP 清单内 42 个文件校验通过，CAD 审计零错误。
+
 ## 2026-11-22 · P24 同步转向绕行
 
 [源码提交 5f26429](https://github.com/ETET114514/GewuZhizaoNew/commit/5f264294ac42ee1f909194833634b0b9e80287c1) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
