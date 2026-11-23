@@ -2,6 +2,14 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-23 · P24 stationary turns at path waypoints
+
+[Source commit 2f3cad9](https://github.com/ETET114514/GewuZhizaoNew/commit/2f3cad9b0528bacb9fc2586c8edd0b7a18a27946) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+Boards, entering and withdrawing tools, and retained tools in transfer can stop and turn at a specified waypoint. A blocked turn can move to a nearby location, complete the same turn there, and return to the original waypoint at the new heading. Reverse assembly records where to turn back, and the millimeter DXF includes a native arc for the stationary turn.
+
+In the two-cabinet test, the tool collided at 45°. The candidate shifted 25 mm sideways, turned 90° in place, and returned to the waypoint, adding 50 mm. All 1,026 Node tests, 70 kitchen and cabinet Python tests, and 36 Edge workflows passed. Independent checks sampled 6,006 poses, verified all 42 ZIP manifest files, and found zero CAD audit errors.
+
 ## 2026-11-22 · P24 detours for stationary turns
 
 [Source commit 8d9e607](https://github.com/ETET114514/GewuZhizaoNew/commit/8d9e607c455f67dee9282c195d17840ddc7359e1) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)

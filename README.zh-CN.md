@@ -2,6 +2,14 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-23 · P24 路径点原地转向
+
+[源码提交 2f3cad9](https://github.com/ETET114514/GewuZhizaoNew/commit/2f3cad9b0528bacb9fc2586c8edd0b7a18a27946) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+板件、进出工具和搬运中的驻留工具可到指定路径点后停下转向。原地转向受阻时，可横移到附近完成同一转角，再以新朝向返回原路径点。反向装配记录原地转回的位置，毫米 DXF 用原生圆弧表达原地转向。
+
+两柜样例中，工具原地转到 45° 时发生碰撞。候选横移 25 mm，在偏移位置原地转 90°，再返回路径点，往返增加 50 mm。1026 项 Node、70 项厨房与柜体 Python、36 组 Edge 流程通过。独立抽查 6006 个姿态，核验 ZIP 清单全部 42 个文件，CAD 审计零错误。
+
 ## 2026-11-22 · P24 原地转向绕行
 
 [源码提交 8d9e607](https://github.com/ETET114514/GewuZhizaoNew/commit/8d9e607c455f67dee9282c195d17840ddc7359e1) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
