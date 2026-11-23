@@ -2,6 +2,14 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-23 · P24 沿原路线搜索原地转向点
+
+[源码提交 308f4b3](https://github.com/ETET114514/GewuZhizaoNew/commit/308f4b34cc87252d3f85f258ef3a00aed7e97c21) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+板件或工具转向受阻时，可沿原路线寻找原地转向点。系统可改写同步转向、提前到位转向，或推迟工具退出前的转向。候选沿用已有路径点，也可插入共线点。联合搜索还能处理其他受阻的直行段。
+
+两柜样例中，工具在退出第 1 段的 110 mm 位置停下，原地转 90°，继续沿总长 480 mm 的原路线退出。1033 项 Node、70 项厨房与柜体 Python、40 组 Edge 流程通过。独立抽查 5005 个姿态，校验两份 ZIP 的 83 个清单文件，读回两条原生 DXF 圆弧，CAD 审计零错误。
+
 ## 2026-11-23 · P24 路径点原地转向
 
 [源码提交 2f3cad9](https://github.com/ETET114514/GewuZhizaoNew/commit/2f3cad9b0528bacb9fc2586c8edd0b7a18a27946) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)

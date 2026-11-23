@@ -2,6 +2,14 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-23 · P24 search for stops along the original path
+
+[Source commit 308f4b3](https://github.com/ETET114514/GewuZhizaoNew/commit/308f4b34cc87252d3f85f258ef3a00aed7e97c21) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+A blocked board or tool can search for a stop on its original path and turn in place. The search can replace a synchronized turn, advance an arrival turn, or delay a tool's pre-withdrawal turn. An existing waypoint or a collinear point can become the stop. A joint candidate can handle a separate straight-leg obstruction as well.
+
+In the two-cabinet test, the tool stopped 110 mm into its first withdrawal leg, turned 90°, and continued on the same 480 mm route. All 1,033 Node tests, 70 kitchen and cabinet Python tests, and 40 Edge workflows passed. Independent checks sampled 5,005 poses, verified 83 manifest files across two ZIPs, and read back two native DXF arcs with zero CAD audit errors.
+
 ## 2026-11-23 · P24 stationary turns at path waypoints
 
 [Source commit 2f3cad9](https://github.com/ETET114514/GewuZhizaoNew/commit/2f3cad9b0528bacb9fc2586c8edd0b7a18a27946) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
