@@ -2,9 +2,20 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-23 · P24 提前偏移与向前接回
+
+[源码提交 258eeff](https://github.com/ETET114514/GewuZhizaoNew/commit/258eeff3a462089af427507745250f497ce88411) · [源码 PR #5，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/5) · [范围与验收](docs/updates-2026-11-23-p24.zh-CN.md)
+
+板件或工具可以通过原转向点，在前方障碍之前离开原线，沿偏移线前进后原地转向。转完可斜向接回，也可沿偏移线继续前进再横向接回。候选保留原路径点及后续转角，并可联用后续直行绕行。
+
+两柜样例中，工具在第二段 25% 处横移 10 mm，沿偏移线前进 55 mm 后在中点原地转 90°。斜向接回增加 10.45 mm。斜向接回也受阻时，工具转后再沿偏移线前进 110 mm，横向接回，总路程增加 20 mm。
+
+1054 项 Node、70 项厨房与柜体相关 Python、48 组 Edge 流程通过。独立 GEOS 抽查 17017 个姿态并复现原转向和连接段碰撞。两份 ZIP 的 84 个清单文件校验通过，DXF 读回 15 条退出中心线和 2 条原生圆弧，CAD 审计零错误。
+
+
 ## 2026-11-23 · P24 段内偏移原地转向
 
-[源码提交 871c21f](https://github.com/ETET114514/GewuZhizaoNew/commit/871c21f0c3ae0247729c087d705cff94145f2915) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[源码提交 871c21f](https://github.com/ETET114514/GewuZhizaoNew/commit/871c21f0c3ae0247729c087d705cff94145f2915) · [源码 PR #4，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [合入提交 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 转向绕行可先让板件或工具直行通过狭口，再从线段内短距偏移、原地转向并回到同一处。系统连续检查往返和完整转角，联合候选也可处理后续直行碰撞。
 
@@ -12,7 +23,7 @@
 
 ## 2026-11-23 · P24 沿原路线搜索原地转向点
 
-[源码提交 308f4b3](https://github.com/ETET114514/GewuZhizaoNew/commit/308f4b34cc87252d3f85f258ef3a00aed7e97c21) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[源码提交 308f4b3](https://github.com/ETET114514/GewuZhizaoNew/commit/308f4b34cc87252d3f85f258ef3a00aed7e97c21) · [源码 PR #4，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [合入提交 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 板件或工具转向受阻时，可沿原路线寻找原地转向点。系统可改写同步转向、提前到位转向，或推迟工具退出前的转向。候选沿用已有路径点，也可插入共线点。联合搜索还能处理其他受阻的直行段。
 
@@ -20,7 +31,7 @@
 
 ## 2026-11-23 · P24 路径点原地转向
 
-[源码提交 2f3cad9](https://github.com/ETET114514/GewuZhizaoNew/commit/2f3cad9b0528bacb9fc2586c8edd0b7a18a27946) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[源码提交 2f3cad9](https://github.com/ETET114514/GewuZhizaoNew/commit/2f3cad9b0528bacb9fc2586c8edd0b7a18a27946) · [源码 PR #4，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [合入提交 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 板件、进出工具和搬运中的驻留工具可到指定路径点后停下转向。原地转向受阻时，可横移到附近完成同一转角，再以新朝向返回原路径点。反向装配记录原地转回的位置，毫米 DXF 用原生圆弧表达原地转向。
 
@@ -28,7 +39,7 @@
 
 ## 2026-11-22 · P24 原地转向绕行
 
-[源码提交 8d9e607](https://github.com/ETET114514/GewuZhizaoNew/commit/8d9e607c455f67dee9282c195d17840ddc7359e1) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[源码提交 8d9e607](https://github.com/ETET114514/GewuZhizaoNew/commit/8d9e607c455f67dee9282c195d17840ddc7359e1) · [源码 PR #4，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [合入提交 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 原地转向受阻时，板件或工具可离开原转向点，在偏移短段内完成转向，再带着目标朝向返回。板件停放后、工具进出及驻留工具均可使用。同一候选也可处理同步转向或后续直行绕行。
 
@@ -36,7 +47,7 @@
 
 ## 2026-11-22 · P24 同步转向绕行
 
-[源码提交 5f26429](https://github.com/ETET114514/GewuZhizaoNew/commit/5f264294ac42ee1f909194833634b0b9e80287c1) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[源码提交 5f26429](https://github.com/ETET114514/GewuZhizaoNew/commit/5f264294ac42ee1f909194833634b0b9e80287c1) · [源码 PR #4，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [合入提交 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 板件或工具转向受阻时，可以先偏离原线段，再沿平行路线完成同步转向，最后接回原位移点。系统复核两端连接段以及完整转向过程，联合搜索还可继续绕过后面的直行障碍。
 
@@ -44,7 +55,7 @@
 
 ## 2026-11-22 · P24 段内转向与绕行联合搜索
 
-[源码提交 8fc9b1d](https://github.com/ETET114514/GewuZhizaoNew/commit/8fc9b1dc345ea563f625d5e5f4b8bc44bd0e71f8) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[源码提交 8fc9b1d](https://github.com/ETET114514/GewuZhizaoNew/commit/8fc9b1dc345ea563f625d5e5f4b8bc44bd0e71f8) · [源码 PR #4，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [合入提交 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 同一候选可在转向前后绕行、缩小同步转向区间，也可调整获准的板件临时放置位置。预览同时标注源段号和执行段号。直行碰撞也能聚焦实际板件或工具轮廓，并在同一视野对照候选。
 
@@ -52,7 +63,7 @@
 
 ## 2026-11-22 · P24 段内调整同步转向
 
-[源码提交 432aa66](https://github.com/ETET114514/GewuZhizaoNew/commit/432aa662d96d5ee441d2e49d025e5ee7b55581b2) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[源码提交 432aa66](https://github.com/ETET114514/GewuZhizaoNew/commit/432aa662d96d5ee441d2e49d025e5ee7b55581b2) · [源码 PR #4，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [合入提交 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 同步转向碰撞时，可把原转角集中到同一直线段的一部分。板件移动、工具进出和驻留工具搬运保留原位移点、路径中心线和最终朝向。聚焦预览显示碰撞时的轮廓，可在同一视野对照候选路线。
 
@@ -60,7 +71,7 @@
 
 ## 2026-11-22 · P24 直行受阻时调整相邻转向
 
-[源码提交 1da5968](https://github.com/ETET114514/GewuZhizaoNew/commit/1da5968fa2d40fd385491d6a124bf77b8d7b175c) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[源码提交 1da5968](https://github.com/ETET114514/GewuZhizaoNew/commit/1da5968fa2d40fd385491d6a124bf77b8d7b175c) · [源码 PR #4，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [合入提交 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 板件或工具进出时，如果直行段碰撞，系统可提前或推迟相邻的已设转角，保留原位移点、转角顺序和最终朝向。也可与绕行及获准的临时放置位置调整联用。
 
@@ -68,7 +79,7 @@
 
 ## 2026-11-22 · P24 临时放置、绕行与转向联合搜索
 
-[源码提交 4e31287](https://github.com/ETET114514/GewuZhizaoNew/commit/4e31287f17841f9a1850e05d1deb016851952330) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[源码提交 4e31287](https://github.com/ETET114514/GewuZhizaoNew/commit/4e31287f17841f9a1850e05d1deb016851952330) · [源码 PR #4，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [合入提交 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 在装拆报告中选定允许调整临时放置位置的步骤，设置移动方向和距离上限。同一候选可调整这些终点、装拆顺序、绕行路线和板件或工具的转向时机。逐步预览显示新终点坐标和最终执行段号。
 

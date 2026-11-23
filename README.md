@@ -2,9 +2,20 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-23 · P24 offset routes around blocked turns
+
+[Source commit 258eeff](https://github.com/ETET114514/GewuZhizaoNew/commit/258eeff3a462089af427507745250f497ce88411) · [Source PR #5, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/5) · [Scope and evidence](docs/updates-2026-11-23-p24.md)
+
+A board or tool can pass a blocked turn waypoint, leave the centerline before the obstruction, advance on a parallel offset, and turn in place. It can then rejoin diagonally or travel farther along the offset before making a lateral join. The search retains authored waypoints and later turns, and can also detour a separate straight obstruction.
+
+In the two-cabinet example, the tool leaves the second leg at 25%, moves 10 mm laterally, advances 55 mm, and turns 90° at the midpoint. The diagonal join adds 10.45 mm to the original route. With the diagonal blocked, it advances another 110 mm and rejoins laterally, adding 20 mm in total.
+
+1,054 Node tests, 70 kitchen and cabinet Python tests, and 48 Edge workflows passed. Independent GEOS sampling checked 17,017 poses and reproduced the blocked turn and connectors. The two ZIP manifests covered 84 files. The DXF readback found 15 withdrawal centerlines, two native arcs, and zero CAD audit errors.
+
+
 ## 2026-11-23 · P24 offset stops within a path leg
 
-[Source commit 871c21f](https://github.com/ETET114514/GewuZhizaoNew/commit/871c21f0c3ae0247729c087d705cff94145f2915) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[Source commit 871c21f](https://github.com/ETET114514/GewuZhizaoNew/commit/871c21f0c3ae0247729c087d705cff94145f2915) · [Source PR #4, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [Merged commit 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 The turn-detour search can keep a board or tool straight through a narrow slot, move it off the route partway along the leg, turn it in place, and return to the same point. The search checks both connectors and the full turn. Joint search can also resolve a later straight-leg obstruction.
 
@@ -12,7 +23,7 @@ In the two-cabinet test, a tool moved 10 mm sideways at the midpoint of its with
 
 ## 2026-11-23 · P24 search for stops along the original path
 
-[Source commit 308f4b3](https://github.com/ETET114514/GewuZhizaoNew/commit/308f4b34cc87252d3f85f258ef3a00aed7e97c21) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[Source commit 308f4b3](https://github.com/ETET114514/GewuZhizaoNew/commit/308f4b34cc87252d3f85f258ef3a00aed7e97c21) · [Source PR #4, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [Merged commit 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 A blocked board or tool can search for a stop on its original path and turn in place. The search can replace a synchronized turn, advance an arrival turn, or delay a tool's pre-withdrawal turn. An existing waypoint or a collinear point can become the stop. A joint candidate can handle a separate straight-leg obstruction as well.
 
@@ -20,7 +31,7 @@ In the two-cabinet test, the tool stopped 110 mm into its first withdrawal leg, 
 
 ## 2026-11-23 · P24 stationary turns at path waypoints
 
-[Source commit 2f3cad9](https://github.com/ETET114514/GewuZhizaoNew/commit/2f3cad9b0528bacb9fc2586c8edd0b7a18a27946) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[Source commit 2f3cad9](https://github.com/ETET114514/GewuZhizaoNew/commit/2f3cad9b0528bacb9fc2586c8edd0b7a18a27946) · [Source PR #4, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [Merged commit 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 Boards, entering and withdrawing tools, and retained tools in transfer can stop and turn at a specified waypoint. A blocked turn can move to a nearby location, complete the same turn there, and return to the original waypoint at the new heading. Reverse assembly records where to turn back, and the millimeter DXF includes a native arc for the stationary turn.
 
@@ -28,7 +39,7 @@ In the two-cabinet test, the tool collided at 45°. The candidate shifted 25 mm 
 
 ## 2026-11-22 · P24 detours for stationary turns
 
-[Source commit 8d9e607](https://github.com/ETET114514/GewuZhizaoNew/commit/8d9e607c455f67dee9282c195d17840ddc7359e1) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[Source commit 8d9e607](https://github.com/ETET114514/GewuZhizaoNew/commit/8d9e607c455f67dee9282c195d17840ddc7359e1) · [Source PR #4, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [Merged commit 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 When a stationary turn is blocked, a board or tool can leave the turn point, complete the turn over a short offset segment, and return at the intended heading. This applies to parked boards, tool entry and withdrawal, and retained tools. The same candidate can also detour a synchronized turn or a later straight leg.
 
@@ -36,7 +47,7 @@ In the two-cabinet fixture, the tool moved 25 mm before turning 90° over the ne
 
 ## 2026-11-22 · P24 detours during synchronized turns
 
-[Source commit 5f26429](https://github.com/ETET114514/GewuZhizaoNew/commit/5f264294ac42ee1f909194833634b0b9e80287c1) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[Source commit 5f26429](https://github.com/ETET114514/GewuZhizaoNew/commit/5f264294ac42ee1f909194833634b0b9e80287c1) · [Source PR #4, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [Merged commit 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 A board or tool can leave a blocked segment, complete its synchronized turn along a parallel route, and return to the original waypoint. The search checks both connectors and the complete turning sweep. Joint search can also route around a later straight collision.
 
@@ -44,7 +55,7 @@ In the two-cabinet fixture, the tool shifted 25 mm sideways, turned 90°, and re
 
 ## 2026-11-22 · P24 joint detours and in-leg turn timing
 
-[Source commit 8fc9b1d](https://github.com/ETET114514/GewuZhizaoNew/commit/8fc9b1dc345ea563f625d5e5f4b8bc44bd0e71f8) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[Source commit 8fc9b1d](https://github.com/ETET114514/GewuZhizaoNew/commit/8fc9b1dc345ea563f625d5e5f4b8bc44bd0e71f8) · [Source PR #4, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [Merged commit 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 One candidate can detour before and after a turn, shorten the turning interval within a straight leg, and adjust authorized temporary stopping points. The preview labels both the original and execution segments. It can also focus on the actual board or tool outline at a straight collision and show the candidate in the same view.
 
@@ -52,7 +63,7 @@ In the two-cabinet fixture, the tool took two detours and completed the 90° tur
 
 ## 2026-11-22 · P24 turn timing within a single leg
 
-[Source commit 432aa66](https://github.com/ETET114514/GewuZhizaoNew/commit/432aa662d96d5ee441d2e49d025e5ee7b55581b2) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[Source commit 432aa66](https://github.com/ETET114514/GewuZhizaoNew/commit/432aa662d96d5ee441d2e49d025e5ee7b55581b2) · [Source PR #4, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [Merged commit 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 When a synchronized turn collides with an obstacle, the search can place the same turn within a shorter portion of its original straight leg. Board moves, tool entry and withdrawal, and retained-tool transfers keep their original waypoints, centerline, and final heading. A focused preview shows the colliding shapes and uses the same view for the candidate path.
 
@@ -60,7 +71,7 @@ In the two-cabinet fixture, the tool completed a 90° turn over the first 110 mm
 
 ## 2026-11-22 · P24 turn timing for blocked straight legs
 
-[Source commit 1da5968](https://github.com/ETET114514/GewuZhizaoNew/commit/1da5968fa2d40fd385491d6a124bf77b8d7b175c) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[Source commit 1da5968](https://github.com/ETET114514/GewuZhizaoNew/commit/1da5968fa2d40fd385491d6a124bf77b8d7b175c) · [Source PR #4, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [Merged commit 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 When a straight leg is blocked, the search can advance or delay a neighboring scheduled turn on a board, a tool entering, or a tool withdrawing. This keeps the original waypoints, turn order, and final heading. The search can also combine this change with detours and authorized changes to stopping points.
 
@@ -68,7 +79,7 @@ In the two-cabinet fixture, a long tool collided with a parked tool on withdrawa
 
 ## 2026-11-22 · P24 parking, detours and turn timing
 
-[Source commit 4e31287](https://github.com/ETET114514/GewuZhizaoNew/commit/4e31287f17841f9a1850e05d1deb016851952330) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+[Source commit 4e31287](https://github.com/ETET114514/GewuZhizaoNew/commit/4e31287f17841f9a1850e05d1deb016851952330) · [Source PR #4, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/4) · [Merged commit 22d4e3a](https://github.com/ETET114514/GewuZhizaoNew/commit/22d4e3a22fcb9f789b7dc3ae50d0d046f0e07f2b)
 
 In the disassembly report, select the steps that may change their temporary stopping points and set a direction and distance limit. One candidate can move those stops, reorder steps, detour around collisions, and reschedule board or tool turns. The step-by-step preview shows the new stop coordinates and the final execution segments.
 

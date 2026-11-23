@@ -2,6 +2,13 @@
 
 **English** | [中文](features.zh-CN.md)
 
+## 2026-11-23 · P24 offset routes around blocked turns
+
+A board or tool can pass a blocked turn waypoint, leave the centerline before the obstruction, advance on a parallel offset, and turn in place. It can then rejoin diagonally or travel farther along the offset before making a lateral join. The search retains authored waypoints and later turns, and can also detour a separate straight obstruction.
+
+This geometric check covers configured board, tool entry and withdrawal, and retained-tool transfer routes. It uses a bounded search and a 16-point, 50 m route limit. Manufacturer-specific assembly processes, fasteners, support and load checks, and CNC remain open. [Scope and evidence](updates-2026-11-23-p24.md)
+
+
 ## 2026-11-20 · P24 joint collision search for boards and tools
 
 [Source commit 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
