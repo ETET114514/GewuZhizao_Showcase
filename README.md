@@ -2,6 +2,14 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-23 · P24 offset stops within a path leg
+
+[Source commit 871c21f](https://github.com/ETET114514/GewuZhizaoNew/commit/871c21f0c3ae0247729c087d705cff94145f2915) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+The turn-detour search can keep a board or tool straight through a narrow slot, move it off the route partway along the leg, turn it in place, and return to the same point. The search checks both connectors and the full turn. Joint search can also resolve a later straight-leg obstruction.
+
+In the two-cabinet test, a tool moved 10 mm sideways at the midpoint of its withdrawal leg, turned 90°, and came back. The loop added 20 mm. When an extra obstacle blocked that connector, the search used a 10 mm offset along the cabinet depth axis. All 1,039 Node tests, 70 kitchen and cabinet Python tests, and 42 Edge workflows passed. Independent checks sampled 16,016 poses, verified 84 manifest files across two ZIPs, and read two native DXF arcs with zero CAD audit errors.
+
 ## 2026-11-23 · P24 search for stops along the original path
 
 [Source commit 308f4b3](https://github.com/ETET114514/GewuZhizaoNew/commit/308f4b34cc87252d3f85f258ef3a00aed7e97c21) · [Source PR #4, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/4)

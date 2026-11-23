@@ -2,6 +2,14 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-23 · P24 段内偏移原地转向
+
+[源码提交 871c21f](https://github.com/ETET114514/GewuZhizaoNew/commit/871c21f0c3ae0247729c087d705cff94145f2915) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
+
+转向绕行可先让板件或工具直行通过狭口，再从线段内短距偏移、原地转向并回到同一处。系统连续检查往返和完整转角，联合候选也可处理后续直行碰撞。
+
+两柜样例中，工具在退出段中点横移 10 mm，原地转 90° 后返回，往返增加 20 mm。挡住该连接段后，搜索改沿柜体前后方向偏移 10 mm。1039 项 Node、70 项厨房与柜体 Python、42 组 Edge 流程通过。独立抽查 16016 个姿态，校验两份 ZIP 的 84 个清单文件，读回两条原生 DXF 圆弧，CAD 审计零错误。
+
 ## 2026-11-23 · P24 沿原路线搜索原地转向点
 
 [源码提交 308f4b3](https://github.com/ETET114514/GewuZhizaoNew/commit/308f4b34cc87252d3f85f258ef3a00aed7e97c21) · [源码 PR #4，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/4)
