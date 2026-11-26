@@ -2,9 +2,17 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-26 · P24 general software acceptance
+
+![Surface drawing with visible solid lines and dashed hidden lines](p24-brep-hidden-lines.png)
+
+![Disassembly step showing the fixed reference and out-of-range palm positions](p24-hand-reach.png)
+
+[Source and evidence](../docs/updates-2026-11-26-p24-closeout.md)
+
 ## 2026-11-20 · P24 joint collision search for boards and tools
 
-[Source commit 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](../docs/updates-2026-11-20-p24.md)
+[Merged source commit 4e634dc](https://github.com/ETET114514/GewuZhizaoNew/commit/4e634dc8d72c61db9b72b6d270e211b1fae3828b) · [Source PR #3, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](../docs/updates-2026-11-20-p24.md)
 
 ![Verified tool withdrawal detour and turn](p24-joint-stage-turn.png)
 

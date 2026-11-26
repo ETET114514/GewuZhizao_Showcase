@@ -2,6 +2,10 @@
 
 **English** | [中文](demo.zh-CN.md)
 
+## 2026-11-26 · P24 general software acceptance
+
+Open **Detail → Surface / BRep hidden-line drawings**, load STEP, switch views, and toggle hidden lines. Compare the SVG, offline HTML, and millimeter DXF for the same view. In the disassembly editor, enter a hand envelope, entry and withdrawal paths, reference point, and distance limit. Reread the scheme and open the step drawing to locate a reach witness. [Scope and screenshots](updates-2026-11-26-p24-closeout.md)
+
 ## 2026-11-23 · P24 offset routes around blocked turns
 
 Open a blocked disassembly report and run the turn-detour search. Compare the original witness and the candidate's departure percentage, turn position, join point, and added distance. Apply the candidate, reread the plan, and export the reverse route and DXF. The DXF arc identifies the turn point along the executed route.
@@ -11,7 +15,7 @@ In the two-cabinet example, the tool leaves the second leg at 25%, moves 10 mm l
 
 ## 2026-11-20 · P24 joint collision search for boards and tools
 
-[Source commit 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Merged source commit 4e634dc](https://github.com/ETET114514/GewuZhizaoNew/commit/4e634dc8d72c61db9b72b6d270e211b1fae3828b) · [Source PR #3, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
 Open the blocked disassembly report, launch the joint search and compare the original with the verified withdrawal route. The step details show which turn moved and which segment executes it.
 

@@ -2,6 +2,10 @@
 
 [English](demo.md) | **中文**
 
+## 2026-11-26 · P24 通用软件验收
+
+打开「做深化 → 曲面 / BRep 隐藏线出图」，导入 STEP，切换视图和隐藏线显示，对照同一视图的 SVG、离线 HTML 和毫米 DXF。在装拆编辑器录入手部包络、进出路线、固定参照点和最大距离，重读方案后在步骤图查看超限见证。 [范围与截图](updates-2026-11-26-p24-closeout.zh-CN.md)
+
 ## 2026-11-23 · P24 提前偏移与向前接回
 
 打开受阻的装拆报告，点击「搜索转向绕行」。对照原碰撞见证，核对候选的偏移起点、转向位置、接回点和增加路程。应用后重新读取方案并导出反向路径和 DXF。原生圆弧对应真实执行转向点。
@@ -11,7 +15,7 @@
 
 ## 2026-11-20 · P24 板件与工具联合避碰
 
-[源码提交 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码合入提交 4e634dc](https://github.com/ETET114514/GewuZhizaoNew/commit/4e634dc8d72c61db9b72b6d270e211b1fae3828b) · [源码 PR #3，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
 打开受阻的装拆报告，运行联合搜索并对照原方案与已复核的退出路径。步骤详情会标明调整的转向和执行段。
 

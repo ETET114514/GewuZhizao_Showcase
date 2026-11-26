@@ -2,9 +2,17 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-26 · P24 general software acceptance
+
+[Source commit f7b7be9](https://github.com/ETET114514/GewuZhizaoNew/commit/f7b7be921428b5d18d8d1dfdfbe19e9fc79dfc6c) · [Source PR #6, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/6) · [Scope, evidence, and screenshots](docs/updates-2026-11-26-p24-closeout.md)
+
+P24 passed coordinated cabinet opening, continuous disassembly with timed tools and hand reach, and STEP/BREP hidden-line drawing. The five packages for product mechanisms, actual appliances, manufacturer hardware, installation processes, and CNC delivery are deferred.
+
+1,157 Node tests, 1,431 Python tests, and 111 Edge workflows passed on the final source revision. Two Python tests were skipped.
+
 ## 2026-11-23 · P24 offset routes around blocked turns
 
-[Source commit 258eeff](https://github.com/ETET114514/GewuZhizaoNew/commit/258eeff3a462089af427507745250f497ce88411) · [Source PR #5, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/5) · [Scope and evidence](docs/updates-2026-11-23-p24.md)
+[Merged source commit ac1d99f](https://github.com/ETET114514/GewuZhizaoNew/commit/ac1d99fc19fa75ea945a34f8933f4f8b8867aeb4) · [Source PR #5, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/5) · [Scope and evidence](docs/updates-2026-11-23-p24.md)
 
 A board or tool can pass a blocked turn waypoint, leave the centerline before the obstruction, advance on a parallel offset, and turn in place. It can then rejoin diagonally or travel farther along the offset before making a lateral join. The search retains authored waypoints and later turns, and can also detour a separate straight obstruction.
 
@@ -476,7 +484,7 @@ Each release records implemented capabilities, remaining scope, verification and
 
 Push the source working branch and update Showcase in the same round. Open or update the source pull request against New’s `main`. Push Showcase documentation directly to its `main` using a fast-forward update. Showcase does not require a PR or wait for the source PR to merge. While the source PR is pending, record its full branch commit SHA and PR link. After it merges, sync the SHA recorded in Showcase to the commit on New’s `main`. Verify the source branch, source PR and Showcase `main` after pushing. [Source collaboration guide](https://github.com/ETET114514/GewuZhizaoNew/blob/main/README.md#github-%E6%8E%A8%E9%80%81%E7%BA%A6%E5%AE%9A)
 
-Current policy update: [source PR](https://github.com/ETET114514/GewuZhizaoNew/pull/2) · [source branch commit](https://github.com/ETET114514/GewuZhizaoNew/commit/97b163714fc8d0a180a88fb59d70b9d99828238a). The source change is pending merge.
+[Current source policy on New main](https://github.com/ETET114514/GewuZhizaoNew/blob/ac1d99fc19fa75ea945a34f8933f4f8b8867aeb4/README.md#github-%E6%8E%A8%E9%80%81%E7%BA%A6%E5%AE%9A)
 
 The 2026-11-19 update covers collaboration documentation. The source PR checked documentation links, anchors and Git diffs, and passed targeted Node and Python checks. [Source PR](https://github.com/ETET114514/GewuZhizaoNew/pull/1) · [Merged source commit](https://github.com/ETET114514/GewuZhizaoNew/commit/a2602ebc5220ffc69f50745fcbb8181c4647c05e)
 

@@ -2,9 +2,13 @@
 
 [English](architecture.md) | **中文**
 
+## 2026-11-26 · P24 通用软件验收
+
+装拆将连续实体碰撞与掌心距离检查联用。封闭 STL 按面平面切分、按绕序确定材料区域，再复核原始外露边界和材料体积。STEP/BREP 由本机 CAD 进程先划分可见和隐藏区段，再采样曲线。预览、SVG、HTML、DXF 和来源 JSON 共用采样几何。 [源码工程记录](https://github.com/ETET114514/GewuZhizaoNew/blob/f7b7be921428b5d18d8d1dfdfbe19e9fc79dfc6c/P24_ENGINEERING.md)
+
 ## 2026-11-20 · P24 板件与工具联合避碰
 
-[源码提交 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码合入提交 4e634dc](https://github.com/ETET114514/GewuZhizaoNew/commit/4e634dc8d72c61db9b72b6d270e211b1fae3828b) · [源码 PR #3，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
 调整转向时机后，搜索从原位移点重新计算绕行。整套复核沿用转角顺序、工具依赖和路径端点。
 

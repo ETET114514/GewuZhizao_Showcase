@@ -2,9 +2,13 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
+## 2026-11-26 · P24 general software acceptance
+
+Disassembly combines continuous collision checks with a reach limit along the palm trajectory. Closed STL geometry is split at face planes, classified by winding, and checked against the original exposed boundaries and material volume. For STEP/BREP, the local CAD process classifies visible and hidden segments before sampling curves. Preview, SVG, HTML, DXF, and source JSON share the sampled geometry. [Engineering notes](https://github.com/ETET114514/GewuZhizaoNew/blob/f7b7be921428b5d18d8d1dfdfbe19e9fc79dfc6c/P24_ENGINEERING.md)
+
 ## 2026-11-20 · P24 joint collision search for boards and tools
 
-[Source commit 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Merged source commit 4e634dc](https://github.com/ETET114514/GewuZhizaoNew/commit/4e634dc8d72c61db9b72b6d270e211b1fae3828b) · [Source PR #3, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
 When a turn moves, the search recalculates detours from the authored waypoints. Turn order, tool dependencies and the route endpoints carry through the full check.
 

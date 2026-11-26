@@ -2,6 +2,10 @@
 
 **English** | [中文](features.zh-CN.md)
 
+## 2026-11-26 · P24 general software acceptance
+
+P24 passed coordinated cabinet opening, continuous disassembly with timed tools and hand reach, and STEP/BREP hidden-line drawing. The five packages for product mechanisms, actual appliances, manufacturer hardware, installation processes, and CNC delivery are deferred. Closed tool meshes preserve holes, cavities, and enclosed islands. [Scope and evidence](updates-2026-11-26-p24-closeout.md)
+
 ## 2026-11-23 · P24 offset routes around blocked turns
 
 A board or tool can pass a blocked turn waypoint, leave the centerline before the obstruction, advance on a parallel offset, and turn in place. It can then rejoin diagonally or travel farther along the offset before making a lateral join. The search retains authored waypoints and later turns, and can also detour a separate straight obstruction.
@@ -11,7 +15,7 @@ This geometric check covers configured board, tool entry and withdrawal, and ret
 
 ## 2026-11-20 · P24 joint collision search for boards and tools
 
-[Source commit 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [Source PR #3, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
+[Merged source commit 4e634dc](https://github.com/ETET114514/GewuZhizaoNew/commit/4e634dc8d72c61db9b72b6d270e211b1fae3828b) · [Source PR #3, merged](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [Scope and evidence](updates-2026-11-20-p24.md)
 
 One candidate can detour around a blocked move and change when a board or tool turns. The search covers board movement, independent tool entry and withdrawal, and retained-tool transfers.
 

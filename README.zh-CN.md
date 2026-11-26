@@ -2,9 +2,17 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-26 · P24 通用软件验收
+
+[源码提交 f7b7be9](https://github.com/ETET114514/GewuZhizaoNew/commit/f7b7be921428b5d18d8d1dfdfbe19e9fc79dfc6c) · [源码 PR #6，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/6) · [功能范围、验收及截图](docs/updates-2026-11-26-p24-closeout.zh-CN.md)
+
+P24 已通过多柜开合协同、带异速工具和手部可达性的连续装拆，以及 STEP/BREP 曲面隐藏线出图。商品机构、实际设备、厂家五金、现场安装工艺和 CNC 机床交付五包暂缓。
+
+最终源码通过 1,157 项 Node、1,431 项 Python 和 111 组 Edge 验收，另有 2 项 Python 跳过。
+
 ## 2026-11-23 · P24 提前偏移与向前接回
 
-[源码提交 258eeff](https://github.com/ETET114514/GewuZhizaoNew/commit/258eeff3a462089af427507745250f497ce88411) · [源码 PR #5，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/5) · [范围与验收](docs/updates-2026-11-23-p24.zh-CN.md)
+[源码合入提交 ac1d99f](https://github.com/ETET114514/GewuZhizaoNew/commit/ac1d99fc19fa75ea945a34f8933f4f8b8867aeb4) · [源码 PR #5，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/5) · [范围与验收](docs/updates-2026-11-23-p24.zh-CN.md)
 
 板件或工具可以通过原转向点，在前方障碍之前离开原线，沿偏移线前进后原地转向。转完可斜向接回，也可沿偏移线继续前进再横向接回。候选保留原路径点及后续转角，并可联用后续直行绕行。
 
@@ -477,7 +485,7 @@ P23 C01～C08、P16 F01～F08、P18 M01～M08 及 P35 本机顶面/灯具流程�
 
 源码工作分支与 Showcase 在同一轮推送。源码开或更新指向 New 的 `main` 的 PR。Showcase 用普通快进方式直接推送 `main`，无需开 PR，也无需等待源码 PR 合并。源码待合并时记录完整分支 SHA 和源码 PR 链接。源码合并后同步引用实际合入 New 的 `main` 的提交 SHA。推送后核对远端源码分支、源码 PR 和 Showcase 的 `main`。[源码协作规范](https://github.com/ETET114514/GewuZhizaoNew/blob/main/README.md#github-%E6%8E%A8%E9%80%81%E7%BA%A6%E5%AE%9A)
 
-本轮规则更新对应[源码 PR](https://github.com/ETET114514/GewuZhizaoNew/pull/2)及[源码分支提交](https://github.com/ETET114514/GewuZhizaoNew/commit/97b163714fc8d0a180a88fb59d70b9d99828238a)，源码待合并。
+[New 主分支现行协作规范](https://github.com/ETET114514/GewuZhizaoNew/blob/ac1d99fc19fa75ea945a34f8933f4f8b8867aeb4/README.md#github-%E6%8E%A8%E9%80%81%E7%BA%A6%E5%AE%9A)
 
 2026-11-19 更新协作规范。源码 PR 检查了文档链接、锚点和 Git 差异，Node 与 Python 定向测试通过。[源码 PR](https://github.com/ETET114514/GewuZhizaoNew/pull/1) · [合并后的源码提交](https://github.com/ETET114514/GewuZhizaoNew/commit/a2602ebc5220ffc69f50745fcbb8181c4647c05e)
 

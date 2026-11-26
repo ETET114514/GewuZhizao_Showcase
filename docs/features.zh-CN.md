@@ -2,6 +2,10 @@
 
 [English](features.md) | **中文**
 
+## 2026-11-26 · P24 通用软件验收
+
+P24 已通过多柜开合协同、带异速工具和手部可达性的连续装拆，以及 STEP/BREP 曲面隐藏线出图。商品机构、实际设备、厂家五金、现场安装工艺和 CNC 机床交付五包暂缓。 封闭工具网格可保留通孔、空腔及腔内实体。[范围与验收](updates-2026-11-26-p24-closeout.zh-CN.md)
+
 ## 2026-11-23 · P24 提前偏移与向前接回
 
 板件或工具可以通过原转向点，在前方障碍之前离开原线，沿偏移线前进后原地转向。转完可斜向接回，也可沿偏移线继续前进再横向接回。候选保留原路径点及后续转角，并可联用后续直行绕行。
@@ -11,7 +15,7 @@
 
 ## 2026-11-20 · P24 板件与工具联合避碰
 
-[源码提交 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
+[源码合入提交 4e634dc](https://github.com/ETET114514/GewuZhizaoNew/commit/4e634dc8d72c61db9b72b6d270e211b1fae3828b) · [源码 PR #3，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](updates-2026-11-20-p24.zh-CN.md)
 
 同一候选可以给受阻平移段加绕行点，并调整转向时机。适用于板件移动、工具独立进入和退出，以及驻留工具搬运。
 

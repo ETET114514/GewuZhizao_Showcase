@@ -2,9 +2,13 @@
 
 [English](NOTICE.md) | **中文**
 
+## 2026-11-26 · P24 通用软件验收
+
+曲面截图来自 Edge 测试生成的 STEP 样件。手部可达性图片由生成柜体样件验收图包中的步骤 SVG 渲染得到。 [源码及验收证据](docs/updates-2026-11-26-p24-closeout.zh-CN.md)
+
 ## 2026-11-20 · P24 板件与工具联合避碰
 
-[源码提交 8bc8569](https://github.com/ETET114514/GewuZhizaoNew/commit/8bc8569d42d706ee2fd10a44722f3d4349c3e28f) · [源码 PR #3，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](docs/updates-2026-11-20-p24.zh-CN.md)
+[源码合入提交 4e634dc](https://github.com/ETET114514/GewuZhizaoNew/commit/4e634dc8d72c61db9b72b6d270e211b1fae3828b) · [源码 PR #3，已合并](https://github.com/ETET114514/GewuZhizaoNew/pull/3) · [范围与验收](docs/updates-2026-11-20-p24.zh-CN.md)
 
 截图为 Edge 验收中程序化柜体样例的已通过退出路径。
 
