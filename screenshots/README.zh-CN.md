@@ -2,6 +2,16 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-28 · P21 DXF 建墙与导入记录复用
+
+![390 px 下为修订图映射改名层并核对单位](p21-dxf-revision-map.png)
+
+![带弧形窗和平开门的圆形房间](p21-dxf-curved-openings.png)
+
+![从四种门窗符号补接建成的可编辑墙](p21-dxf-symbol-bridges.png)
+
+[源码及验收证据](../docs/updates-2026-11-28-p21-dxf.zh-CN.md)
+
 ## 2026-11-26 · P24 通用软件验收
 
 ![显示可见实线和隐藏虚线的曲面轴测图](p24-brep-hidden-lines.png)

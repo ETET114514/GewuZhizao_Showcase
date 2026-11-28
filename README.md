@@ -2,6 +2,14 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-28 · P21 DXF walls and reusable import records
+
+[Source commit 3fc4085](https://github.com/ETET114514/GewuZhizaoNew/commit/3fc40856ae4d9b9a33057dc60acc6af3b4c1b838) · [Source PR #7, awaiting review and merge](https://github.com/ETET114514/GewuZhizaoNew/pull/7) · [Scope, evidence, and screenshots](docs/updates-2026-11-28-p21-dxf.md)
+
+DXF axes and outlines can build straight, sloped, tapered, and circular walls. Confirmed opening markers can bridge gaps and produce editable doors and windows. Import records now restore the same drawing or reuse selected settings on a revision through layer mapping.
+
+252 DXF Python checks, 1,168 Node checks, and 16 Edge checks for the final revision and replay workflows passed.
+
 ## 2026-11-26 · P24 general software acceptance
 
 [Source commit f7b7be9](https://github.com/ETET114514/GewuZhizaoNew/commit/f7b7be921428b5d18d8d1dfdfbe19e9fc79dfc6c) · [Source PR #6, awaiting merge](https://github.com/ETET114514/GewuZhizaoNew/pull/6) · [Scope, evidence, and screenshots](docs/updates-2026-11-26-p24-closeout.md)

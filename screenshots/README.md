@@ -2,6 +2,16 @@
 
 **English** | [中文](README.zh-CN.md)
 
+## 2026-11-28 · P21 DXF walls and reusable import records
+
+![A 390 px preview with renamed layer mapping and the revised DXF unit](p21-dxf-revision-map.png)
+
+![A circular room with a curved opening and hinged door](p21-dxf-curved-openings.png)
+
+![A wall rebuilt from four door and window symbol types](p21-dxf-symbol-bridges.png)
+
+[Source and evidence](../docs/updates-2026-11-28-p21-dxf.md)
+
 ## 2026-11-26 · P24 general software acceptance
 
 ![Surface drawing with visible solid lines and dashed hidden lines](p24-brep-hidden-lines.png)

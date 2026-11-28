@@ -2,6 +2,10 @@
 
 **English** | [中文](architecture.zh-CN.md)
 
+## 2026-11-28 · P21 DXF walls and reusable import records
+
+Analytic line and circle axes retain physical coordinates when clipped. Gap proposals use the section at each end and compare the real bridge footprints. Continuous wall sections stay attached to their physical stations through circle splits. The wall-axis DXF stores validated dimension and opening records. Import JSON is bound by the source SHA-256 and revalidated by a fresh preview. Revisions carry mapped layer settings and build a fresh candidate set. [Workflow and source](updates-2026-11-28-p21-dxf.md)
+
 ## 2026-11-26 · P24 general software acceptance
 
 Disassembly combines continuous collision checks with a reach limit along the palm trajectory. Closed STL geometry is split at face planes, classified by winding, and checked against the original exposed boundaries and material volume. For STEP/BREP, the local CAD process classifies visible and hidden segments before sampling curves. Preview, SVG, HTML, DXF, and source JSON share the sampled geometry. [Engineering notes](https://github.com/ETET114514/GewuZhizaoNew/blob/f7b7be921428b5d18d8d1dfdfbe19e9fc79dfc6c/P24_ENGINEERING.md)

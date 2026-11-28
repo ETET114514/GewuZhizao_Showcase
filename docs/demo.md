@@ -2,6 +2,10 @@
 
 **English** | [中文](demo.zh-CN.md)
 
+## 2026-11-28 · P21 DXF walls and reusable import records
+
+Open **My Projects → DXF** and select wall centerlines or paired outlines. Enable the corresponding wall geometry and assign the opening layers. Preview and confirm the walls, gap bridges, and openings. Download the import record. On a revised DXF, map the renamed layers, verify the units and crop, then confirm the new candidates. [Scope and screenshots](updates-2026-11-28-p21-dxf.md)
+
 ## 2026-11-26 · P24 general software acceptance
 
 Open **Detail → Surface / BRep hidden-line drawings**, load STEP, switch views, and toggle hidden lines. Compare the SVG, offline HTML, and millimeter DXF for the same view. In the disassembly editor, enter a hand envelope, entry and withdrawal paths, reference point, and distance limit. Reread the scheme and open the step drawing to locate a reach witness. [Scope and screenshots](updates-2026-11-26-p24-closeout.md)

@@ -2,6 +2,10 @@
 
 **English** | [中文](features.zh-CN.md)
 
+## 2026-11-28 · P21 DXF walls and reusable import records
+
+Build editable orthogonal, sloped, and circular walls from selected DXF centerlines or paired outlines. Confirmed opening axes or supported symbols can bridge gaps and create editable apertures. Round-trip supported wall sections and opening properties through wall-axis DXF. Reopen a saved import record or apply its layer settings to a revised drawing. [Scope and limits](updates-2026-11-28-p21-dxf.md)
+
 ## 2026-11-26 · P24 general software acceptance
 
 P24 passed coordinated cabinet opening, continuous disassembly with timed tools and hand reach, and STEP/BREP hidden-line drawing. The five packages for product mechanisms, actual appliances, manufacturer hardware, installation processes, and CNC delivery are deferred. Closed tool meshes preserve holes, cavities, and enclosed islands. [Scope and evidence](updates-2026-11-26-p24-closeout.md)

@@ -2,6 +2,14 @@
 
 [English](README.md) | **中文**
 
+## 2026-11-28 · P21 DXF 建墙与导入记录复用
+
+[源码提交 3fc4085](https://github.com/ETET114514/GewuZhizaoNew/commit/3fc40856ae4d9b9a33057dc60acc6af3b4c1b838) · [源码 PR #7，待审查与合并](https://github.com/ETET114514/GewuZhizaoNew/pull/7) · [范围、验收与截图](docs/updates-2026-11-28-p21-dxf.zh-CN.md)
+
+DXF 轴线和双线轮廓可建立直墙、斜墙、渐变截面墙与圆弧墙。确认后的门窗标记可补接缺口并创建可编辑门窗。同源导入记录可恢复完整预览，修订图可通过图层映射复用设置。
+
+252 项 DXF Python、1,168 项 Node，以及最终修订图和记录恢复的 16 项 Edge 检查通过。
+
 ## 2026-11-26 · P24 通用软件验收
 
 [源码提交 f7b7be9](https://github.com/ETET114514/GewuZhizaoNew/commit/f7b7be921428b5d18d8d1dfdfbe19e9fc79dfc6c) · [源码 PR #6，待合并](https://github.com/ETET114514/GewuZhizaoNew/pull/6) · [功能范围、验收及截图](docs/updates-2026-11-26-p24-closeout.zh-CN.md)
